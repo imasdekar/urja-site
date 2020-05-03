@@ -1,6 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Urja"
+theme = "welfare"
 
 [menu]
   [[menu.nav]]
