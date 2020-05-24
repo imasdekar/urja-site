@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+# This line should *not* be indented
+publish_mode: editorial_workflow
+
+# when using the default proxy server port
+local_backend: true
+
+# for live preview. Currently only works with GitHub and Git Gateway
+show_preview_links: true
+
+# These lines should *not* be indented
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "data/about.yml"
+        fields:
+          - {label: "Title", name: title, widget: string}
+          - {label: "Hero Image", name: hero_image, widget: image}
+          - {label: "First Side Image", name: side_image, widget: image}
+          - {label: "First Body", name: body_1, widget: text}
+          - {label: "Second Body", name: body_2, widget: text}
+          - {label: "Second Side Image", name: side_image, widget: image}
+          - {label: "Third Body", name: body_3, widget: text}
+          - {label: "Fourth Body", name: body_4, widget: text}
+          - {label: "Vision Title", name: vision_title, widget: string}
+          - {label: "Vision Subtitle", name: vision_subtitle, widget: text}
+          - {label: "Mission Title", name: mission_title, widget: string}
+          - {label: "Mission Subtitle", name: mission_subtitle, widget: text}
+          - {label: "Team Title", name: team_title, widget: string}
+          - {label: "Team Subtitle", name: team_subtitle, widget: text}
+          - label: "Team Members"
+            name: "team_members"
+            widget: list
+            fields:
+                - {label: "Name", name: name, widget: string}
+                - {label: "Image", name: image, widget: image}
+                - {label: "Role", name: role, widget: string}
+                - {label: "About", name: about, widget: text}
