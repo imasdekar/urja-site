@@ -20,8 +20,22 @@
       </div>
       <div class="col-md-6 pl-md-5 ftco-animate">
         <h2 class="mb-4">{{ $data.subtitle }}</h2>
-        <p>{{ $data.body_1 }}</p>
-        <p>{{ $data.body_2 }}</p>
+        <p>{{ $data.body_1 | markdownify }}</p>
+        <p>{{ $data.body_2 | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row d-flex">
+	  <div class="col-md-8 pl-md-5 ftco-animate">
+        <p>{{ $data.body_3 | markdownify }}</p>
+        <p>{{ $data.body_4 | markdownify }}</p>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="img img-about align-self-stretch" style="background-image: url('{{ $data.side_image_2 | absURL }}'); width: 100%;"></div>
       </div>
     </div>
   </div>
@@ -29,57 +43,56 @@
 
 {{ partial "counter_section.html" . }}
 
+<section class="ftco-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+        <div class="media block-6 d-flex services p-3 py-4 d-block">
+          <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
+          <div class="media-body pl-4">
+            <h3 class="heading">{{ $data.vision_title }}</h3>
+            <p>{{ $data.vision_subtitle }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+        <div class="media block-6 d-flex services p-3 py-4 d-block">
+          <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
+          <div class="media-body pl-4">
+            <h3 class="heading">{{ $data.mission_title }}</h3>
+            <p>{{ $data.mission_subtitle }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="ftco-section bg-light">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-4">Latest Donations</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <h2 class="mb-4">{{ $data.team_title }}</h2>
+        <p>{{ $data.team_subtitle }}</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+    {{ range $data.team_members }}
+      <div class="col-lg-6 d-flex mb-sm-4 ftco-animate">
         <div class="staff">
           <div class="d-flex mb-4">
-            <div class="img" style="background-image: url('{{ `images/person_1.jpg` | absURL }}');"></div>
+            <div class="img" style="background-image: url('{{ .image | absURL }}');"></div>
             <div class="info ml-4">
-              <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
-              <span class="position">Donated Just now</span>
+              <h3><a href="teacher-single.html">{{ .name }}</a></h3>
+              <span class="position">{{ .role }}</span>
               <div class="text">
-                <p>Donated <span>$300</span> for <a href="#">Children Needs Food</a></p>
+                <p>{{ .about }}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
-        <div class="staff">
-          <div class="d-flex mb-4">
-            <div class="img" style="background-image: url('{{ `images/person_2.jpg` | absURL }}');"></div>
-            <div class="info ml-4">
-              <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
-              <span class="position">Donated Just now</span>
-              <div class="text">
-                <p>Donated <span>$150</span> for <a href="#">Children Needs Food</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
-        <div class="staff">
-          <div class="d-flex mb-4">
-            <div class="img" style="background-image: url('{{ `images/person_3.jpg` | absURL }}');"></div>
-            <div class="info ml-4">
-              <h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
-              <span class="position">Donated Just now</span>
-              <div class="text">
-                <p>Donated <span>$250</span> for <a href="#">Children Needs Food</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    {{ end }}
     </div>
   </div>
 </section>
