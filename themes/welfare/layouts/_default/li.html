@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-5 heading-section ftco-animate text-center">
+        <h2 class="mb-4">{{ .Title }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 ftco-animate">
+        <div class="carousel-cause owl-carousel">
+        {{ range .Pages }}
+            {{ .Render "summary"}}
+        {{ end }}
+		</div>
+	</div>
+</div>
