@@ -1,8 +1,6 @@
 ---
-title: "Causes"
-date: 2020-05-25T11:44:22Z
-draft: true
-cascade:
-  banner: /images/uploads/bg_2.jpg
+title: Causes
+draft: false
+date: 2020-05-25T18:15:11.847Z
+banner: /images/uploads/bg_1.jpg
 ---
-
