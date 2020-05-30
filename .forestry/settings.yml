@@ -10,7 +10,7 @@ sections:
   path: content/about
   label: About
   create: all
-  match: "**/*"
+  match: "*"
 - type: directory
   path: content/causes
   label: Causes
@@ -23,7 +23,7 @@ sections:
   label: Data Files
   create: documents
   match: "**/*"
-  new_doc_ext: ".yml"
+  new_doc_ext: yml
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
