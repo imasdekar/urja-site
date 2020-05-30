@@ -16,6 +16,14 @@ sections:
   label: Causes
   create: all
   match: "**/*"
+- type: heading
+  label: Configuration
+- type: directory
+  path: data
+  label: Data Files
+  create: documents
+  match: "**/*"
+  new_doc_ext: ".yml"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
