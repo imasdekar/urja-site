@@ -23,15 +23,31 @@ fields:
 - type: textarea
   name: body_1
   label: body_1
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: textarea
   name: body_2
   label: body_2
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: textarea
   name: body_3
   label: body_3
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: textarea
   name: body_4
   label: body_4
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: text
   name: vision_title
   label: vision_title
@@ -66,3 +82,7 @@ fields:
   - type: textarea
     name: about
     label: about
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
