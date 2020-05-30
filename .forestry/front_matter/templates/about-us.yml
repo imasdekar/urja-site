@@ -1,0 +1,68 @@
+---
+label: About Us
+hide_body: true
+fields:
+- type: boolean
+  name: active
+  label: active
+- type: text
+  name: title
+  label: title
+- type: file
+  name: hero_image
+  label: hero_image
+- type: file
+  name: side_image
+  label: side_image
+- type: file
+  name: side_image_2
+  label: side_image_2
+- type: text
+  name: subtitle
+  label: subtitle
+- type: textarea
+  name: body_1
+  label: body_1
+- type: textarea
+  name: body_2
+  label: body_2
+- type: textarea
+  name: body_3
+  label: body_3
+- type: textarea
+  name: body_4
+  label: body_4
+- type: text
+  name: vision_title
+  label: vision_title
+- type: textarea
+  name: vision_subtitle
+  label: vision_subtitle
+- type: text
+  name: mission_title
+  label: mission_title
+- type: textarea
+  name: mission_subtitle
+  label: mission_subtitle
+- type: text
+  name: team_title
+  label: team_title
+- type: text
+  name: team_subtitle
+  label: team_subtitle
+- type: field_group_list
+  name: team_members
+  label: team_members
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: role
+    label: role
+  - type: textarea
+    name: about
+    label: about
