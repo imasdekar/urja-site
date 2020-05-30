@@ -83,3 +83,7 @@ fields:
   - type: textarea
     name: about
     label: about
+    config:
+      wysiwyg: false
+      schema:
+        format: markdown
