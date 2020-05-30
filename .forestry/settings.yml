@@ -7,10 +7,10 @@ sections:
 - type: heading
   label: Pages
 - type: directory
-  path: data/about.yml
+  path: data
   label: About
   create: documents
-  match: "*"
+  match: about.yml
 - type: directory
   path: content/causes
   label: Causes
