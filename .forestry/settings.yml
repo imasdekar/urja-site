@@ -7,9 +7,9 @@ sections:
 - type: heading
   label: Pages
 - type: directory
-  path: content/about
+  path: data/about.yml
   label: About
-  create: all
+  create: documents
   match: "*"
 - type: directory
   path: content/causes
@@ -23,7 +23,7 @@ sections:
   label: Data Files
   create: documents
   match: "**/*"
-  new_doc_ext: ".yml"
+  new_doc_ext: yml
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
