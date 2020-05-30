@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: Pages
 - type: directory
-  path: content/causes
+  path: causes
   label: Causes
   create: documents
   match: "**/*"
