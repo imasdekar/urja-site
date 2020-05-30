@@ -7,7 +7,7 @@ hero_image: ''
 side_image: ''
 side_image_2: ''
 subtitle: ''
-body_1: ''
+body_1: asdadsadsadadsad
 body_2: ''
 body_3: ''
 body_4: ''
@@ -18,6 +18,5 @@ mission_subtitle: ''
 team_title: ''
 team_subtitle: ''
 team_members: []
-draft: true
 
 ---
