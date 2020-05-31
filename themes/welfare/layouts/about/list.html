@@ -1,12 +1,11 @@
 {{ define "main" }}
-{{ $data := index .Site.Data.about }}
-<div class="hero-wrap" style="background-image: url('{{ $data.hero_image }}');" data-stellar-background-ratio="0.5">
+<div class="hero-wrap" style="background-image: url('{{ .Params.hero_image }}');" data-stellar-background-ratio="0.5">
   <div class="overlay"></div>
   <div class="container">
     <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
       <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
         <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span> <span>About</span></p>
-        <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{ $data.title }}</h1>
+        <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{ .Title }}</h1>
       </div>
     </div>
   </div>
@@ -16,12 +15,12 @@
   <div class="container">
     <div class="row d-flex">
       <div class="col-md-6 d-flex ftco-animate">
-        <div class="img img-about align-self-stretch" style="background-image: url('{{ $data.side_image }}'); width: 100%;"></div>
+        <div class="img img-about align-self-stretch" style="background-image: url('{{ .Params.side_image }}'); width: 100%;"></div>
       </div>
       <div class="col-md-6 pl-md-5 ftco-animate">
-        <h2 class="mb-4">{{ $data.subtitle }}</h2>
-        <p>{{ $data.body_1 | markdownify }}</p>
-        <p>{{ $data.body_2 | markdownify }}</p>
+        <h2 class="mb-4">{{ .Params.subtitle }}</h2>
+        <p>{{ .Params.body_1 | markdownify }}</p>
+        <p>{{ .Params.body_2 | markdownify }}</p>
       </div>
     </div>
   </div>
@@ -31,11 +30,11 @@
   <div class="container">
     <div class="row d-flex">
 	  <div class="col-md-8 pl-md-5 ftco-animate">
-        <p>{{ $data.body_3 | markdownify }}</p>
-        <p>{{ $data.body_4 | markdownify }}</p>
+        <p>{{ .Params.body_3 | markdownify }}</p>
+        <p>{{ .Params.body_4 | markdownify }}</p>
       </div>
       <div class="col-md-4 d-flex ftco-animate">
-        <div class="img img-about align-self-stretch" style="background-image: url('{{ $data.side_image_2 }}'); width: 100%;"></div>
+        <div class="img img-about align-self-stretch" style="background-image: url('{{ .Params.side_image_2 }}'); width: 100%;"></div>
       </div>
     </div>
   </div>
@@ -50,8 +49,8 @@
         <div class="media block-6 d-flex services p-3 py-4 d-block">
           <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
           <div class="media-body pl-4">
-            <h3 class="heading">{{ $data.vision_title }}</h3>
-            <p>{{ $data.vision_subtitle }}</p>
+            <h3 class="heading">{{ .Params.vision_title }}</h3>
+            <p>{{ .Params.vision_subtitle }}</p>
           </div>
         </div>
       </div>
@@ -59,8 +58,8 @@
         <div class="media block-6 d-flex services p-3 py-4 d-block">
           <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
           <div class="media-body pl-4">
-            <h3 class="heading">{{ $data.mission_title }}</h3>
-            <p>{{ $data.mission_subtitle }}</p>
+            <h3 class="heading">{{ .Params.mission_title }}</h3>
+            <p>{{ .Params.mission_subtitle }}</p>
           </div>
         </div>
       </div>
@@ -72,12 +71,12 @@
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-4">{{ $data.team_title }}</h2>
-        <p>{{ $data.team_subtitle }}</p>
+        <h2 class="mb-4">{{ .Params.team_title }}</h2>
+        <p>{{ .Params.team_subtitle }}</p>
       </div>
     </div>
     <div class="row">
-    {{ range $data.team_members }}
+    {{ range .Params.team_members }}
       <div class="col-lg-6 d-flex mb-sm-4 ftco-animate">
         <div class="staff">
           <div class="d-flex mb-4">
