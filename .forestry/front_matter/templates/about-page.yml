@@ -11,6 +11,7 @@ fields:
 - type: text
   name: Kind
   label: Kind
+  hidden: true
 - type: boolean
   name: active
   label: active
