@@ -1,8 +1,7 @@
 ---
-title: "About Us"
-date: 2020-05-01T19:33:52+05:30
-draft: false
-Kind: "about"
+title: About Us
+date: 2020-05-01T14:03:52.000+00:00
+Kind: about
 active: true
 hero_image: "/images/uploads/bg_7.jpg"
 side_image: "/images/uploads/bg_2.jpg"
@@ -130,4 +129,5 @@ team_members:
     Roshni has completed her MA in Social Work with a specialisation in Criminology
     and Correctional Administration (TISS-1993) and Ph.D. in Social Work (TISS-2015)
     with a focus on Field work in Criminology and Justice.
+
 ---
