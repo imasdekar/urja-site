@@ -5,6 +5,8 @@ fields:
 - type: boolean
   name: active
   label: active
+  default: true
+  hidden: true
 - type: text
   name: title
   label: title
