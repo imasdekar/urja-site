@@ -1,7 +1,7 @@
 ---
 title: "Sample_event"
 date: 2020-06-02T17:11:11+05:30
-draft: true
+draft: false
 banner: /images/uploads/bg_1.jpg
 tags:
 - domestic
