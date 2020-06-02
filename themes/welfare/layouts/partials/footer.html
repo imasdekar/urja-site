@@ -27,31 +27,20 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">Recent Blog</h2>
-          <div class="block-21 mb-4 d-flex">
-            <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-            <div class="text">
-              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+          <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent {{ $data.recent_section }}</h2>
+              {{ range (  where .Site.RegularPages "Section" $data.recent_section | first 3 ) }}
+              <div class="block-21 mb-4 d-flex">
+                  <a class="blog-img mr-4" href="{{ .Permalink }}" style="background-image: url('{{ .Params.banner }}');"></a>
+                  <div class="text">
+                      <h3 class="heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                      <div class="meta">
+                          <div><span class="icon-calendar"></span> {{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+                      </div>
+                  </div>
               </div>
-            </div>
+              {{ end }}
           </div>
-          <div class="block-21 mb-4 d-flex">
-            <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-            <div class="text">
-              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="col-md-2">
          <div class="ftco-footer-widget mb-4 ml-md-4">
@@ -71,6 +60,7 @@
               <li><span class="icon icon-map-marker"></span><span class="text">{{ $data.address }}</span></li>
               <li><a href=""><span class="icon icon-phone"></span><span class="text">{{ $data.telephone }}</span></a></li>
               <li><a href="{{ $data.email }}?subject={{ $data.email_subject }}"><span class="icon icon-envelope"></span><span class="text">{{ $data.email }}</span></a></li>
+              <li><span class="icon icon-clock-o"></span><span class="text">{{ $data.office_hours }}</span></li>
             </ul>
           </div>
         </div>
