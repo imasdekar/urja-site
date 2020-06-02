@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="hero-wrap" style="background-image: url('{{ .Params.image }}');" data-stellar-background-ratio="0.5">
+<div class="hero-wrap" style="background-image: url('{{ .Params.banner }}');" data-stellar-background-ratio="0.5">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -17,7 +17,7 @@
 <section class="ftco-section ftco-degree-bg">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 ftco-animate">
+            <div class="{{ if gt (len .CurrentSection.Pages) 1 }}col-md-8 {{ else }}col-md-12{{ end }} ftco-animate">
 				<h2 class="mb-3">{{ .Title }}</h2>
 				{{ .Content }}
 
@@ -32,6 +32,7 @@
 				{{ end }}
 
 			</div> <!-- .col-md-8 -->
+            {{ if gt (len .CurrentSection.Pages) 1 }}
 			<div class="col-md-4 sidebar ftco-animate">
 				{{ with .Params.categories }}
 				<div class="sidebar-box ftco-animate">
@@ -48,7 +49,7 @@
           {{ range ( where .CurrentSection.Pages "Title" "!=" .Title | first 3 ) }}
 					<div class="block-21 mb-4 d-flex">
 						<a class="blog-img mr-4" href="{{ .Permalink }}"
-							style="background-image: url('{{ .Params.image }}');"></a>
+							style="background-image: url('{{ .Params.banner }}');"></a>
 						<div class="text">
 							<h3 class="heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 							<div class="meta">
@@ -69,6 +70,7 @@
 					</div>
 				</div>
 				{{ end }}
+                {{ end }}
 			</div>
 		</div>
 </section>

@@ -1,1 +1,29 @@
 active: true
+slides:
+  - hero_image: /images/uploads/bg_7.jpg
+    title: Doing Something is always better than doing nothing
+    subtitle: A small subtitle
+    video_link: /about
+    video_text: About Us
+  - hero_image: /images/uploads/bg_3.jpg
+    title: A second title text
+    subtitle: A second small subtitle
+    video_link: /causes
+    video_text: Causes
+
+gallery:
+  - image: /images/uploads/bg_1.jpg
+  - image: /images/uploads/bg_2.jpg
+  - image: /images/uploads/bg_1.jpg
+  - image: /images/uploads/bg_2.jpg
+
+volunteer_background: /images/uploads/bg_6.jpg
+volunteer_form_title: Be a volunteer
+volunteer_body_text: >
+  We believe that our strength lies in unity. A better world will only be possible if we all work together.  You can become an integral part of our journey by volunteering and working with us.
+
+
+  You can also choose to become a fundraiser. You could do so by working towards strengthening communities and sharing the power to lead a dignified life with the young women at Urja by starting your own fundraising page. The more the number of people involve themselves with such a cause, the better the future of these women will be.
+
+
+  Get started today!
