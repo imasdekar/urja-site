@@ -17,9 +17,9 @@ sections:
   create: none
   match: "**/*"
 - type: directory
-  path: content/causes
-  label: Causes
-  create: all
+  path: content/events
+  label: Our Latest Events
+  create: documents
   match: "**/*"
 - type: heading
   label: Configuration
