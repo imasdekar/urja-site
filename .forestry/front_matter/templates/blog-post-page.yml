@@ -11,5 +11,14 @@ fields:
 - type: file
   name: banner
   label: Banner
+- name: Content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Body
 pages:
 - content/blog/home_story.md
