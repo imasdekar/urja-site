@@ -12,7 +12,6 @@ sections:
 - type: document
   path: content/about/_index.md
   label: About
-  match: "**/*"
 - type: directory
   path: content/blog
   label: Blog

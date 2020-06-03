@@ -94,3 +94,5 @@ fields:
       wysiwyg: false
       schema:
         format: markdown
+pages:
+- content/about/_index.md
