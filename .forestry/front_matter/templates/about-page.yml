@@ -4,10 +4,10 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: text
   name: Kind
   label: Kind
@@ -18,78 +18,78 @@ fields:
   hidden: true
 - type: file
   name: hero_image
-  label: hero_image
+  label: Hero Image
 - type: file
   name: side_image
-  label: side_image
+  label: Side Image
 - type: file
   name: side_image_2
-  label: side_image_2
+  label: Side Image 2
 - type: text
   name: subtitle
-  label: subtitle
+  label: Subtitle
 - type: textarea
   name: body_1
-  label: body_1
+  label: Body 1
   config:
     wysiwyg: true
     schema:
       format: markdown
 - type: textarea
   name: body_2
-  label: body_2
+  label: Body 2
   config:
     wysiwyg: true
     schema:
       format: markdown
 - type: textarea
   name: body_3
-  label: body_3
+  label: Body 3
   config:
     wysiwyg: true
     schema:
       format: markdown
 - type: textarea
   name: body_4
-  label: body_4
+  label: Body 4
   config:
     wysiwyg: true
     schema:
       format: markdown
 - type: text
   name: vision_title
-  label: vision_title
+  label: Vision Title
 - type: textarea
   name: vision_subtitle
-  label: vision_subtitle
+  label: Vision Subtitle
 - type: text
   name: mission_title
-  label: mission_title
+  label: Mission Title
 - type: textarea
   name: mission_subtitle
-  label: mission_subtitle
+  label: Mission Subtitle
 - type: text
   name: team_title
-  label: team_title
+  label: Team Title
 - type: text
   name: team_subtitle
-  label: team_subtitle
+  label: Team Subtitle
 - type: field_group_list
   name: team_members
-  label: team_members
+  label: Team Members
   fields:
   - type: text
     name: name
-    label: name
+    label: Name
   - type: file
     name: image
     label: image
   - type: text
     name: role
-    label: role
+    label: Role
   - type: textarea
     name: about
-    label: about
+    label: About
     config:
       wysiwyg: false
       schema:
