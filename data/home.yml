@@ -13,9 +13,13 @@ slides:
   video_text: Causes
 gallery:
 - image: "/images/uploads/bg_1.jpg"
+  title: First Image
 - image: "/images/uploads/bg_2.jpg"
+  title: Second Image
 - image: "/images/uploads/bg_1.jpg"
+  title: Third Image
 - image: "/images/uploads/bg_2.jpg"
+  title: Fourth Image
 volunteer_background: "/images/uploads/bg_6.jpg"
 volunteer_form_title: Be a volunteer
 volunteer_body_text: |
