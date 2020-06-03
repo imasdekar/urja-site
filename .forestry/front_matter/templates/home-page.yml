@@ -5,38 +5,43 @@ fields:
 - type: boolean
   name: active
   label: active
+  hidden: true
 - type: field_group_list
   name: slides
-  label: slides
+  label: Slides
   fields:
   - type: file
     name: hero_image
-    label: hero_image
+    label: Hero Image
   - type: text
     name: title
-    label: title
+    label: Title
   - type: text
     name: subtitle
-    label: subtitle
+    label: Subtitle
   - type: text
     name: video_link
-    label: video_link
+    label: Video Link
   - type: text
     name: video_text
-    label: video_text
+    label: Video Text
 - type: field_group_list
   name: gallery
-  label: gallery
+  label: Gallery
   fields:
   - type: file
     name: image
     label: image
 - type: file
   name: volunteer_background
-  label: volunteer_background
+  label: Volunteer Background
 - type: text
   name: volunteer_form_title
-  label: volunteer_form_title
+  label: Volunteer Form Title
 - type: textarea
   name: volunteer_body_text
-  label: volunteer_body_text
+  label: Volunteer Body Text
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
