@@ -45,3 +45,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- data/home.yml
