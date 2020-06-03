@@ -4,17 +4,15 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: document
+  path: content/about/_index.md
+  label: About
+  match: "**/*"
 - type: heading
   label: Pages
 - type: document
   path: data/home.yml
   label: Home Page
-  match: "**/*"
-- type: directory
-  path: content/about
-  label: About
-  create: none
-  match: "**/*"
 - type: directory
   path: content/blog
   label: Blog
