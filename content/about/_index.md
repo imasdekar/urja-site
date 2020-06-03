@@ -129,5 +129,8 @@ team_members:
     Roshni has completed her MA in Social Work with a specialisation in Criminology
     and Correctional Administration (TISS-1993) and Ph.D. in Social Work (TISS-2015)
     with a focus on Field work in Criminology and Justice.
+menu:
+  nav:
+    weight: 2
 
 ---
