@@ -7,14 +7,14 @@ sections:
 - type: heading
   label: Pages
 - type: directory
-  path: content/blog
-  label: Blog
-  create: all
-  match: "**/*"
-- type: directory
   path: content/about
   label: About
   create: none
+  match: "**/*"
+- type: directory
+  path: content/blog
+  label: Blog
+  create: documents
   match: "**/*"
 - type: directory
   path: content/events
