@@ -1,0 +1,42 @@
+---
+label: Home Page
+hide_body: true
+fields:
+- type: boolean
+  name: active
+  label: active
+- type: field_group_list
+  name: slides
+  label: slides
+  fields:
+  - type: file
+    name: hero_image
+    label: hero_image
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: text
+    name: video_link
+    label: video_link
+  - type: text
+    name: video_text
+    label: video_text
+- type: field_group_list
+  name: gallery
+  label: gallery
+  fields:
+  - type: file
+    name: image
+    label: image
+- type: file
+  name: volunteer_background
+  label: volunteer_background
+- type: text
+  name: volunteer_form_title
+  label: volunteer_form_title
+- type: textarea
+  name: volunteer_body_text
+  label: volunteer_body_text
