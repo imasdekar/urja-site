@@ -10,17 +10,4 @@ last_tile_title: SPONSORSHIP
 last_tile_subtitile: ''
 last_tile_button_link: "/sponsorship"
 last_tile_button_text: SPONSORSHIP
-count_section:
-  count_title: asdasdasdasdd
-  count_total: 
-  count_subtitle: ''
-mid_section:
-  mid_tile_title: ''
-  mid_tile_subtitle: ''
-  mid_tile_button_link: ''
-  mid_tile_button_text: ''
-last_section:
-  last_tile_title: ''
-  last_tile_subtitile: ''
-  last_tile_button_link: ''
-  last_tile_button_text: ''
+---
