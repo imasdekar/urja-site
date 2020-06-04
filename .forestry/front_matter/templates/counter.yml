@@ -1,0 +1,37 @@
+---
+label: Counter
+hide_body: true
+fields:
+- type: text
+  name: count_title
+  label: count_title
+- type: number
+  name: count_total
+  label: count_total
+- type: text
+  name: count_subtitle
+  label: count_subtitle
+- type: text
+  name: mid_tile_title
+  label: mid_tile_title
+- type: text
+  name: mid_tile_subtitle
+  label: mid_tile_subtitle
+- type: text
+  name: mid_tile_button_link
+  label: mid_tile_button_link
+- type: text
+  name: mid_tile_button_text
+  label: mid_tile_button_text
+- type: text
+  name: last_tile_title
+  label: last_tile_title
+- type: text
+  name: last_tile_subtitile
+  label: last_tile_subtitile
+- type: text
+  name: last_tile_button_link
+  label: last_tile_button_link
+- type: text
+  name: last_tile_button_text
+  label: last_tile_button_text
