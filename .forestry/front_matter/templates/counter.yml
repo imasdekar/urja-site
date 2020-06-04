@@ -77,3 +77,5 @@ fields:
       required: false
     label: Button Text
   label: Last Section
+pages:
+- data/counter.yml

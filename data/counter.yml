@@ -1,11 +1,26 @@
-count_title: "REACHED OUT TO"
+---
+count_title: REACHED OUT TO
 count_total: 10000
-count_subtitle: "HOMELESS YOUNG WOMEN TILL DATE"
-mid_tile_title: "DONATE NOW"
-mid_tile_subtitle: ""
+count_subtitle: HOMELESS YOUNG WOMEN TILL DATE
+mid_tile_title: DONATE NOW
+mid_tile_subtitle: ''
 mid_tile_button_link: "/donate"
-mid_tile_button_text: "DONATE NOW"
-last_tile_title: "SPONSORSHIP"
-last_tile_subtitile: ""
+mid_tile_button_text: DONATE NOW
+last_tile_title: SPONSORSHIP
+last_tile_subtitile: ''
 last_tile_button_link: "/sponsorship"
-last_tile_button_text: "SPONSORSHIP"
+last_tile_button_text: SPONSORSHIP
+count_section:
+  count_title: ''
+  count_total: 
+  count_subtitle: ''
+mid_section:
+  mid_tile_title: ''
+  mid_tile_subtitle: ''
+  mid_tile_button_link: ''
+  mid_tile_button_text: ''
+last_section:
+  last_tile_title: ''
+  last_tile_subtitile: ''
+  last_tile_button_link: ''
+  last_tile_button_text: ''
