@@ -4,79 +4,34 @@ hide_body: true
 fields:
 - type: text
   name: count_title
-  label: count_title
+  label: Count Title
 - type: number
   name: count_total
-  label: count_total
+  label: Count Total
 - type: text
   name: count_subtitle
-  label: count_subtitle
+  label: Count Subtitle
 - type: text
   name: mid_tile_title
-  label: mid_tile_title
+  label: Mid Tile Title
 - type: text
   name: mid_tile_subtitle
-  label: mid_tile_subtitle
+  label: Mid Tile Subtitle
 - type: text
   name: mid_tile_button_link
-  label: mid_tile_button_link
+  label: Mid Tile Button Link
 - type: text
   name: mid_tile_button_text
-  label: mid_tile_button_text
+  label: Mid Tile Button Text
 - type: text
   name: last_tile_title
-  label: last_tile_title
+  label: Last Tile Title
 - type: text
   name: last_tile_subtitile
-  label: last_tile_subtitile
+  label: Last Tile Subtitile
 - type: text
   name: last_tile_button_link
-  label: last_tile_button_link
+  label: Last Tile Button Link
 - type: text
   name: last_tile_button_text
-  label: last_tile_button_text
-- type: field_group
-  name: count_section
-  label: count_section
-  fields:
-  - type: text
-    name: count_title
-    label: count_title
-  - type: text
-    name: count_total
-    label: count_total
-  - type: text
-    name: count_subtitle
-    label: count_subtitle
-- type: field_group
-  name: mid_section
-  label: mid_section
-  fields:
-  - type: text
-    name: mid_tile_title
-    label: mid_tile_title
-  - type: text
-    name: mid_tile_subtitle
-    label: mid_tile_subtitle
-  - type: text
-    name: mid_tile_button_link
-    label: mid_tile_button_link
-  - type: text
-    name: mid_tile_button_text
-    label: mid_tile_button_text
-- type: field_group
-  name: last_section
-  label: last_section
-  fields:
-  - type: text
-    name: last_tile_title
-    label: last_tile_title
-  - type: text
-    name: last_tile_subtitile
-    label: last_tile_subtitile
-  - type: text
-    name: last_tile_button_link
-    label: last_tile_button_link
-  - type: text
-    name: last_tile_button_text
-    label: last_tile_button_text
+  label: Last Tile Button Text
