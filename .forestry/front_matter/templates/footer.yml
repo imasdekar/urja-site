@@ -4,37 +4,37 @@ hide_body: true
 fields:
 - type: text
   name: title_1
-  label: title_1
+  label: Title 1
 - type: text
   name: body_1
-  label: body_1
+  label: Body 1
 - type: text
   name: twitter
-  label: twitter
+  label: Twitter
 - type: text
   name: facebook
-  label: facebook
+  label: Facebook
 - type: text
   name: instagram
   label: instagram
 - type: text
   name: contact_title
-  label: contact_title
+  label: Contact Title
 - type: text
   name: address
-  label: address
+  label: Address
 - type: text
   name: office_hours
-  label: office_hours
+  label: Office Hours
 - type: text
   name: telephone
-  label: telephone
+  label: Telephone
 - type: text
   name: email
-  label: email
+  label: Email
 - type: text
   name: email_subject
-  label: email_subject
+  label: Email Subject
 - type: text
   name: recent_section
-  label: recent_section
+  label: Recent Section
