@@ -27,11 +27,9 @@ sections:
 - type: document
   path: data/footer.yml
   label: Footer
-  match: "**/*"
 - type: document
   path: data/counter.yml
   label: Counter
-  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''

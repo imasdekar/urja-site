@@ -1,0 +1,40 @@
+---
+label: Footer
+hide_body: true
+fields:
+- type: text
+  name: title_1
+  label: title_1
+- type: text
+  name: body_1
+  label: body_1
+- type: text
+  name: twitter
+  label: twitter
+- type: text
+  name: facebook
+  label: facebook
+- type: text
+  name: instagram
+  label: instagram
+- type: text
+  name: contact_title
+  label: contact_title
+- type: text
+  name: address
+  label: address
+- type: text
+  name: office_hours
+  label: office_hours
+- type: text
+  name: telephone
+  label: telephone
+- type: text
+  name: email
+  label: email
+- type: text
+  name: email_subject
+  label: email_subject
+- type: text
+  name: recent_section
+  label: recent_section
