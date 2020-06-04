@@ -2,36 +2,78 @@
 label: Counter
 hide_body: true
 fields:
-- type: text
-  name: count_title
-  label: count_title
-- type: number
-  name: count_total
-  label: count_total
-- type: text
-  name: count_subtitle
-  label: count_subtitle
-- type: text
-  name: mid_tile_title
-  label: mid_tile_title
-- type: text
-  name: mid_tile_subtitle
-  label: mid_tile_subtitle
-- type: text
-  name: mid_tile_button_link
-  label: mid_tile_button_link
-- type: text
-  name: mid_tile_button_text
-  label: mid_tile_button_text
-- type: text
-  name: last_tile_title
-  label: last_tile_title
-- type: text
-  name: last_tile_subtitile
-  label: last_tile_subtitile
-- type: text
-  name: last_tile_button_link
-  label: last_tile_button_link
-- type: text
-  name: last_tile_button_text
-  label: last_tile_button_text
+- name: count_section
+  type: field_group
+  config: {}
+  fields:
+  - name: count_title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: count_total
+    type: number
+    label: Count Total
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: count_subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  label: Count Section
+- name: mid_section
+  type: field_group
+  config: {}
+  fields:
+  - name: mid_tile_title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: mid_tile_subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: mid_tile_button_link
+    type: text
+    config:
+      required: false
+    label: Button Link
+  - name: mid_tile_button_text
+    type: text
+    config:
+      required: false
+    label: Button Text
+  label: Mid Section
+- name: last_section
+  type: field_group
+  config: {}
+  fields:
+  - name: last_tile_title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: last_tile_subtitile
+    type: text
+    config:
+      required: false
+    label: Subtitile
+  - name: last_tile_button_link
+    type: text
+    config:
+      required: false
+    label: Button Link
+  - name: last_tile_button_text
+    type: text
+    config:
+      required: false
+    label: Button Text
+  label: Last Section
