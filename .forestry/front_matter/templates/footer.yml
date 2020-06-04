@@ -38,3 +38,5 @@ fields:
 - type: text
   name: recent_section
   label: Recent Section
+pages:
+- data/footer.yml

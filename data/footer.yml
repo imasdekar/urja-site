@@ -1,3 +1,4 @@
+---
 title_1: About us
 body_1: Something about Urja
 twitter: https://twitter.com/
@@ -6,7 +7,7 @@ instagram: https://instagram.com/
 contact_title: Have Questions?
 address: 129/A, Latif villa compound, Dada Saheb Phalke road, Dadar east, Mumbai 400014.
 office_hours: 10am to 6pm
-telephone: +91 XXXXXXX
+telephone: "+91 XXXXXXX"
 email: admin@example.com
 email_subject: Questions
 recent_section: events
