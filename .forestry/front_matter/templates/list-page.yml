@@ -12,5 +12,4 @@ fields:
   name: banner
   label: Banner
 pages:
-- content/blog/our-blogs.md
 - content/events/_index.md
