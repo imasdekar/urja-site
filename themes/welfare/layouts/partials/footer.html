@@ -1,6 +1,6 @@
 {{ $data := .Site.Data.footer }}
 <footer class="ftco-footer ftco-section img">
-	<div class="overlay"></div>
+  <div class="overlay"></div>
   <div class="container">
     <div class="row mb-5">
       <div class="col-md-3">
@@ -27,23 +27,27 @@
         </div>
       </div>
       <div class="col-md-4">
-          <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Recent {{ $data.recent_section }}</h2>
-              {{ range (  where .Site.RegularPages "Section" $data.recent_section | first 3 ) }}
-              <div class="block-21 mb-4 d-flex">
-                  <a class="blog-img mr-4" href="{{ .Permalink }}" style="background-image: url('{{ .Params.banner }}');"></a>
-                  <div class="text">
-                      <h3 class="heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                      <div class="meta">
-                          <div><span class="icon-calendar"></span> {{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-                      </div>
-                  </div>
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Recent {{ $data.recent_section }}</h2>
+          {{ range ( where .Site.RegularPages "Section" $data.recent_section | first 3 ) }}
+          <div class="block-21 mb-4 d-flex">
+            <a
+              class="blog-img mr-4"
+              href="{{ .Permalink }}"
+              style="background-image: url('{{ .Params.banner }}');"
+            ></a>
+            <div class="text">
+              <h3 class="heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <div class="meta">
+                <div><span class="icon-calendar"></span> {{ .Date.Format "Mon, Jan 2, 2006" }}</div>
               </div>
-              {{ end }}
+            </div>
           </div>
+          {{ end }}
+        </div>
       </div>
       <div class="col-md-2">
-         <div class="ftco-footer-widget mb-4 ml-md-4">
+        <div class="ftco-footer-widget mb-4 ml-md-4">
           <h2 class="ftco-heading-2">Site Links</h2>
           <ul class="list-unstyled">
             {{ range .Site.Menus.nav }}
@@ -54,13 +58,29 @@
       </div>
       <div class="col-md-3">
         <div class="ftco-footer-widget mb-4">
-        	<h2 class="ftco-heading-2">{{ $data.contact_title }}</h2>
-        	<div class="block-23 mb-3">
+          <h2 class="ftco-heading-2">{{ $data.contact_title }}</h2>
+          <div class="block-23 mb-3">
             <ul>
-              <li><span class="icon icon-map-marker"></span><span class="text">{{ $data.address }}</span></li>
-              <li><a href=""><span class="icon icon-phone"></span><span class="text">{{ $data.telephone }}</span></a></li>
-              <li><a href="{{ $data.email }}?subject={{ $data.email_subject }}"><span class="icon icon-envelope"></span><span class="text">{{ $data.email }}</span></a></li>
-              <li><span class="icon icon-clock-o"></span><span class="text">{{ $data.office_hours }}</span></li>
+              <li>
+                <span class="icon icon-map-marker"></span
+                ><span class="text">{{ $data.address }}</span>
+              </li>
+              <li>
+                <a href=""
+                  ><span class="icon icon-phone"></span
+                  ><span class="text">{{ $data.telephone }}</span></a
+                >
+              </li>
+              <li>
+                <a href="{{ $data.email }}?subject={{ $data.email_subject }}"
+                  ><span class="icon icon-envelope"></span
+                  ><span class="text">{{ $data.email }}</span></a
+                >
+              </li>
+              <li>
+                <span class="icon icon-clock-o"></span
+                ><span class="text">{{ $data.office_hours }}</span>
+              </li>
             </ul>
           </div>
         </div>

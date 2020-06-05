@@ -1,113 +1,138 @@
-{{ define "main" }}
-{{ $data := .Site.Data.home }}
+{{ define "main" }} {{ $data := .Site.Data.home }}
 <div id="heroCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        {{ range $index, $element := $data.slides }}
-        <div class="carousel-item {{ if ( eq $index 0) }}active{{ end }}">
-            <div class="hero-wrap" style="background-image: url('{{ $element.hero_image }}');" data-stellar-background-ratio="0.5">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-                        <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-                            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{ $element.title }}</h1>
-                            <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{ $element.subtitle }}</p>
-                            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="{{ $element.video_link }}" class="btn btn-white btn-outline-white px-4 py-3 popup-vimeo">{{ $element.video_text }}</a></p>
-                        </div>
-                    </div>
-                </div>
+  <div class="carousel-inner">
+    {{ range $index, $element := $data.slides }}
+    <div class="carousel-item {{ if ( eq $index 0) }}active{{ end }}">
+      <div
+        class="hero-wrap"
+        style="background-image: url('{{ $element.hero_image }}');"
+        data-stellar-background-ratio="0.5"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <div
+            class="row no-gutters slider-text align-items-center justify-content-center"
+            data-scrollax-parent="true"
+          >
+            <div
+              class="col-md-7 ftco-animate text-center"
+              data-scrollax=" properties: { translateY: '70%' }"
+            >
+              <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                {{ $element.title }}
+              </h1>
+              <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                {{ $element.subtitle }}
+              </p>
+              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                <a
+                  href="{{ $element.video_link }}"
+                  class="btn btn-white btn-outline-white px-4 py-3 popup-vimeo"
+                  >{{ $element.video_text }}</a
+                >
+              </p>
             </div>
+          </div>
         </div>
-        {{ end }}
+      </div>
     </div>
-    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+    {{ end }}
+  </div>
+  <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
-{{ partial "counter_section.html" . }}
-
-{{ with .Site.GetPage "/blog/home_story.md" }}
+{{ partial "counter_section.html" . }} {{ with .Site.GetPage "/blog/home_story.md" }}
 <section class="ftco-section">
-	<div class="container">
-		<div class="row d-flex">
-            <div class="item">
-                <div class="cause-entry">
-                    <a href="{{ .Permalink }}" class="img" style="background-image: url('{{ .Params.banner }}');"></a>
-                    <div class="text p-3 p-md-4">
-                        <div class="meta mb-3">
-                            <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-                        </div>
-                        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                        <p>{{ .Summary }}</p>
-                        <p><a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a></p>
-                    </div>
-                </div>
+  <div class="container">
+    <div class="row d-flex">
+      <div class="item">
+        <div class="cause-entry">
+          <a
+            href="{{ .Permalink }}"
+            class="img"
+            style="background-image: url('{{ .Params.banner }}');"
+          ></a>
+          <div class="text p-3 p-md-4">
+            <div class="meta mb-3">
+              <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
             </div>
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Summary }}</p>
+            <p>
+              <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
+            </p>
+          </div>
         </div>
-	</div>
+      </div>
+    </div>
+  </div>
 </section>
 {{ end }}
-
-
 
 <section class="ftco-gallery">
-    <div class="d-md-flex">
-        {{ range $data.gallery }}
-        <a href="{{ .image }}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url('{{ .image }}');">
-            <div class="icon d-flex justify-content-center align-items-center">
-                <span class="icon-search"></span>
-            </div>
-        </a>
-        {{ end }}
-    </div>
+  <div class="d-md-flex">
+    {{ range $data.gallery }}
+    <a
+      href="{{ .image }}"
+      class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
+      style="background-image: url('{{ .image }}');"
+    >
+      <div class="icon d-flex justify-content-center align-items-center">
+        <span class="icon-search"></span>
+      </div>
+    </a>
+    {{ end }}
+  </div>
 </section>
 
-
 {{ with .Site.GetPage "/events" }}
-<section class="ftco-section bg-light">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-            <div class="col-md-7 heading-section ftco-animate text-center">
-                <h2 class="mb-4">{{ .Params.events_title }}</h2>
-            </div>
-        </div>
-        <div class="row">
-            {{ .Render "li" }}
-        </div>
-    </div>
+<section class="ftco-section">
+    {{ .Render "li" }}
 </section>
 {{ end }}
 
-<section class="ftco-section-3 img" style="background-image: url('{{ $data.volunteer_background }}');">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row d-md-flex">
-            <div class="col-md-6 volunteer pl-md-5 ftco-animate" style="color: #fff;">
-                {{ $data.volunteer_body_text | markdownify }}
-            </div>
-            <div class="col-md-6 volunteer pl-md-5 ftco-animate">
-                <h3 class="mb-3">{{ $data.volunteer_form_title }}</h3>
-                <form action="#" class="volunter-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Email">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="Send Message" class="btn btn-white py-3 px-5">
-                    </div>
-                </form>
-            </div>
-        </div>
+<section
+  class="ftco-section-3 img"
+  style="background-image: url('{{ $data.volunteer_background }}');"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row d-md-flex">
+      <div class="col-md-6 volunteer pl-md-5 ftco-animate" style="color: #fff;">
+        {{ $data.volunteer_body_text | markdownify }}
+      </div>
+      <div class="col-md-6 volunteer pl-md-5 ftco-animate">
+        <h3 class="mb-3">{{ $data.volunteer_form_title }}</h3>
+        <form action="#" class="volunter-form">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name" />
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Email" />
+          </div>
+          <div class="form-group">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="3"
+              class="form-control"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Send Message" class="btn btn-white py-3 px-5" />
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
 </section>
 {{ end }}
