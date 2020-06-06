@@ -17,3 +17,5 @@ fields:
 - type: list
   name: categories
   label: Categories
+pages:
+- content/events/sample_event.md
