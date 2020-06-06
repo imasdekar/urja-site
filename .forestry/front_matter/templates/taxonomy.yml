@@ -15,3 +15,5 @@ fields:
   - type: file
     name: banner
     label: Banner
+pages:
+- content/categories/_index.md
