@@ -3,18 +3,6 @@ languageCode = "en-us"
 theme = "welfare"
 title = "Urja"
 [[menu.nav]]
-name = "Our Blogs"
-url = "/blog"
-weight = 4
-[[menu.nav]]
-name = "Our Events"
-url = "/events"
-weight = 3
-[[menu.nav]]
-name = "About Us"
-url = "/about"
-weight = 2
-[[menu.nav]]
 name = "Donate"
 url = "/donate/"
 weight = 5
