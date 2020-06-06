@@ -33,11 +33,9 @@ sections:
 - type: document
   path: content/categories/_index.md
   label: Categories
-  match: "**/*"
 - type: document
   path: content/tags/_index.md
   label: Tags
-  match: "**/*"
 upload_dir: static/images/uploads
 public_path: "/images/uploads"
 front_matter_path: ''
