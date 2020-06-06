@@ -13,4 +13,3 @@ fields:
   label: Banner
 pages:
 - content/events/_index.md
-- content/events/another_one_more_event.md
