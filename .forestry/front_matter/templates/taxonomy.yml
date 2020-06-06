@@ -16,5 +16,6 @@ fields:
     name: banner
     label: Banner
 pages:
+- content/blog/_index.md
 - content/categories/_index.md
 - content/tags/_index.md
