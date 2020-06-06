@@ -2,8 +2,9 @@
   class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
   id="ftco-navbar"
 >
+{{ $data := .Site.Data.home }}
   <div class="container">
-    <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
+      <a class="navbar-brand" href="/"><img src="{{ $data.logo }}" alt="Urja Trust Logo" width="65" height="65"></a>
     <button
       class="navbar-toggler"
       type="button"
