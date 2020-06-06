@@ -4,14 +4,14 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: field_group
   name: cascade
-  label: cascade
+  label: Cascade Banner
   fields:
   - type: file
     name: banner
-    label: banner
+    label: Banner
