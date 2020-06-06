@@ -18,4 +18,5 @@ fields:
   name: categories
   label: Categories
 pages:
+- content/events/one_more_event.md
 - content/events/sample_event.md
