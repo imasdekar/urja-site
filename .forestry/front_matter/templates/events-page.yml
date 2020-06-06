@@ -4,16 +4,16 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: file
   name: banner
-  label: banner
+  label: Banner
 - type: list
   name: tags
-  label: tags
+  label: Tags
 - type: list
   name: categories
-  label: categories
+  label: Categories
