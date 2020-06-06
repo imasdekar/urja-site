@@ -25,11 +25,19 @@ sections:
 - type: heading
   label: Miscellaneous
 - type: document
+  path: data/counter.yml
+  label: Counter
+- type: document
   path: data/footer.yml
   label: Footer
 - type: document
-  path: data/counter.yml
-  label: Counter
+  path: content/categories/_index.md
+  label: Categories
+  match: "**/*"
+- type: document
+  path: content/tags/_index.md
+  label: Tags
+  match: "**/*"
 upload_dir: static/images/uploads
 public_path: "/images/uploads"
 front_matter_path: ''
