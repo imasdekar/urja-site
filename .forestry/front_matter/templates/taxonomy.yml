@@ -17,3 +17,4 @@ fields:
     label: Banner
 pages:
 - content/categories/_index.md
+- content/tags/_index.md

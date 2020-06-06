@@ -1,8 +1,7 @@
 ---
-title: "Tags"
-date: 2020-06-06T14:57:13+05:30
-draft: false
+title: Tags
+date: 2020-06-06T14:57:13.000+05:30
 cascade:
-   banner: /images/uploads/bg_5.jpg
----
+  banner: "/images/uploads/bg_5.jpg"
 
+---
