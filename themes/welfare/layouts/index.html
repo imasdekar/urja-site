@@ -63,7 +63,9 @@
             <div class="meta mb-3">
               <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
             </div>
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <h3>
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h3>
             <p>{{ .Summary }}</p>
             <p>
               <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
@@ -94,7 +96,7 @@
 
 {{ with .Site.GetPage "/events" }}
 <section class="ftco-section">
-    {{ .Render "li" }}
+  {{ .Render "li" }}
 </section>
 {{ end }}
 
@@ -105,7 +107,7 @@
   <div class="overlay"></div>
   <div class="container">
     <div class="row d-md-flex">
-      <div class="col-md-6 volunteer pl-md-5 ftco-animate" style="color: #fff;">
+      <div class="col-md-6 volunteer pl-md-5 ftco-animate">
         {{ $data.volunteer_body_text | markdownify }}
       </div>
       <div class="col-md-6 volunteer pl-md-5 ftco-animate">
