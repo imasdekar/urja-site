@@ -7,6 +7,7 @@ $font-secondary: 'Dosis',Arial, sans-serif;
 $white: #fff;
 $black: #000;
 $darken: #4a5562;
+$grey: #ccc;
 
 $primary: #f86f2d;
 $secondary: #fa8f3d;
@@ -88,7 +89,7 @@ h1, h2, h3, h4, h5,
 			color: $white;
 		}
 	}
-	
+
 	.navbar-nav {
 		> .nav-item {
 			> .nav-link {
@@ -97,7 +98,7 @@ h1, h2, h3, h4, h5,
 				padding-bottom: .9rem;
 				padding-left: 20px;
 				padding-right: 20px;
-				color: rgba(255,255,255,.8);
+				color: rgba($white,.8);
 				font-weight: 400;
 				&:hover {
 					color: $white;
@@ -108,12 +109,12 @@ h1, h2, h3, h4, h5,
 			.dropdown-menu{
 				border: none;
 				background: $white;
-				-webkit-box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
-				-moz-box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
-				box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
+				-webkit-box-shadow: 0px 10px 34px -20px rgba($black,0.41);
+				-moz-box-shadow: 0px 10px 34px -20px rgba($black,0.41);
+				box-shadow: 0px 10px 34px -20px rgba($black,0.41);
 			}
 
-			
+
 			&.ftco-seperator {
 				position: relative;
 				margin-left: 20px;
@@ -173,14 +174,14 @@ h1, h2, h3, h4, h5,
 	}
 	.navbar-toggler {
 		border: none;
-		color: rgba(255,255,255,.5)!important;
+		color: rgba($white,.5)!important;
 		cursor: pointer;
 		padding-right: 0;
 		text-transform: uppercase;
 		font-size: 16px;
 		letter-spacing: .1em;
 	}
-	
+
 	&.scrolled  {
 		position: fixed;
 		right: 0;
@@ -188,7 +189,7 @@ h1, h2, h3, h4, h5,
 		top: 0;
 		margin-top: -130px;
 		background: $white!important;
-		box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 10px 0 rgba($black,.1);
 		.nav-item {
 			&.active {
 				> a {
@@ -238,8 +239,8 @@ h1, h2, h3, h4, h5,
 
 		.navbar-toggler {
 			border: none;
-			color: rgba(0,0,0,.5)!important;
-			border-color: rgba(0,0,0,.5)!important;
+			color: rgba($black,.5)!important;
+			border-color: rgba($black,.5)!important;
 			cursor: pointer;
 			padding-right: 0;
 			text-transform: uppercase;
@@ -260,7 +261,7 @@ h1, h2, h3, h4, h5,
 			transition: .3s all ease-out;
 		}
 		&.sleep {
-			transition: .3s all ease-out;	
+			transition: .3s all ease-out;
 		}
 
 		.navbar-brand {
@@ -327,10 +328,10 @@ h1, h2, h3, h4, h5,
 		font-size: 20px;
 		line-height: 1.5;
 		font-weight: 300;
-		color: rgba(255,255,255,.8);
+		color: rgba($white,.8);
 		a{
 			color: $white;
-			border-bottom: 2px solid rgba(255,255,255,.3);
+			border-bottom: 2px solid rgba($white,.3);
 			span{
 				color: $white;
 			}
@@ -343,8 +344,8 @@ h1, h2, h3, h4, h5,
 		margin-bottom: 20px;
 		z-index: 99;
 		span{
-			border-bottom: 2px solid rgba(255,255,255,.1);
-			color: rgba(255,255,255,.7);
+			border-bottom: 2px solid rgba($white,.1);
+			color: rgba($white,.7);
 			a{
 				color: $white;
 			}
@@ -354,7 +355,7 @@ h1, h2, h3, h4, h5,
 		font-weight: 400 !important;
 	}
 	.btn-outline-white{
-		border: 1px solid rgba(255,255,255,.4) !important;
+		border: 1px solid rgba($white,.4) !important;
 		span{
 			color: $white;
 		}
@@ -375,7 +376,7 @@ h1, h2, h3, h4, h5,
 			opacity: 1;
 		}
 	}
-	
+
 	.owl-nav {
 		position: absolute;
 		top: 50%;
@@ -421,7 +422,7 @@ h1, h2, h3, h4, h5,
 				content: '';
 				border:1px solid lighten($black, 90%);
 				@include border-radius(50%);
-			}	
+			}
 			&.active {
 				background: lighten($black, 60%);
 			}
@@ -450,13 +451,13 @@ h1, h2, h3, h4, h5,
 	.owl-custom-next {
 		padding: 10px;
 		font-size: 30px;
-		background: #ccc;
+		background: $grey;
 		line-height: 0;
 		width: 60px;
 		text-align: center;
 		display: inline-block;
 	}
-} 
+}
 
 
 .bg-light {
@@ -473,7 +474,7 @@ h1, h2, h3, h4, h5,
 	cursor: pointer;
 	@include border-radius(0px);
 	// box-shadow: none!important;
-	box-shadow: 0 5px 20px -5px rgba(0,0,0,.5);
+	box-shadow: 0 5px 20px -5px rgba($black,.5);
 	&:hover, &:active, &:focus {
 		outline: none;
 	}
@@ -522,7 +523,7 @@ h1, h2, h3, h4, h5,
 		border: 1px solid $white;
 		color: $black;
 		@include border-radius(0);
-		// box-shadow: 0 5px 20px -5px rgba(0,0,0,.5) !important;
+		// box-shadow: 0 5px 20px -5px rgba($black,.5) !important;
 		&:hover {
 			border: 1px solid $black;
 			background: $black;
@@ -565,7 +566,7 @@ h1, h2, h3, h4, h5,
 		display: block;
 		width: 100%;
 		padding: 30px;
-		color: rgba(0,0,0,.7);
+		color: rgba($black,.7);
 		&.color-1{
 			background: $primary;
 		}
@@ -616,9 +617,9 @@ h1, h2, h3, h4, h5,
 .cause-entry{
 	background: $white;
 	border: 1px solid lighten($black,98%);
-	-webkit-box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
-	box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 66px -24px rgba($black,0.2);
+	-moz-box-shadow: 0px 3px 66px -24px rgba($black,0.2);
+	box-shadow: 0px 3px 66px -24px rgba($black,0.2);
 	overflow: hidden;
 	@include border-radius(4px);
 	.img{
@@ -639,7 +640,7 @@ h1, h2, h3, h4, h5,
 			}
 		}
 		.custom-progress-success {
-			background-color: lighten(#ccc, 15%);
+			background-color: lighten($grey, 15%);
 			height: .3rem;
 			border-radius: 4px;
 			margin-bottom: 20px;
@@ -647,7 +648,7 @@ h1, h2, h3, h4, h5,
 	}
 	span.donation-time{
 		font-style: italic;
-		color: lighten(#ccc, 1%);
+		color: lighten($grey, 1%);
 	}
 	span.fund-raised{
 		color: $black;
@@ -667,15 +668,15 @@ h1, h2, h3, h4, h5,
 		content: '';
 		opacity: .9;
 		background: $primary;
-		
+
 	}
 	.img{
 		width: 100%;
 	}
 	.img-2{
-		-webkit-box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
-		-moz-box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
-		box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
+		-webkit-box-shadow: 0px 3px 66px -24px rgba($black,0.2);
+		-moz-box-shadow: 0px 3px 66px -24px rgba($black,0.2);
+		box-shadow: 0px 3px 66px -24px rgba($black,0.2);
 		@include border-radius(4px);
 		@include media-breakpoint-down(sm){
 			height: 200px;
@@ -690,24 +691,24 @@ h1, h2, h3, h4, h5,
 }
 .volunter-form{
 	.form-control {
-		border: 2px solid rgba(255,255,255,.7);
+		border: 2px solid rgba($white,.7);
 		height: 58px!important;
 		background: transparent!important;
-		color: rgba(255,255,255,.8)!important;
+		color: rgba($white,.8)!important;
 		font-size: 18px;
 		border-radius: 0px;
 		box-shadow: none!important;
 		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		  color: rgba(255,255,255,.8);
+		  color: rgba($white,.8);
 		}
 		&::-moz-placeholder { /* Firefox 19+ */
-		  color: rgba(255,255,255,.8);
+		  color: rgba($white,.8);
 		}
 		&:-ms-input-placeholder { /* IE 10+ */
-		  color: rgba(255,255,255,.8);
+		  color: rgba($white,.8);
 		}
 		&:-moz-placeholder { /* Firefox 18- */
-		  color: rgba(255,255,255,.8);
+		  color: rgba($white,.8);
 		}
 		&:focus, &:active {
 			border-color: $white;
@@ -729,7 +730,7 @@ h1, h2, h3, h4, h5,
 		right: 0;
 		bottom: 0;
 		content: '';
-		background: rgba(0,0,0,.2);
+		background: rgba($black,.2);
 		@include transition(.3s);
 	}
 	@include media-breakpoint-down(sm){
@@ -742,7 +743,7 @@ h1, h2, h3, h4, h5,
 	.icon{
 		width: 50px;
 		height: 50px;
-		background: rgba(255,255,255,.8);
+		background: rgba($white,.8);
 		opacity: 0;
 		@include border-radius(50%);
 		@include transition(.3s);
@@ -764,9 +765,9 @@ h1, h2, h3, h4, h5,
 .staff{
 	padding: 25px;
 	background: $white;
-	-webkit-box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
-	box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 66px -24px rgba($black,0.2);
+	-moz-box-shadow: 0px 3px 66px -24px rgba($black,0.2);
+	box-shadow: 0px 3px 66px -24px rgba($black,0.2);
 	@include border-radius(4px);
 	@include media-breakpoint-down(sm){
 		margin-bottom: 30px;
@@ -797,7 +798,7 @@ h1, h2, h3, h4, h5,
 			span{
 				font-size: 20px;
 				font-weight: 400;
-				color: $quarternary;				
+				color: $quarternary;
 			}
 			a{
 				text-decoration: underline;
@@ -832,7 +833,7 @@ h1, h2, h3, h4, h5,
 	display: block;
 	width: 100%;
 	position: relative;
-	background: rgba(255,255,255,.8);
+	background: rgba($white,.8);
 	margin-bottom: 1px;
 	padding: 30px 40px 30px 50px;
 	&:first-child{
@@ -845,7 +846,7 @@ h1, h2, h3, h4, h5,
 		bottom: 0;
 		content: '';
 		width: 360%;
-		background: rgba(255,255,255,.8);
+		background: rgba($white,.8);
 	}
 	h2{
 		color: $primary;
@@ -940,7 +941,7 @@ h1, h2, h3, h4, h5,
 		display: block;
 		@include media-breakpoint-up(md) {
 			width: 50%;
-			padding: 10% 7%;	
+			padding: 10% 7%;
 		}
 	}
 	.text {
@@ -1010,9 +1011,9 @@ h1, h2, h3, h4, h5,
     	right: 0;
     	bottom: 0;
    	left: 0;
-    	background: -moz-linear-gradient(top, transparent 0%, transparent 18%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%);
-    	background: -webkit-linear-gradient(top, transparent 0%, transparent 18%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%);
-    	background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%);
+    	background: -moz-linear-gradient(top, transparent 0%, transparent 18%, rgba($black,0.8) 99%, rgba($black,0.8) 100%);
+    	background: -webkit-linear-gradient(top, transparent 0%, transparent 18%, rgba($black,0.8) 99%, rgba($black,0.8) 100%);
+    	background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba($black,0.8) 99%, rgba($black,0.8) 100%);
     	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
     	opacity: .8;
 	}
@@ -1029,7 +1030,7 @@ h1, h2, h3, h4, h5,
 			left: 0;
 			right: 0;
 			z-index: 1;
-			background: $white;	
+			background: $white;
 			visibility: hidden;
 			opacity: 0;
 			height: 0;
@@ -1081,7 +1082,7 @@ h1, h2, h3, h4, h5,
 	}
 	&:hover, &:focus {
 		.text {
-			
+
 			&:before {
 				visibility: visible;
 				opacity: 1;
@@ -1091,7 +1092,7 @@ h1, h2, h3, h4, h5,
 			.heading, .subheading, .post-meta, .price, .star-rate {
 				color: $black;
 			}
-			
+
 		}
 	}
 }
@@ -1175,16 +1176,16 @@ textarea.form-control {
 			text-transform: uppercase;
 			font-size: 14px;
 			letter-spacing: .2em;
-			color: #ccc;
-			border: 2px solid #ccc;
+			color: $grey;
+			border: 2px solid $grey;
 			border-radius: 0!important;
 			&.active {
 				background: none!important;
-				color: darken(#ccc, 100%)!important;
+				color: darken($grey, 100%)!important;
 				border: 2px solid $black;
 			}
 		}
-		
+
 	}
 }
 
@@ -1201,7 +1202,7 @@ textarea.form-control {
 		font-size: 16px;
 		text-transform: uppercase;
 		letter-spacing: .5em;
-		color: lighten(#ccc, 3%);
+		color: lighten($grey, 3%);
 		font-family: $font-family-sans-serif;
 		font-weight: 300;
 	}
@@ -1323,7 +1324,7 @@ textarea.form-control {
 			.heading {
 				font-size: 18px;
 				a {
-					color: rgba(255,255,255,.8);
+					color: rgba($white,.8);
 					&:hover, &:active, &:focus {
 						color: $primary;
 					}
@@ -1398,13 +1399,13 @@ textarea.form-control {
 	&.ftco-media-shadow {
 		padding: 40px;
 		background: $white;
-		box-shadow: 0 10px 50px -15px rgba(0,0,0,.3);
+		box-shadow: 0 10px 50px -15px rgba($black,.3);
 		transition: .2s all ease;
 		position: relative;
 		top: 0;
 		&:hover, &:focus {
 			top: -3px;
-			box-shadow: 0 10px 70px -15px rgba(0,0,0,.3);
+			box-shadow: 0 10px 70px -15px rgba($black,.3);
 		}
 	}
 	.icon {
@@ -1480,14 +1481,14 @@ textarea.form-control {
 	}
 	&.heading-section-white{
 		.subheading{
-			color: rgba(255,255,255,.9);
+			color: rgba($white,.9);
 		}
 		h2{
 			font-size: 30px;
 			color: $white;
 		}
 		p{
-			color: rgba(255,255,255,.9);
+			color: rgba($white,.9);
 		}
 	}
 }
@@ -1523,9 +1524,9 @@ textarea.form-control {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
-  -webkit-transition: all 0.3s ease-out; 
-  -moz-transition: all 0.3s ease-out; 
-  -o-transition: all 0.3s ease-out; 
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -1536,7 +1537,7 @@ textarea.form-control {
     opacity: 0.8;
 }
 
-.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
 }
@@ -1548,7 +1549,7 @@ textarea.form-control {
 	z-index: 0;
 }
 
-//blocks 
+//blocks
 .block-20 {
 	overflow: hidden;
 	background-size: cover;
@@ -1564,9 +1565,9 @@ textarea.form-control {
 	background:$white;
 	overflow: hidden;
 	@include border-radius(4px);
-	-webkit-box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
-	box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 66px -24px rgba($black,0.2);
+	-moz-box-shadow: 0px 3px 66px -24px rgba($black,0.2);
+	box-shadow: 0px 3px 66px -24px rgba($black,0.2);
 	@include media-breakpoint-up(md){
 		margin-bottom: 30px;
 	}
@@ -1624,7 +1625,7 @@ textarea.form-control {
 	ul {
 		padding: 0;
 		li {
-			
+
 			&, > a {
 				display: table;
 				line-height: 1.5;
@@ -1643,7 +1644,7 @@ textarea.form-control {
 				padding-top: 2px;
 				color: rgba($white, 1);
 			}
-			
+
 		}
 	}
 }
@@ -1664,9 +1665,9 @@ textarea.form-control {
 			font-size: 16px;
 		}
 	}
-} 
+}
 
-//### .block-10 
+//### .block-10
 .block-10 {
 	.chef-img{
 		height: 400px;
@@ -1732,7 +1733,7 @@ textarea.form-control {
 				}
 				&:last-child {
 					border-right: none;
-					border-left: 1px solid rgba(0,0,0,.1);
+					border-left: 1px solid rgba($black,.1);
 				}
 				label{
 					font-weight: 700;
@@ -1744,7 +1745,7 @@ textarea.form-control {
 				border: transparent;
 				background: $white !important;
 				color: lighten($black,30%) !important;
-				border: 2px solid rgba(0,0,0,.1);
+				border: 2px solid rgba($black,.1);
 				font-size: 14px;
 				width: 100%;
 				height: 70px !important;
@@ -1808,7 +1809,7 @@ textarea.form-control {
 	}
 }
 
-//### .block-18 
+//### .block-18
 .block-18 {
 	.icon, .text {
 	}
@@ -1872,7 +1873,7 @@ textarea.form-control {
 					width: 20px;
 					height: 20px;
 					line-height: 18px;
-					border: 1px solid #ccc;
+					border: 1px solid $grey;
 					text-align: center;
 					font-size: 18px;
 					top: .1em;
@@ -1892,14 +1893,14 @@ textarea.form-control {
 				&[aria-expanded="false"] {
 					&:before {
 						content: "\e313";
-						color: #ccc;	
+						color: $grey;
 						font-family: 'icomoon';
 						position: absolute;
-				
+
 						transition: .3s all ease;
 					}
 				}
-				
+
 			}
 		}
 		.body-text {
@@ -1917,7 +1918,7 @@ textarea.form-control {
 			padding-bottom: 2em;
 		}
 		.owl-item {
-			box-shadow: 0 7px 20px -5px rgba(0,0,0,.2);	
+			box-shadow: 0 7px 20px -5px rgba($black,.2);
 		}
 		.owl-nav {
 			z-index: 2;
@@ -1955,13 +1956,13 @@ textarea.form-control {
 				display: inline-block;
 				width: 8px;
 				height: 8px;
-				background: #ccc;
+				background: $grey;
 				border-radius: 50%;
 				margin-right: 10px;
 				margin-bottom: 10px;
 				transition: .3s all ease;
 				&.active {
-					
+
 					background: $primary;
 				}
 			}
@@ -2062,7 +2063,7 @@ textarea.form-control {
 				&:hover, &:focus {
 					color: $white;
 				}
-			}	
+			}
 		}
 	}
 	.prev {
@@ -2100,10 +2101,10 @@ textarea.form-control {
 		margin-right: 4px;
 		border-radius: 4px;
 		color: $black;
-		border: 1px solid #ccc;
+		border: 1px solid $grey;
 		font-size :11px;
 		&:hover {
-			border: 1px solid #000;
+			border: 1px solid $black;
 		}
 	}
 }
@@ -2146,7 +2147,7 @@ textarea.form-control {
 				text-transform: uppercase;
 				font-size: 13px;
 				letter-spacing: .1em;
-				color: #ccc;
+				color: $grey;
 			}
 			.reply {
 				padding: 5px 10px;
@@ -2262,9 +2263,9 @@ textarea.form-control {
 	padding: 25px;
 	font-size: 15px;
 	width: 100%;
-	
+
 	float: left;
-	
+
 	background: $white;
 	*:last-child {
 		margin-bottom: 0;
@@ -2293,7 +2294,7 @@ textarea.form-control {
 				position: absolute;
 				right: 0;
 				top: 0;
-				color: #ccc;
+				color: $grey;
 			}
 		}
 		&.active {
@@ -2314,10 +2315,10 @@ textarea.form-control {
 	left:  50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	background-color: rgba(255,255,255,0.9);
-	box-shadow: 0px 24px 64px rgba(0,0,0,0.24);
+	background-color: rgba($white,0.9);
+	box-shadow: 0px 24px 64px rgba($black,0.24);
 	border-radius:16px;
-	opacity: 0; 
+	opacity: 0;
 	visibility: hidden;
 	transition: opacity .2s ease-out, visibility 0s linear .2s;
 	z-index:1000;
@@ -2330,7 +2331,7 @@ textarea.form-control {
 	width:  100%;
 	height: 100%;
 	transform: none;
-	background-color: #fff;
+	background-color: $white;
 	border-radius: 0;
 	box-shadow: none;
 }
