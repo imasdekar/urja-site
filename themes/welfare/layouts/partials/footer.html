@@ -23,6 +23,11 @@
                 <span class="icon-instagram"></span>
               </a>
             </li>
+            <li class="ftco-animate">
+              <a href="{{ $data.linkedin }}" target="_blank" rel="noopener noreferrer">
+                <span class="icon-linkedin"></span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -37,7 +42,9 @@
               style="background-image: url('{{ .Params.banner }}');"
             ></a>
             <div class="text">
-              <h3 class="heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <h3 class="heading">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              </h3>
               <div class="meta">
                 <div><span class="icon-calendar"></span> {{ .Date.Format "Mon, Jan 2, 2006" }}</div>
               </div>
@@ -50,8 +57,10 @@
         <div class="ftco-footer-widget mb-4 ml-md-4">
           <h2 class="ftco-heading-2">Site Links</h2>
           <ul class="list-unstyled">
-            {{ range .Site.Menus.nav }}
-            <li><a href="{{ .URL }}" class="py-2 d-block">{{ .Name }}</a></li>
+            {{ range.Site.Menus.nav }}
+            <li>
+              <a href="{{ .URL }}" class="py-2 d-block">{{ .Name }}</a>
+            </li>
             {{ end }}
           </ul>
         </div>
@@ -88,10 +97,21 @@
     </div>
     <div class="row">
       <div class="col-md-12 text-center">
-		  <p>This website is developed with <i class="icon-heart" aria-hidden="true">&nbsp</i>by <b><a href="https://itcracy.com" target="_blank" rel="noopener noreferrer">ITcracy</a></b></p>
-        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true">&nbsp</i>by <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        <p>
+          This website is developed with <i class="icon-heart" aria-hidden="true">&nbsp</i>by
+          <b><a href="https://itcracy.com" target="_blank" rel="noopener noreferrer">ITcracy</a></b>
+        </p>
+        <p>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          All rights reserved | This template is made with
+          <i class="icon-heart" aria-hidden="true">&nbsp</i>by
+          <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">Colorlib</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
       </div>
     </div>
   </div>
