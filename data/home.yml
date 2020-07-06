@@ -2,9 +2,9 @@
 active: true
 logo: "/images/uploads/logo.png"
 slides:
-- hero_image: "/images/uploads/bg_7.jpg"
-  title: Doing Something is always better than doing nothing
-  subtitle: A small subtitle
+- hero_image: "/images/uploads/girls.jpg"
+  title: Journey With Homeless Young Women
+  subtitle: ''
   video_link: "/about"
   video_text: About Us
 - hero_image: "/images/uploads/bg_2.jpg"
