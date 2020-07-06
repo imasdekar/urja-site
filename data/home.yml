@@ -7,11 +7,11 @@ slides:
   subtitle: ''
   video_link: "/about"
   video_text: About Us
-- hero_image: "/images/uploads/bg_2.jpg"
-  title: A second title text
+- hero_image: "/images/uploads/urja.jpg"
+  title: Creating Empowering and Safe Spaces For Homeless Young Women
   subtitle: A second small subtitle
   video_link: "/events"
-  video_text: Events
+  video_text: Our Approach
 gallery:
 - image: "/images/uploads/bg_1.jpg"
   title: First Image
