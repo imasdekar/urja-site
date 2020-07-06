@@ -2,6 +2,11 @@
 active: true
 logo: "/images/uploads/logo.png"
 slides:
+- hero_image: "/images/uploads/mh-week-women.jpg"
+  title: Intersectional Rights Based Approach
+  subtitle: ''
+  video_link: ''
+  video_text: ''
 - hero_image: "/images/uploads/girls.jpg"
   title: Journey With Homeless Young Women
   subtitle: ''
