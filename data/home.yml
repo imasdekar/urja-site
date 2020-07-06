@@ -3,12 +3,7 @@ active: true
 logo: "/images/uploads/logo.png"
 slides:
 - hero_image: "/images/uploads/yw.jpg"
-  title: A Journey Towards Resilent Self
-  subtitle: ''
-  video_link: ''
-  video_text: ''
-- hero_image: "/images/uploads/mh-week-women.jpg"
-  title: Intersectional Rights Based Approach
+  title: Intersectional, Rights Based Approach
   subtitle: ''
   video_link: ''
   video_text: ''
