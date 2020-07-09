@@ -4,16 +4,21 @@
 $font-primary: 'Overpass', Arial, sans-serif;
 $font-secondary: 'Dosis', Arial, sans-serif;
 
-$white: #fff;
+$white: #FFFFFF;
+$body-background: #FFFDD0;
 $black: #000;
 $darken: #4a5562;
 $grey: #ccc;
+$nav-color: #360084;
 $dark-background: #3c312e;
 $footer-background: #252525;
+$volunteer-color: #49BEB7;
 
-$primary: #ffb933;
+$primary: #FACF5A;
 $secondary: #fa8f3d;
+$counter-secondary: #f1ba59;
 $tertiary: #faaa3a;
+$counter-tertiary: #FF5959;
 $quarternary: #7cbd1e;
 
 @mixin border-radius($radius) {
@@ -33,7 +38,7 @@ $quarternary: #7cbd1e;
 
 body {
   font-family: $font-primary;
-  background: $white;
+  background: $body-background;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 300;
@@ -84,7 +89,7 @@ h5,
   z-index: 3;
   top: 10px;
   @include media-breakpoint-down(md) {
-    background: rgba($black, 0.8) !important;
+    background: rgba($nav-color, 0.8) !important;
     top: 0;
   }
 
@@ -189,7 +194,7 @@ h5,
     left: 0;
     top: 0;
     margin-top: -130px;
-    background: rgba($black, 0.8) !important;
+    background: rgba($nav-color, 0.8) !important;
     box-shadow: 0 0 10px 0 rgba($white, 0.1);
     .nav-item {
       &.active {
@@ -566,14 +571,16 @@ h5,
     width: 100%;
     padding: 30px;
     color: rgba($black, 0.7);
+    border-style: solid;
+    border-width: 2px;
     &.color-1 {
       background: $primary;
     }
     &.color-2 {
-      background: $secondary;
+      background: $primary;
     }
     &.color-3 {
-      background: $tertiary;
+      background: $counter-tertiary;
     }
     .text {
       strong {
@@ -584,7 +591,7 @@ h5,
       span {
         display: block;
         color: $black;
-        font-size: 24px;
+        font-size: medium;
       }
     }
   }
@@ -665,7 +672,7 @@ h5,
     bottom: 0;
     content: '';
     opacity: 0.9;
-    background: $primary;
+    background: $volunteer-color;
   }
   .img {
     width: 100%;
