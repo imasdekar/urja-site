@@ -36,6 +36,11 @@
         class="markdown-content {{ if gt (len .CurrentSection.Pages) 1 }}col-md-8 {{ else }}col-md-12{{ end }} ftco-animate"
       >
         <h2 class="mb-3">{{ .Title }}</h2>
+              {{ if not .Date.IsZero }}
+            <div class="meta mb-3">
+                <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+            </div>
+            {{ end }}
         {{ .Content }}
         {{ with .Params.tags }}
         <div class="tag-widget post-tag-container mb-5 mt-5">

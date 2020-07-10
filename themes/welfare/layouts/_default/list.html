@@ -28,7 +28,7 @@
 <section class="ftco-section">
   <div class="container">
     <div class="row d-flex">
-      {{ template "_internal/pagination.html" . }} {{ range .Paginator.Pages }} {{ .Render "summary"}} {{ end }}
+      {{ template "_internal/pagination.html" . }} {{ range .Paginator.Pages }} <div class="col-md-6 col-sm-12">{{ .Render "summary"}} </div>{{ end }}
     </div>
   </div>
 </section>

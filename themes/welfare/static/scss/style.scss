@@ -1234,6 +1234,12 @@ textarea.form-control {
   background: $primary !important;
 }
 .ftco-section {
+    section {
+    padding-top: 1px !important;
+    }
+    div {
+    margin-bottom: 5px;
+    }
   .ftco-sub-title {
     font-size: 16px;
     text-transform: uppercase;

@@ -9741,6 +9741,12 @@ textarea.form-control {
   background: #FACF5A !important;
 }
 
+.ftco-section section {
+  padding-top: 1px !important;
+}
+.ftco-section div {
+  margin-bottom: 5px;
+}
 .ftco-section .ftco-sub-title {
   font-size: 16px;
   text-transform: uppercase;
