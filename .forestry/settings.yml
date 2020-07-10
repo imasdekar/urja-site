@@ -17,16 +17,22 @@ sections:
   label: Approach
   create: documents
   match: "**/*"
+  templates:
+  - approach
 - type: directory
   path: content/blog
   label: Blog
   create: documents
   match: "**/*"
+  templates:
+  - blog-post-page
 - type: directory
   path: content/events
   label: Events
   create: documents
   match: "**/*"
+  templates:
+  - events-page
 - type: heading
   label: Miscellaneous
 - type: document
