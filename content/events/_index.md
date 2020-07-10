@@ -6,6 +6,7 @@ cascade:
 banner: "/images/uploads/bg_1.jpg"
 menu:
   nav:
-    weight: 3
+    name: Impact
+    weight: 4
 
 ---
