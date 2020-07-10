@@ -13,6 +13,11 @@ sections:
   path: content/about/_index.md
   label: About
 - type: directory
+  path: content/approach
+  label: Approach
+  create: documents
+  match: "**/*"
+- type: directory
   path: content/blog
   label: Blog
   create: documents
