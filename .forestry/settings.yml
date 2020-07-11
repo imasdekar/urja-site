@@ -26,6 +26,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - taxonomy
   - events-page
 - type: directory
   path: content/get_involved
@@ -41,6 +42,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - taxonomy
   - blog-post-page
 - type: heading
   label: Miscellaneous
