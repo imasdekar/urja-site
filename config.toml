@@ -3,7 +3,7 @@ languageCode = "en-us"
 theme = "welfare"
 title = "Urja"
 [[menu.nav]]
-name = "Donate"
+name = "DONATE"
 url = "/donate/"
 weight = 7
 [[menu.nav]]
