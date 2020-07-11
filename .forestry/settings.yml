@@ -32,6 +32,8 @@ sections:
   label: Get Involved
   create: all
   match: "**/*"
+  templates:
+  - get-involved-page
 - type: directory
   path: content/blog
   label: Blog
