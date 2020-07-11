@@ -12,10 +12,12 @@
             </div>
             {{ end }}
       <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      {{ if not (eq .Summary "") }}
       <p>{{ .Summary }}</p>
       <p>
         <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
       </p>
+            {{ end }}
     </div>
   </div>
 </div>
