@@ -1,10 +1,6 @@
 ---
 title: First Approach
 banner: "/images/uploads/bg_3.jpg"
-menu:
-  nav:
-    name: Our Approach
-    weight: 3
 
 ---
 The Census of India 2011 defines 'houseless household' as, 'households who do not live in buildings or census houses but live in the open on roadside, pavements, in huge pipes, under flyovers and staircases, or in the open in places of worship, mandaps, railway platforms, etc.”
