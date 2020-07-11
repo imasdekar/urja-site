@@ -33,6 +33,7 @@ sections:
   create: all
   match: "**/*"
   templates:
+  - taxonomy
   - get-involved-page
 - type: directory
   path: content/blog
