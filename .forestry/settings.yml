@@ -18,6 +18,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - taxonomy
   - approach
 - type: directory
   path: content/blog
