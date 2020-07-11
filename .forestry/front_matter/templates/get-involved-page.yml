@@ -8,3 +8,5 @@ fields:
 - type: file
   name: banner
   label: banner
+pages:
+- content/get_involved/work_with_us.md
