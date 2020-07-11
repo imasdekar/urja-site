@@ -21,19 +21,24 @@ sections:
   - taxonomy
   - approach
 - type: directory
-  path: content/blog
-  label: Blog
-  create: documents
-  match: "**/*"
-  templates:
-  - blog-post-page
-- type: directory
   path: content/events
   label: Events
   create: documents
   match: "**/*"
   templates:
   - events-page
+- type: directory
+  path: content/get_involved
+  label: Get Involved
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/blog
+  label: Blog
+  create: documents
+  match: "**/*"
+  templates:
+  - blog-post-page
 - type: heading
   label: Miscellaneous
 - type: document
