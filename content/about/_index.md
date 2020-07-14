@@ -3,8 +3,8 @@ title: About Us
 date: 2020-05-01T14:03:52.000+00:00
 Kind: about
 active: true
-hero_image: "/images/uploads/bg_7.jpg"
-side_image: "/images/uploads/bg_2.jpg"
+hero_image: "/images/uploads/about-us-cover-photo.jpg"
+side_image: "/images/uploads/urja.jpg"
 side_image_2: "/images/uploads/bg_3.jpg"
 subtitle: Welcome to Urja
 body_1: URJA TRUST is a Mumbai (India) based grassroots organisation working to empower
