@@ -1,4 +1,27 @@
 {{ $data := .Site.Data.footer }}
+
+<ul class="ct-socials">
+  <li class="">
+    <a href="{{ $data.twitter }}" target="_blank" rel="noopener noreferrer">
+      <span class="icon-twitter"></span>
+    </a>
+  </li>
+  <li class="">
+    <a href="{{ $data.facebook }}" target="_blank" rel="noopener noreferrer">
+      <span class="icon-facebook"></span>
+    </a>
+  </li>
+  <li class="">
+    <a href="{{ $data.instagram }}" target="_blank" rel="noopener noreferrer">
+      <span class="icon-instagram"></span>
+    </a>
+  </li>
+  <li class="">
+    <a href="{{ $data.linkedin }}" target="_blank" rel="noopener noreferrer">
+      <span class="icon-linkedin"></span>
+    </a>
+  </li>
+</ul>
 <footer class="ftco-footer img">
   <div class="overlay"></div>
   <div class="container">
@@ -36,11 +59,7 @@
           <h2 class="ftco-heading-2">Recent {{ $data.recent_section }}</h2>
           {{ range ( where .Site.RegularPages "Section" $data.recent_section | first 3 ) }}
           <div class="block-21 mb-4 d-flex">
-            <a
-              class="blog-img mr-4"
-              href="{{ .Permalink }}"
-              style="background-image: url('{{ .Params.banner }}');"
-            ></a>
+            <a class="blog-img mr-4" href="{{ .Permalink }}" style="background-image: url('{{ .Params.banner }}');"></a>
             <div class="text">
               <h3 class="heading">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -71,24 +90,17 @@
           <div class="block-23 mb-3">
             <ul>
               <li>
-                <span class="icon icon-map-marker"></span
-                ><span class="text">{{ $data.address }}</span>
+                <span class="icon icon-map-marker"></span><span class="text">{{ $data.address }}</span>
               </li>
               <li>
-                <a href=""
-                  ><span class="icon icon-phone"></span
-                  ><span class="text">{{ $data.telephone }}</span></a
-                >
+                <a href=""><span class="icon icon-phone"></span><span class="text">{{ $data.telephone }}</span></a>
               </li>
               <li>
-                <a href="{{ $data.email }}?subject={{ $data.email_subject }}"
-                  ><span class="icon icon-envelope"></span
-                  ><span class="text">{{ $data.email }}</span></a
-                >
+                <a href="{{ $data.email }}?subject={{ $data.email_subject }}"><span
+                    class="icon icon-envelope"></span><span class="text">{{ $data.email }}</span></a>
               </li>
               <li>
-                <span class="icon icon-clock-o"></span
-                ><span class="text">{{ $data.office_hours }}</span>
+                <span class="icon icon-clock-o"></span><span class="text">{{ $data.office_hours }}</span>
               </li>
             </ul>
           </div>

@@ -1,30 +1,21 @@
-<nav
-  class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
-  id="ftco-navbar"
-  >
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
   {{ $data := .Site.Data.home }}
   <div class="container">
     <a class="navbar-brand" href="/"><img src="{{ $data.logo }}" alt="Urja Trust Logo" width="105" height="105"></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#ftco-nav"
-      aria-controls="ftco-nav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="oi oi-menu"></span> Menu
     </button>
 
     <div class="collapse navbar-collapse" id="ftco-nav">
       {{ $current := . }}
       <ul class="navbar-nav ml-auto">
-        {{ range .Site.Menus.nav }} {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }} {{ $active = or $active (eq .Name $current.Title) }}
+        {{ range .Site.Menus.nav }}
+        {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+        {{ $active = or $active (eq .Name $current.Title) }}
         <li class="nav-item {{ if $active }} active {{ end }}">
           <a href="{{ .URL }}"
-            class='{{ if (eq (lower .Name) "donate") }}btn btn-outline-warning btn-lg{{ else }}nav-link{{ end }}'
-            >
+            class='{{ if (eq (lower .Name) "donate") }}btn btn-tertiary btn-outline-tertiary btn-lg{{ else }}nav-link{{ end }}'>
             {{ .Name }}
           </a>
         </li>
