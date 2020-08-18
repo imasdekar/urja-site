@@ -1,0 +1,12 @@
+# vim: set fenc=utf-8 ft=dosini:
+
+[project-run]
+command=hugo server
+cwd=$(VIM_ROOT)
+
+[project-build]
+command=hugo -b localhost:8080 -D -F --gc --minify -v
+cwd=$(VIM_ROOT)
+
+[miniserve]
+command=miniserve --index index.html public

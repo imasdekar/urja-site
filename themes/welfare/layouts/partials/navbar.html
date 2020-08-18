@@ -13,12 +13,24 @@
         {{ range .Site.Menus.nav }}
         {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
         {{ $active = or $active (eq .Name $current.Title) }}
+        {{ if .HasChildren }}
+        <li class="nav-item dropdown {{ if $active }} active {{ end }}">
+          <a href="{{ .URL }}" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            {{ .Name }}
+          </a>
+          <div class="dropdown-menu">
+            {{ range .Children }}
+            <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+          </div>
+        </li>
+        {{ else }}
         <li class="nav-item {{ if $active }} active {{ end }}">
-          <a href="{{ .URL }}"
-            class='{{ if (eq (lower .Name) "donate") }}btn btn-tertiary btn-outline-tertiary btn-lg{{ else }}nav-link{{ end }}'>
+          <a href="{{ .URL }}" class='{{ if (eq (lower .Name) "donate") }}btn btn-tertiary btn-outline-tertiary btn-lg{{ else }}nav-link{{ end }}'>
             {{ .Name }}
           </a>
         </li>
+        {{ end }}
         {{ end }}
       </ul>
     </div>

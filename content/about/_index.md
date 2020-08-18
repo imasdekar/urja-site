@@ -6,52 +6,6 @@ active: true
 hero_image: "/images/uploads/about-us-cover-photo.jpg"
 side_image: "/images/uploads/urja.jpg"
 side_image_2: "/images/uploads/bg_3.jpg"
-subtitle: Welcome to Urja
-body_1: URJA TRUST is a Mumbai (India) based grassroots organisation working to empower
-  homeless young women, with a rights based intersectional perspective that explores
-  the issues of homeless young women through the lens of gender, caste, mental health
-  and violence. Our organisation’s values and principles are aligned with the Indian
-  constitution, Human Rights Framework and the  UN’s Sustainable Development Goals
-  ensuring good health and well-being (Goal 3), Quality Education (Goal 4), Gender
-  Equality (Goal 5), Decent work and economic growth (Goal 8), Reduced Inequality
-  (Goal 10) and Peace and justice strong institutions (Goal 16).
-body_2: The founders of URJA, Deepali Kamble and Altaf Shaikh, have experienced gender,
-  caste and religious violence up close personally , and have always found themselves
-  more attuned to the sufferings of the marginalised sections of the society. They
-  have witnessed up close how women and children were the worst affected during the
-  different communal riots, be it the Mumbai riots in 92, or the Godhra riots in 2002,
-  leaving several families without homes overnight. These experiences played a key
-  role in making them reach out to the people forced to live on streets due to various
-  socio- economic and political factors. It also brought forth the fact for them,
-  that while there are several organisations working with homeless children, there
-  are hardly any working with homeless young women from religious minorities and other
-  marginalised sections of the society  with an intersectional rights based perspective.
-  The critical need for working with this group is what prompted them to start URJA
-  TRUST.
-body_3: URJA was registered under the Bombay Public Trust Act, 1950. The Trust believes
-  that the aid, development and ultimate transformation of young homeless women entails
-  not just economic sufficiency but also mental health stabilization. In 2012, Urja
-  opened its first centre at Dadar, Mumbai. The small team worked together with an
-  indomitable spirit to fight for the rights and rehabilitation of young women who
-  find themselves homeless. In due course, the outreach programme was initiated whereby
-  the team regularly surveyed railway stations to identify and approach vulnerable
-  women. This allowed Urja to build a very strong network of stakeholders including
-  police, railway officials and lawyers at these places.
-body_4: Today URJA has managed to make a name for itself at state and national level
-  as one of the few organisations working around issues of violence against women
-  and homelessness with a holistic and rights based approach. It is part of various
-  state level committees and continues to raise voices around the issues of gender,
-  caste, sexuality and mental health. Recently URJA has also been chosen as a partner
-  organisation to run One Stop Crisis Centre in Mumbai suburbs. Till date it has worked
-  along with more than 600 homeless young women.
-vision_title: VISION
-vision_subtitle: Our Vision of a just, equitable and compassionate society where young
-  women pursue their lives with freedom and dignity.
-mission_title: MISSION
-mission_subtitle: Our Mission is to act as a catalyst for homeless young women by
-  facilitating their journey to access fundamental needs, reclaim their identity by
-  building an exemplary, replicable model that provides opportunities for their economic,
-  psychological, emotional, civil and social development.
 team_title: MEET OUT TEAM
 team_subtitle: OUR BOARD
 team_members:
@@ -132,5 +86,6 @@ team_members:
 menu:
   nav:
     weight: 2
+    name: About
 
 ---

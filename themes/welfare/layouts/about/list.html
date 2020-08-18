@@ -25,44 +25,31 @@
   </div>
 </div>
 
-<section class="ftco-section">
+{{ with .Site.GetPage "/about/organization.md" }}
+<section class="ftco-section" id="organization">
   <div class="container">
     <div class="row d-flex">
-      <div class="col-md-6 d-flex ftco-animate">
-        <div
-          class="img img-about align-self-stretch"
-          style="background-image: url('{{ .Params.side_image }}'); width: 100%;"
-        ></div>
-      </div>
-      <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg">
-        <h2 class="mb-4">{{ .Params.subtitle }}</h2>
-        <p>{{ .Params.body_1 | markdownify }}</p>
-        <p>{{ .Params.body_2 | markdownify }}</p>
+      <div class="item">
+        <div class="cause-entry">
+          <a
+            class="img"
+            style="background-image: url('{{ .Params.banner }}');"
+          ></a>
+          <div class="text p-3 p-md-4">
+            <h3>
+              <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
+            </h3>
+            <p>{{ .Content }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+{{ end }}
 
-<section class="ftco-section">
-  <div class="container">
-    <div class="row d-flex">
-      <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
-        <p>{{ .Params.body_3 | markdownify }}</p>
-        <p>{{ .Params.body_4 | markdownify }}</p>
-      </div>
-      <div class="col-md-4 d-flex ftco-animate">
-        <div
-          class="img img-about align-self-stretch"
-          style="background-image: url('{{ .Params.side_image_2 }}'); width: 100%;"
-        ></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-{{ partial "counter_section.html" . }}
-
-<section class="ftco-section">
+{{ with .Site.GetPage "/about/vision_mission.md" }}
+<section class="ftco-section" id="vision_mission">
   <div class="container">
     <div class="row">
       <div class="col-md-6 d-flex align-self-stretch ftco-animate ftco-degree-bg">
@@ -70,7 +57,7 @@
           <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
           <div class="media-body pl-4">
             <h3 class="heading">{{ .Params.vision_title }}</h3>
-            <p>{{ .Params.vision_subtitle }}</p>
+            <p>{{ .Params.vision_body }}</p>
           </div>
         </div>
       </div>
@@ -79,15 +66,55 @@
           <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
           <div class="media-body pl-4">
             <h3 class="heading">{{ .Params.mission_title }}</h3>
-            <p>{{ .Params.mission_subtitle }}</p>
+            <p>{{ .Params.mission_body }}</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+{{ end }}
 
-<section class="ftco-section bg-light">
+{{ with .Site.GetPage "/about/demographic.md" }}
+<section class="ftco-section" id="demographic">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-md-6 d-flex ftco-animate">
+        <div
+          class="img img-about align-self-stretch"
+          style="background-image: url('{{ .Params.banner }}'); width: 100%;"
+        ></div>
+      </div>
+      <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg">
+        <h2 class="mb-4">{{ .Title }}</h2>
+        <p>{{ .Content }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/about/partners.md" }}
+<section class="ftco-section" id="partners">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
+        <p>{{ .Content }}</p>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div
+          class="img img-about align-self-stretch"
+          style="background-image: url('{{ .Params.banner }}'); width: 100%;"
+        ></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ partial "counter_section.html" . }}
+
+<section class="ftco-section bg-light" id="team">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
