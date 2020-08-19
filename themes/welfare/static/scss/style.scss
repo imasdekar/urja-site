@@ -4,7 +4,7 @@
 $font-primary: 'Overpass', Arial, sans-serif;
 $font-secondary: 'Dosis', Arial, sans-serif;
 
-$white: #FFFFFF;
+$white: #ffffff;
 $body-background: #faf7f3ff;
 $black: #000000;
 $darken: #4a5562;
@@ -13,7 +13,7 @@ $nav-color: #000000;
 $dark-background: #3c312e;
 $footer-background: #252525;
 $card-background: #252525;
-$volunteer-color: #49BEB7;
+$volunteer-color: #49beb7;
 $ftco-section-color: #faf7f3ff;
 
 $primary: #fab73c;
@@ -118,6 +118,10 @@ h5,
         -webkit-box-shadow: 0px 10px 34px -20px rgba($white, 0.41);
         -moz-box-shadow: 0px 10px 34px -20px rgba($white, 0.41);
         box-shadow: 0px 10px 34px -20px rgba($white, 0.41);
+      }
+
+      .dropdown-item {
+        color: rgba($white, 0.8) !important;
       }
 
       &.ftco-seperator {
@@ -595,17 +599,17 @@ h5,
     border-width: 2px;
     &.color-1 {
       background: $primary;
-        color: $black;
+      color: $black;
     }
     &.color-2 {
       background: $black;
-      h4{
-      color: $primary;
+      h4 {
+        color: $primary;
       }
     }
     &.color-3 {
       background: $primary;
-        color: $black;
+      color: $black;
     }
     .text {
       strong {
@@ -655,22 +659,22 @@ h5,
     display: block;
     height: 300px;
   }
-    p {
-      a {
-        color: $primary;
-        &:hover,
-        &:focus,
-        &:active {
-          color: $body-background;
-        }
+  p {
+    a {
+      color: $primary;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $body-background;
       }
     }
+  }
   .text {
-      margin-top: -40px !important;
-      background: $card-background;
-      color: $body-background;
-      width: 90%;
-      margin: 0 auto;
+    margin-top: -40px !important;
+    background: $card-background;
+    color: $body-background;
+    width: 90%;
+    margin: 0 auto;
     h3 {
       margin-bottom: 20px;
       a {
@@ -1265,16 +1269,16 @@ textarea.form-control {
 }
 
 .ftco-degree-bg {
-    background: $ftco-section-color !important;
-        color: lighten($black, 30%) !important;
-        strong{
-            color: $black !important;
-        }
+  background: $ftco-section-color !important;
+  color: lighten($black, 30%) !important;
+  strong {
+    color: $black !important;
+  }
 }
 .ftco-animate {
   opacity: 0;
   visibility: hidden;
-  div{
+  div {
     border-radius: 15px;
   }
 }
@@ -1283,12 +1287,12 @@ textarea.form-control {
   background: $primary !important;
 }
 .ftco-section {
-    section {
+  section {
     padding-top: 1px !important;
-    }
-    div {
+  }
+  div {
     margin-bottom: 5px;
-    }
+  }
   .ftco-sub-title {
     font-size: 16px;
     text-transform: uppercase;
@@ -1657,23 +1661,23 @@ textarea.form-control {
   @include media-breakpoint-down(sm) {
     margin-bottom: 30px;
   }
-    p {
-      a {
-        color: $primary;
-        &:hover,
-        &:focus,
-        &:active {
-          color: $body-background;
-        }
+  p {
+    a {
+      color: $primary;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $body-background;
       }
     }
+  }
   .text {
     position: relative;
-      width: 90%;
-      margin: 0 auto;
-      margin-top: -40px;
-      background: $card-background;
-      color: $body-background;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -40px;
+    background: $card-background;
+    color: $body-background;
     .heading {
       font-size: 20px;
       margin-bottom: 16px;
@@ -2490,117 +2494,116 @@ textarea.form-control {
   }
 }
 
-
 .ct-socials {
-	position: fixed;
-	top: 25%;
-	right: 0;
-	list-style: none;
-	padding-left: 0;
-	z-index: 10;
-	margin: 0;
-	-webkit-transition: right 0.25s ease-in-out;
-	transition: right 0.25s ease-in-out;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	li {
-		padding: 0px 0;
-		a {
-			background: $secondary;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			align-items: center;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
-			justify-content: center;
-			color: $white;
-			width: 44px;
-			height: 54px;
-			-webkit-transition: all 0.15s ease-in-out;
-			transition: all 0.15s ease-in-out;
-			float: right;
-			padding-left: 5px;
-			&:hover {
-				width: 54px;
-				padding-left: 0;
-				text-decoration: none;
-				background: $tertiary;
-                color: $secondary;
-			}
-		}
-	}
+  position: fixed;
+  top: 25%;
+  right: 0;
+  list-style: none;
+  padding-left: 0;
+  z-index: 10;
+  margin: 0;
+  -webkit-transition: right 0.25s ease-in-out;
+  transition: right 0.25s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  li {
+    padding: 0px 0;
+    a {
+      background: $secondary;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: $white;
+      width: 44px;
+      height: 54px;
+      -webkit-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+      float: right;
+      padding-left: 5px;
+      &:hover {
+        width: 54px;
+        padding-left: 0;
+        text-decoration: none;
+        background: $tertiary;
+        color: $secondary;
+      }
+    }
+  }
 }
 .section.triad-section {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 section.section {
-	h2 {
-		font-size: 40px;
-		line-height: 46px;
-		margin-bottom: 20px;
-		text-align: center;
-		margin-top: 0;
-	}
-	p.sub-heading {
-		font-size: 16px;
-		font-family: $font-primary;
-		font-weight: 300;
-		text-align: center;
-		margin-bottom: 40px;
-	}
+  h2 {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 0;
+  }
+  p.sub-heading {
+    font-size: 16px;
+    font-family: $font-primary;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 h2 {
-	color: $black;
-	font-weight: 200;
-	letter-spacing: -1px;
+  color: $black;
+  font-weight: 200;
+  letter-spacing: -1px;
 }
 h1 {
-	font-weight: 200;
-	letter-spacing: -1px;
+  font-weight: 200;
+  letter-spacing: -1px;
 }
 h3 {
-	font-weight: 200;
-	letter-spacing: -1px;
+  font-weight: 200;
+  letter-spacing: -1px;
 }
 h4 {
-	font-weight: 200;
-	letter-spacing: -1px;
+  font-weight: 200;
+  letter-spacing: -1px;
 }
 h5 {
-	font-weight: 200;
-	letter-spacing: -1px;
+  font-weight: 200;
+  letter-spacing: -1px;
 }
 h6 {
-	font-weight: 200;
-	letter-spacing: -1px;
+  font-weight: 200;
+  letter-spacing: -1px;
 }
 section.triad-section {
-	.triad-sub-section {
-		padding-right: 60px;
-	}
+  .triad-sub-section {
+    padding-right: 60px;
+  }
 }
 section {
-	p.detail-paragraph {
-		&:first-child {
-			margin-top: 0;
-		}
-		font-family: $font-secondary;
-		margin-top: 40px;
-		font-size: 18px;
-		color: $black;
-	}
+  p.detail-paragraph {
+    &:first-child {
+      margin-top: 0;
+    }
+    font-family: $font-secondary;
+    margin-top: 40px;
+    font-size: 18px;
+    color: $black;
+  }
 }
 b {
-	font-weight: 700;
+  font-weight: 700;
 }
 strong {
-	font-weight: 700;
+  font-weight: 700;
 }

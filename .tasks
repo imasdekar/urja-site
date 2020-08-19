@@ -3,6 +3,8 @@
 [project-run]
 command=hugo server
 cwd=$(VIM_ROOT)
+output=terminal
+pos=tab
 
 [project-build]
 command=hugo -b localhost:8080 -D -F --gc --minify -v
@@ -10,3 +12,10 @@ cwd=$(VIM_ROOT)
 
 [miniserve]
 command=miniserve --index index.html public
+cwd=$(VIM_ROOT)
+output=terminal
+pos=tab
+
+[scss-build]
+command=sass ./themes/welfare/static/scss/style.scss ./themes/welfare/static/css/style.css
+cwd=$(VIM_ROOT)
