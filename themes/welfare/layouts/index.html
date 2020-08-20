@@ -3,21 +3,12 @@
   <div class="carousel-inner">
     {{ range $index, $element := $data.slides }}
     <div class="carousel-item {{ if ( eq $index 0) }}active{{ end }}">
-      <div
-        class="hero-wrap"
-        style="background-image: url('{{ $element.hero_image }}');"
-        data-stellar-background-ratio="0.5"
-      >
+      <div class="hero-wrap" style="background-image: url('{{ $element.hero_image }}');"
+        data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
-          <div
-            class="row no-gutters slider-text align-items-center justify-content-center"
-            data-scrollax-parent="true"
-          >
-            <div
-              class="col-md-7 ftco-animate text-center"
-              data-scrollax=" properties: { translateY: '70%' }"
-            >
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+            <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
               <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                 {{ $element.title }}
               </h1>
@@ -25,11 +16,8 @@
                 {{ $element.subtitle }}
               </p>
               <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-                <a
-                  href="{{ $element.video_link }}"
-                  class="btn btn-white btn-outline-white px-4 py-3 popup-vimeo"
-                  >{{ $element.video_text }}</a
-                >
+                <a href="{{ $element.video_link }}"
+                  class="btn btn-white btn-outline-white px-4 py-3 popup-vimeo">{{ $element.video_text }}</a>
               </p>
             </div>
           </div>
@@ -48,29 +36,25 @@
   </a>
 </div>
 
-{{ partial "counter_section.html" . }} {{ with .Site.GetPage "/blog/home_story.md" }}
+{{ partial "counter_section.html" . }} {{ with .Site.GetPage "/about/organization.md" }}
 <section class="ftco-section">
   <div class="container">
     <div class="row d-flex">
       <div class="item">
         <div class="cause-entry">
-          <a
-            href="{{ .Permalink }}"
-            class="img"
-            style="background-image: url('{{ .Params.banner }}');"
-          ></a>
+          <a href="/about/#organization" class="img" style="background-image: url('{{ .Params.banner }}');"></a>
           <div class="text p-3 p-md-4">
-              {{ if not .Date.IsZero }}
+            {{ if not .Date.IsZero }}
             <div class="meta mb-3">
-                <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+              <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
             </div>
             {{ end }}
             <h3>
-              <a href="{{ .Permalink }}">{{ .Title }}</a>
+              <a href="/about/#organization">{{ .Title }}</a>
             </h3>
             <p>{{ .Summary }}</p>
             <p>
-              <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
+              <a href="/about/#organization">Read more<i class="ion-ios-arrow-forward"></i></a>
             </p>
           </div>
         </div>
@@ -80,30 +64,43 @@
 </section>
 {{ end }}
 
-<section class="ftco-gallery">
-  <div class="container-fluid">
-    <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-4">{{ $data.gallery_title }}</h2>
-      </div>
-    </div>
-    <div class="d-md-flex row">
-      {{ range $data.gallery }}
-      <a
-        href="{{ .image }}"
-        class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
-        style="background-image: url('{{ .image }}');"
-        title="{{ .title }}" data-description="{{ .description }}"
-        >
-        <div class="icon d-flex justify-content-center align-items-center">
-          <span class="icon-search"></span>
+{{ with .Site.GetPage "/approach/pronged.md" }}
+<section class="ftco-section" id="pronged">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+        <div class="media block-6 d-flex services p-3 py-4 d-block">
+          <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
+          <div class="media-body pl-4">
+            <h3 class="heading">{{ .Params.first_approach_title }}</h3>
+            <p>{{ .Params.first_approach_body }}</p>
+          </div>
         </div>
-      </a>
-      {{ end }}
+      </div>
+      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+        <div class="media block-6 d-flex services p-3 py-4 d-block">
+          <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
+          <div class="media-body pl-4">
+            <h3 class="heading">{{ .Params.second_approach_title }}</h3>
+            <p>{{ .Params.second_approach_body }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+        <div class="media block-6 d-flex services p-3 py-4 d-block">
+          <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
+          <div class="media-body pl-4">
+            <h3 class="heading">{{ .Params.third_approach_title }}</h3>
+            <p>{{ .Params.third_approach_body }}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+{{ end }}
 
+{{ partial "gallery_section.html" . }}
 {{ with .Site.GetPage "/events" }}
 <section class="ftco-section">
   {{ .Render "li" }}

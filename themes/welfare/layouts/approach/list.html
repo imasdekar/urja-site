@@ -1,0 +1,125 @@
+{{ define "main" }}
+<div class="hero-wrap" style="background-image: url('{{ .Params.banner }}');" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+      <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+        <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+          <span class="mr-2"><a href="/">Home</a></span> <span>Approach</span>
+        </p>
+        <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+          {{ .Title }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ with .Site.GetPage "/approach/introduction.md" }}
+<section class="ftco-section" id="introduction">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="item">
+        <div class="cause-entry">
+          <a class="img" style="background-image: url('{{ .Params.banner }}');"></a>
+          <div class="text p-3 p-md-4">
+            <h3>
+              <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
+            </h3>
+            <p>{{ .Content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/approach/pronged.md" }}
+<section class="ftco-section" id="pronged">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+        <div class="media block-6 d-flex services p-3 py-4 d-block">
+          <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
+          <div class="media-body pl-4">
+            <h3 class="heading">{{ .Params.first_approach_title }}</h3>
+            <p>{{ .Params.first_approach_body }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+        <div class="media block-6 d-flex services p-3 py-4 d-block">
+          <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
+          <div class="media-body pl-4">
+            <h3 class="heading">{{ .Params.second_approach_title }}</h3>
+            <p>{{ .Params.second_approach_body }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+        <div class="media block-6 d-flex services p-3 py-4 d-block">
+          <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
+          <div class="media-body pl-4">
+            <h3 class="heading">{{ .Params.third_approach_title }}</h3>
+            <p>{{ .Params.third_approach_body }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/approach/objectives.md" }}
+<section class="ftco-section" id="objectives">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-md-6 d-flex ftco-animate">
+        <div class="img img-about align-self-stretch"
+          style="background-image: url('{{ .Params.banner }}'); width: 100%;"></div>
+      </div>
+      <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg">
+        <h2 class="mb-4">{{ .Title }}</h2>
+        <p>{{ .Content }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/approach/journey.md" }}
+<section class="ftco-section" id="journey">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
+        <p>{{ .Content }}</p>
+        <a href="/approach/#" class="btn btn-white px-3 py-2 mt-2">{{ .Params.vacancy_button_text }}</a>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="img img-about align-self-stretch"
+          style="background-image: url('{{ .Params.banner }}'); width: 100%;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ partial "gallery_section.html" . }}
+{{ with .Site.GetPage "/approach/programs.md" }}
+<section class="ftco-section" id="programs">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
+        <p>{{ .Content }}</p>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="img img-about align-self-stretch"
+          style="background-image: url('{{ .Params.banner }}'); width: 100%;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}

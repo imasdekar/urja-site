@@ -8632,6 +8632,9 @@ h5,
 .ftco-navbar-light .navbar-nav > .nav-item .dropdown-item {
   color: rgba(255, 255, 255, 0.8) !important;
 }
+.ftco-navbar-light .navbar-nav > .nav-item .dropdown-item:hover {
+  background: #fab73c;
+}
 .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
   position: relative;
   margin-left: 20px;

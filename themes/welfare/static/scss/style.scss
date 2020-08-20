@@ -122,6 +122,9 @@ h5,
 
       .dropdown-item {
         color: rgba($white, 0.8) !important;
+        &:hover{
+          background: $primary;
+        }
       }
 
       &.ftco-seperator {
