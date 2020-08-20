@@ -114,32 +114,108 @@
 
 {{ partial "counter_section.html" . }}
 
+
+{{ with .Site.GetPage "/about/teams.md" }}
+<!-- team -->
 <section class="ftco-section bg-light" id="team">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-4">{{ .Params.team_title }}</h2>
-        <p>{{ .Params.team_subtitle }}</p>
+        <h2 class="mb-4">{{ .Params.board.title }}</h2>
+        <p>{{ .Params.board.subtitle }}</p>
       </div>
     </div>
     <div class="row">
-      {{ range .Params.team_members }}
-      <div class="col-lg-6 d-flex mb-sm-4 ftco-animate">
-        <div class="staff">
-          <div class="d-flex mb-4">
-            <div class="img" style="background-image: url('{{ .image }}');"></div>
-            <div class="info ml-4">
-              <h3><a href="teacher-single.html">{{ .name }}</a></h3>
-              <span class="position">{{ .role }}</span>
-              <div class="text">
-                <p>{{ .about }}</p>
+      {{ range $index, $element := .Params.board.members }}
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+        <div class="avatar mx-auto" data-toggle="modal" data-target="#{{ $index }}">
+          <img src="{{ $element.image }}" width="250" class="z-depth-1" alt="{{ $element.name }}">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3" data-toggle="modal" data-target="#{{ $index }}">{{ $element.name }}</h5>
+        <p class="text-uppercase blue-text" data-toggle="modal" data-target="#{{ $index }}"><strong>{{ $element.role }}</strong></p>
+        <!-- Modal -->
+        <div class="modal fade" id="{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLongTitle{{ $index }}">{{ $element.name }}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                {{ $element.about }}
               </div>
             </div>
           </div>
         </div>
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic" href="{{ $element.facebook }}">
+            <span class="icon-facebook"></span>
+          </a>
+          <!-- Twitter -->
+          <a class="p-2 fa-lg tw-ic" href="{{ $element.twitter }}">
+            <span class="icon-twitter"></span>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="{{ $element.instagram }}">
+            <span class="icon-instagram"></span>
+          </a>
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section ftco-animate text-center">
+        <h2 class="mb-4">{{ .Params.team.title }}</h2>
+        <p>{{ .Params.team.subtitle }}</p>
+      </div>
+    </div>
+    <div class="row">
+      {{ range $index, $element := .Params.team.members }}
+      <div class="col-lg-2 col-md-4 mb-lg-0 mb-5">
+        <div class="avatar mx-auto" data-toggle="modal" data-target="#{{ $index }}">
+          <img src="{{ $element.image }}" width="150" class="rounded-circle z-depth-1" alt="{{ $element.name }}">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3" data-toggle="modal" data-target="#{{ $index }}">{{ $element.name }}</h5>
+        <p class="text-uppercase blue-text" data-toggle="modal" data-target="#{{ $index }}"><strong>{{ $element.role }}</strong></p>
+        <!-- Modal -->
+        <div class="modal fade" id="{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLongTitle{{ $index }}">{{ $element.name }}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                {{ $element.about }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic" href="{{ $element.facebook }}">
+            <span class="icon-facebook"></span>
+          </a>
+          <!-- Twitter -->
+          <a class="p-2 fa-lg tw-ic" href="{{ $element.twitter }}">
+            <span class="icon-twitter"></span>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="{{ $element.instagram }}">
+            <span class="icon-instagram"></span>
+          </a>
+        </ul>
       </div>
       {{ end }}
     </div>
   </div>
 </section>
+{{ end }}
 {{ end }}
