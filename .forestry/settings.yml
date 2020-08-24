@@ -15,6 +15,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - meet-our-team
   - about-page
 - type: directory
   path: content/approach
