@@ -1,0 +1,47 @@
+---
+label: About Page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: Kind
+  label: Kind
+- type: boolean
+  name: active
+  label: active
+- type: file
+  name: hero_image
+  label: hero_image
+- type: file
+  name: side_image
+  label: side_image
+- type: file
+  name: side_image_2
+  label: side_image_2
+- type: text
+  name: team_title
+  label: team_title
+- type: text
+  name: team_subtitle
+  label: team_subtitle
+- type: field_group_list
+  name: team_members
+  label: team_members
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: role
+    label: role
+  - type: textarea
+    name: about
+    label: about
