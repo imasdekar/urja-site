@@ -9,9 +9,13 @@ sections:
 - type: document
   path: data/home.yml
   label: Home Page
-- type: document
-  path: content/about/_index.md
+- type: directory
+  path: content/about
   label: About
+  create: documents
+  match: "**/*"
+  templates:
+  - about-page
 - type: directory
   path: content/approach
   label: Approach

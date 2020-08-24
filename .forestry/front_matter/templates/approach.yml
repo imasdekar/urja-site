@@ -8,5 +8,3 @@ fields:
 - type: file
   name: banner
   label: banner
-pages:
-- content/approach/first_approach.md
