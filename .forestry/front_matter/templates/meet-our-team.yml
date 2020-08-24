@@ -1,0 +1,80 @@
+---
+label: Meet our Team
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: field_group
+  name: board
+  label: board
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: field_group_list
+    name: members
+    label: members
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: image
+      label: image
+    - type: text
+      name: role
+      label: role
+    - type: text
+      name: facebook
+      label: facebook
+    - type: text
+      name: twitter
+      label: twitter
+    - type: text
+      name: instagram
+      label: instagram
+    - type: textarea
+      name: about
+      label: about
+- type: field_group
+  name: team
+  label: team
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: field_group_list
+    name: members
+    label: members
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: image
+      label: image
+    - type: text
+      name: role
+      label: role
+    - type: text
+      name: facebook
+      label: facebook
+    - type: text
+      name: twitter
+      label: twitter
+    - type: text
+      name: instagram
+      label: instagram
+    - type: textarea
+      name: about
+      label: about
