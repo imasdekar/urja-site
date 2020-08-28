@@ -1,24 +1,13 @@
 {{ define "main" }}
-<div
-  class="hero-wrap"
-  style="background-image: url('{{ .Params.banner }}');"
-  data-stellar-background-ratio="0.5"
->
+<div class="hero-wrap" style="background-image: url('{{ .Params.banner }}');" data-stellar-background-ratio="0.5">
   <div class="overlay"></div>
   <div class="container">
-    <div
-      class="row no-gutters slider-text align-items-center justify-content-center"
-      data-scrollax-parent="true"
-    >
-      <div
-        class="col-md-7 ftco-animate text-center"
-        data-scrollax=" properties: { translateY: '70%' }"
-      >
+    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+      <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
         <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-          <span class="mr-2"><a href="/">Home</a></span>
-          <span class="mr-2"
-            ><a href="{{ .CurrentSection.Permalink }}">{{ .CurrentSection.Title }}</a></span
-          >
+          <span class="mr-2"><a
+              href="{{ .CurrentSection.Parent.Permalink }}">{{ .CurrentSection.Parent.Title }}</a></span>
+          <span class="mr-2"><a href="{{ .CurrentSection.Permalink }}">{{ .CurrentSection.Title }}</a></span>
           <span>{{ .Title }}</span>
         </p>
         <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
@@ -33,14 +22,13 @@
   <div class="container">
     <div class="row">
       <div
-        class="markdown-content {{ if gt (len .CurrentSection.Pages) 1 }}col-md-8 {{ else }}col-md-12{{ end }} ftco-animate"
-      >
+        class="markdown-content {{ if gt (len .CurrentSection.Pages) 1 }}col-md-8 {{ else }}col-md-12{{ end }} ftco-animate">
         <h2 class="mb-3">{{ .Title }}</h2>
-              {{ if not .Date.IsZero }}
-            <div class="meta mb-3">
-                <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-            </div>
-            {{ end }}
+        {{ if not .Date.IsZero }}
+        <div class="meta mb-3">
+          <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+        </div>
+        {{ end }}
         {{ .Content }}
         {{ with .Params.tags }}
         <div class="tag-widget post-tag-container mb-5 mt-5">
@@ -69,11 +57,7 @@
           <h3>Recent {{ .CurrentSection.Title }}</h3>
           {{ range ( where .CurrentSection.Pages "Title" "!=" .Title | first 3 ) }}
           <div class="block-21 mb-4 d-flex">
-            <a
-              class="blog-img mr-4"
-              href="{{ .Permalink }}"
-              style="background-image: url('{{ .Params.banner }}');"
-            ></a>
+            <a class="blog-img mr-4" href="{{ .Permalink }}" style="background-image: url('{{ .Params.banner }}');"></a>
             <div class="text">
               <h3 class="heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
               <div class="meta">

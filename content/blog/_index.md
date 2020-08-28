@@ -5,6 +5,6 @@ cascade:
   banner: "/images/uploads/bg_2.jpg"
 menu:
   nav:
-    weight: 5
+    weight: 6
 
 ---

@@ -5,7 +5,7 @@ title = "Urja"
 [[menu.nav]]
 name = "DONATE"
 url = "/donate/"
-weight = 6
+weight = 7
 [[menu.nav]]
 name = "Home"
 url = "/"

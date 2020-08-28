@@ -8,26 +8,22 @@
     {{ range .Pages | first 3 }}
     <div class="col-md-4 ftco-animate">
       <div class="blog-entry align-self-stretch">
-        <a
-            href="{{ .Permalink }}"
-            class="block-20"
-            style="background-image: url('{{ .Params.banner }}');"
-            ></a>
+        <a href="{{ .Permalink }}" class="block-20" style="background-image: url('{{ .Params.banner }}');"></a>
         <div class="text p-4 d-block">
-              {{ if not .Date.IsZero }}
-            <div class="meta mb-3">
-                <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-            </div>
-            {{ end }}
-            <h3 class="heading md-4"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-            {{ if gt (len .Summary) 150 }}
-            <p>{{ slicestr .Summary 0 150 | markdownify }}...</p>
-            <p>
-                <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
-            </p>
-            {{ else }}
-            <p>{{ .Summary | markdownify }}</p>
-            {{ end }}
+          {{ if not .Date.IsZero }}
+          <div class="meta mb-3">
+            <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+          </div>
+          {{ end }}
+          <h3 class="heading md-4"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          {{ if gt (len .Summary) 150 }}
+          <p>{{ slicestr .Summary 0 150 | markdownify }}...</p>
+          <p>
+            <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
+          </p>
+          {{ else }}
+          <p>{{ .Summary | markdownify }}</p>
+          {{ end }}
         </div>
       </div>
     </div>
