@@ -100,7 +100,9 @@
 </section>
 {{ end }}
 
-{{ partial "gallery_section.html" . }}
+<section class="ftco-section">
+  {{ partial "gallery_section.html" . }}
+</section>
 {{ with .Site.GetPage "/events" }}
 <section class="ftco-section">
   {{ .Render "li" }}
