@@ -25,29 +25,6 @@
   </div>
 </div>
 
-{{ with .Site.GetPage "/about/organization.md" }}
-<section class="ftco-section" id="organization">
-  <div class="container">
-    <div class="row d-flex">
-      <div class="item">
-        <div class="cause-entry">
-          <a
-            class="img"
-            style="background-image: url('{{ .Params.banner }}');"
-          ></a>
-          <div class="text p-3 p-md-4">
-            <h3>
-              <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
-            </h3>
-            <p>{{ .Content }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-
 {{ with .Site.GetPage "/about/vision_mission.md" }}
 <section class="ftco-section" id="vision_mission">
   <div class="container">
@@ -94,11 +71,40 @@
 </section>
 {{ end }}
 
-{{ with .Site.GetPage "/about/partners.md" }}
-<section class="ftco-section" id="partners">
+{{ with .Site.GetPage "/blog/home_story.md" }}
+<section class="ftco-section">
   <div class="container">
     <div class="row d-flex">
-      <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
+      <div class="item">
+        <div class="cause-entry">
+          <a
+            class="img"
+            style="background-image: url('{{ .Params.banner }}');"
+          ></a>
+          <div class="text p-3 p-md-4">
+            <h3>
+              <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
+            </h3>
+            {{ if not (eq .Summary "") }}
+            <p>{{ .Summary }}</p>
+            <p>
+              <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
+            </p>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/about/organization.md" }}
+<section class="ftco-section" id="organization">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="markdown-content col-md-8 ftco-animate ftco-degree-bg">
+        <h2 class="mb-4">{{ .Title }}</h2>
         <p>{{ .Content }}</p>
       </div>
       <div class="col-md-4 d-flex ftco-animate">
@@ -111,9 +117,6 @@
   </div>
 </section>
 {{ end }}
-
-{{ partial "counter_section.html" . }}
-
 
 {{ with .Site.GetPage "/about/teams.md" }}
 <!-- team -->
@@ -129,7 +132,7 @@
       {{ range $index, $element := .Params.board.members }}
       <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
         <div class="avatar mx-auto" data-toggle="modal" data-target="#{{ $index }}">
-          <img src="{{ $element.image }}" width="250" class="z-depth-1" alt="{{ $element.name }}">
+          <img src="{{ $element.image }}" width="100%" class="z-depth-1" alt="{{ $element.name }}">
         </div>
         <h5 class="font-weight-bold mt-4 mb-3" data-toggle="modal" data-target="#{{ $index }}">{{ $element.name }}</h5>
         <p class="text-uppercase blue-text" data-toggle="modal" data-target="#{{ $index }}"><strong>{{ $element.role }}</strong></p>
@@ -178,7 +181,7 @@
       {{ range $index, $element := .Params.team.members }}
       <div class="col-lg-2 col-md-4 mb-lg-0 mb-5">
         <div class="avatar mx-auto" data-toggle="modal" data-target="#{{ $index }}">
-          <img src="{{ $element.image }}" width="150" class="rounded-circle z-depth-1" alt="{{ $element.name }}">
+          <img src="{{ $element.image }}" width="100%" class="rounded-circle z-depth-1" alt="{{ $element.name }}">
         </div>
         <h5 class="font-weight-bold mt-4 mb-3" data-toggle="modal" data-target="#{{ $index }}">{{ $element.name }}</h5>
         <p class="text-uppercase blue-text" data-toggle="modal" data-target="#{{ $index }}"><strong>{{ $element.role }}</strong></p>
@@ -218,4 +221,69 @@
   </div>
 </section>
 {{ end }}
+
+{{ with .Site.GetPage "/about/partners.md" }}
+<section class="ftco-section" id="partners">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="markdown-content col-lg-5 col-md-12 ftco-animate ftco-degree-bg">
+        <h2 class="mb-4">{{ .Title }}</h2>
+        <p>{{ .Content }}</p>
+      </div>
+      <div class="col-lg-7 col-md-12">
+        <div class="row">
+          {{ range $index, $element := .Params.partners }}
+          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+            <div class="avatar mx-auto" data-toggle="modal" data-target="#partner_{{ $index }}">
+              <img src="{{ $element.image }}" width="100%" class="z-depth-1" alt="{{ $element.name }}">
+            </div>
+            <h5 class="font-weight-bold mt-4 mb-3" data-toggle="modal" data-target="#partner_{{ $index }}">{{ $element.name }}</h5>
+            <!-- Modal -->
+            <div class="modal fade" id="partner_{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="partnerModalLongTitle{{ $index }}">{{ $element.name }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    {{ $element.about }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/about/awards.md" }}
+<section class="ftco-section">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="item col-sm-12">
+        <div class="cause-entry">
+          <a
+            class="img"
+            style="background-image: url('{{ .Params.banner }}');"
+          ></a>
+          <div class="text p-3 p-md-4">
+            <h3>
+              <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
+            </h3>
+            <p>{{ .Content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
 {{ end }}

@@ -2,11 +2,25 @@
 title: Partners/Funders
 date: 2020-08-16T06:56:58.000+00:00
 banner: "/images/uploads/bg_3.jpg"
+partners:
+    - name: Partner 1
+      image: /images/uploads/bg_3.jpg
+      about: something about partner
+    - name: Partner 2
+      image: /images/uploads/bg_3.jpg
+      about: something about partner
+    - name: Partner 2
+      image: /images/uploads/bg_3.jpg
+      about: something about partner
+    - name: Partner 2
+      image: /images/uploads/bg_3.jpg
+      about: something about partner
 menu:
   nav:
     parent: About
     name: Partners
-    url: "#partners"
+    url: "/about/#partners"
+    weight: 6
 
 ---
 URJA was registered under the Bombay Public Trust Act, 1950. The Trust believes

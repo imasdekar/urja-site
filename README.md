@@ -10,4 +10,4 @@ For enabling local CMS:
 - Start the website local server as mentioned above.
 - In a new terminal start the netlify server with the following comand,
   `npx netlify-cms-proxy-server`
-- View the CMS at http://localhost:1313/admin 
+- View the CMS at http://localhost:1313/admin

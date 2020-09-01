@@ -4,7 +4,7 @@
 command=hugo server
 cwd=$(VIM_ROOT)
 output=terminal
-pos=tab
+pos=right
 
 [project-build]
 command=hugo -b localhost:8080 -D -F --gc --minify -v

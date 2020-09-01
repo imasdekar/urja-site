@@ -10,7 +10,7 @@ menu:
     weight: 3
 
 ---
-URJA TRUST is a Mumbai (India) based grassroots organisation working to empower
+**URJA TRUST** is a Mumbai (India) based grassroots organisation working to empower
 homeless young women, with a rights based intersectional perspective that explores
 the issues of homeless young women through the lens of gender, caste, mental health
 and violence. Our organisation’s values and principles are aligned with the Indian
