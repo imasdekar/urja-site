@@ -1,6 +1,6 @@
 ---
-title: CSR & PHILANTHROPHY 
-kind: section
+title: CSR & PHILANTHROPHY
+type: csr_philantrophy
 menu:
   nav:
     parent: Get Involved
