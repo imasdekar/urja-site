@@ -11024,13 +11024,6 @@ strong {
     display: none;
   }
 }
-@media (min-width: 576px) {
-  .gallery_slider .large-screen-gallery {
-    display: block;
-    width: 700px;
-    height: 440px;
-  }
-}
 .gallery_slider .slider-ctr {
   width: 700px;
   height: 440px;
@@ -11087,7 +11080,7 @@ strong {
 }
 .gallery_slider .slider-control .control.disabled {
   pointer-events: none;
-  background: #D0CECE;
+  background: #d0cece;
 }
 .gallery_slider .slider-control .control.disabled .icon {
   opacity: 0.5;

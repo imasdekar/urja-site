@@ -23,7 +23,11 @@
     <div class="row">
       <div class="align-self-stretch d-flex">
         <blockquote class="blockquote">
-          <p class="p-5"><strong>"{{ .Params.qoute }}"</strong></p>
+          <p class="p-5">
+            <i class="fas fa-quote-left"></i>
+            <strong>{{ .Params.qoute }}</strong>
+            <i class="fas fa-quote-right"></i>
+          </p>
         </blockquote>
       </div>
     </div>
@@ -56,57 +60,141 @@
     </div>
   </div>
 </section>
-
 {{ end }}
 
-{{ with .Site.GetPage "/approach/pronged.md" }}
-<section class="ftco-section" id="pronged">
+{{ with .Site.GetPage "/impact/covid_response.md" }}
+<section class="ftco-section " id="covid_response">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section ftco-animate text-center">
+        <h2 class="mb-2">{{ .Params.title }}</h2>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row">
-      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services p-3 py-4 d-block">
-          <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
-          <div class="media-body pl-4">
-            <h3 class="heading">{{ .Params.first_approach_title }}</h3>
-            <p>{{ .Params.first_approach_body }}</p>
+      <div class="container-fluid small-screen-gallery">
+        <div class="d-md-flex row">
+          {{ range $index, $element := .Params.gallery }}
+          {{ if eq (len $element) $index }}
+          <a href="{{ .image }}"
+             class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
+             style="background-image: url('{{ .image }}');" title="{{ .image_title }}" data-description="{{ .description }}">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="icon-search"></span>
+            </div>
+          </a>
+          {{ else }}
+          <a href="{{ .image }}"
+             class="gallery image-popup justify-content-center align-items-center img ftco-animate d-none"
+             style="background-image: url('{{ .image }}');" title="{{ .image_title }}" data-description="{{ .description }}">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="icon-search"></span>
+            </div>
+          </a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="gallery_slider col-lg-8 col-md-12">
+        <div class="large-screen-gallery">
+          <div class="slider-ctr">
+            {{ range $index, $element := .Params.gallery }}
+            {{ if eq (len $element) $index }}
+            <figure class="slide text-on"><img src="{{ .image }}" alt="{{ .image_title }}" />
+              {{ else }}
+              <figure class="slide"><img src="{{ .image }}" alt="{{ .image_title }}" />
+                {{ end }}
+                <figcaption>
+                  <div class="title">{{ .image_title }}</div>
+                  <div class="author">{{ .description }}</div>
+                </figcaption>
+              </figure>
+              {{ end }}
+              <div class="slider-control">
+                <div class="control prev disabled">
+                  <div class="icon fas fa-chevron-left"></div>
+                </div>
+                <div class="control next">
+                  <div class="icon fas fa-chevron-right"></div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services p-3 py-4 d-block">
-          <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
-          <div class="media-body pl-4">
-            <h3 class="heading">{{ .Params.second_approach_title }}</h3>
-            <p>{{ .Params.second_approach_body }}</p>
-          </div>
-        </div>
+      <div class="text-justify markdown-content col-lg-4 ftco-animate ftco-degree-bg">
+        <p>{{ .Params.side_content | markdownify }}</p>
       </div>
-      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services p-3 py-4 d-block">
-          <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
-          <div class="media-body pl-4">
-            <h3 class="heading">{{ .Params.third_approach_title }}</h3>
-            <p>{{ .Params.third_approach_body }}</p>
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="markdown-content ftco-animate ftco-degree-bg">
+      <p>{{ .Content }}</p>
     </div>
   </div>
 </section>
 {{ end }}
 
-{{ partial "gallery_section.html" . }}
-{{ with .Site.GetPage "/approach/programs.md" }}
-<section class="ftco-section" id="programs">
+{{ with .Site.GetPage "/impact/volunteer_testimonials.md" }}}
+<!-- Section: Testimonials v.2 -->
+<section class="text-center ftco-section" id="volunteer_testimonials">
+  <hr>
   <div class="container">
-    <div class="row d-flex">
-      <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
-        <p>{{ .Content }}</p>
+    <!-- Section heading -->
+    <div class="heading-section ftco-animate text-center">
+      <h2 class="mb-4">{{ .Title }}</h2>
+    </div>
+
+    <div class="wrapper-carousel-fix">
+      <!-- Carousel Wrapper -->
+      <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <!--slide-->
+          {{ range $index, $element := .Params.testimonials }}
+          <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
+            <div class="testimonial">
+              <!--Avatar-->
+              <div class="avatar mb-4 mx-auto">
+                <img src="{{ $element.image }}" width="250px" class="rounded-circle img-fluid" alt="{{ $element.name }}">
+              </div>
+              <!--Content-->
+              <p class="markdown-content">
+                <i class="fas fa-quote-left"></i>
+                {{ $element.content | markdownify }}
+              </p>
+              <h4 class="font-weight-bold">{{ $element.name }}</h4>
+            </div>
+          </div>
+          {{ end }}
+          <!--slide-->
+        </div>
+        <!--Slides-->
+        <!--Controls-->
+        <div>
+          <a class="btn-floating btn-lg darken-4" href="#carousel-example-1" data-slide="prev">
+            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+          </a>
+          <a class="btn-floating btn-lg darken-4" href="#carousel-example-1" data-slide="next">
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <!--Controls-->
       </div>
-      <div class="col-md-4 d-flex ftco-animate">
-        <div class="img img-about align-self-stretch"
-          style="background-image: url('{{ .Params.banner }}'); width: 100%;"></div>
-      </div>
+      <!-- Carousel Wrapper -->
+    </div>
+
+  </div>
+  <hr>
+</section>
+<!-- Section: Testimonials v.2 -->
+{{ end }}
+
+{{ with .Site.GetPage "/impact/media" }}
+<section class="mb-4 ftco-section" id="media">
+  {{ .Render "li" }}
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <a href="media" class="btn btn-white px-3 py-2 mt-2">{{ .Params.explore_button }}</a>
     </div>
   </div>
 </section>
