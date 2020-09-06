@@ -4,77 +4,77 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: field_group
   name: board
-  label: board
+  label: Board
   fields:
   - type: text
     name: title
-    label: title
+    label: Title
   - type: text
     name: subtitle
-    label: subtitle
+    label: Subtitle
   - type: field_group_list
     name: members
-    label: members
+    label: Members
     fields:
     - type: text
       name: name
-      label: name
+      label: Name
     - type: file
       name: image
-      label: image
+      label: Image
     - type: text
       name: role
-      label: role
+      label: Role
     - type: text
       name: facebook
-      label: facebook
+      label: Facebook
     - type: text
       name: twitter
-      label: twitter
+      label: Twitter
     - type: text
       name: instagram
-      label: instagram
+      label: Instagram
     - type: textarea
       name: about
-      label: about
+      label: About
 - type: field_group
   name: team
-  label: team
+  label: Team
   fields:
   - type: text
     name: title
-    label: title
+    label: Title
   - type: text
     name: subtitle
-    label: subtitle
+    label: Subtitle
   - type: field_group_list
     name: members
-    label: members
+    label: Members
     fields:
     - type: text
       name: name
-      label: name
+      label: Name
     - type: file
       name: image
-      label: image
+      label: Image
     - type: text
       name: role
-      label: role
+      label: Role
     - type: text
       name: facebook
-      label: facebook
+      label: Facebook
     - type: text
       name: twitter
-      label: twitter
+      label: Twitter
     - type: text
       name: instagram
-      label: instagram
+      label: Instagram
     - type: textarea
       name: about
-      label: about
+      label: About
