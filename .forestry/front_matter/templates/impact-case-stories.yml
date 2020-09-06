@@ -31,3 +31,5 @@ fields:
   - type: textarea
     name: content
     label: Content
+pages:
+- content/impact/case_stories.md
