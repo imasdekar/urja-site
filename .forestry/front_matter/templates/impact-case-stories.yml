@@ -1,0 +1,33 @@
+---
+label: 'Impact: Case Stories'
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: banner
+  label: banner
+- type: field_group
+  name: story_1
+  label: story_1
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: textarea
+    name: content
+    label: content
+- type: field_group
+  name: story_2
+  label: story_2
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: textarea
+    name: content
+    label: content
