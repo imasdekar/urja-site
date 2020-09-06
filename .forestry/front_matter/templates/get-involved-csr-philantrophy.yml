@@ -1,0 +1,32 @@
+---
+label: 'Get Involved: CSR & Philantrophy'
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: text
+  name: explore_button
+  label: explore_button
+- type: field_group
+  name: cascade
+  label: cascade
+  fields:
+  - type: file
+    name: banner
+    label: banner
+- type: text
+  name: csr_list_title
+  label: csr_list_title
+- type: text
+  name: desc_title
+  label: desc_title
+- type: textarea
+  name: description
+  label: description
+- type: file
+  name: desc_image
+  label: desc_image
