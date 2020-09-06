@@ -4,13 +4,13 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: file
   name: banner
-  label: banner
+  label: Banner
 - type: textarea
   name: description
-  label: description
+  label: Description
 - type: text
   name: donate_button_text
-  label: donate_button_text
+  label: Donate Button Text
