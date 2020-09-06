@@ -42,14 +42,6 @@ sections:
   - impact-case-stories
   - impact-page
 - type: directory
-  path: content/events
-  label: Events
-  create: documents
-  match: "**/*"
-  templates:
-  - taxonomy
-  - events-page
-- type: directory
   path: content/get_involved
   label: Get Involved
   create: documents
