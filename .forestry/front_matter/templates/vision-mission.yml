@@ -2,22 +2,27 @@
 label: Vision & Mission
 hide_body: true
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: text
   name: vision_title
-  label: vision_title
+  label: Vision Title
 - type: textarea
   name: vision_body
-  label: vision_body
+  label: Vision Body
   config:
     wysiwyg: false
     schema:
       format: markdown
 - type: text
   name: mission_title
-  label: mission_title
+  label: Mission Title
 - type: textarea
   name: mission_body
-  label: mission_body
+  label: Mission Body
