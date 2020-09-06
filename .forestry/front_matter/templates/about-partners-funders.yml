@@ -21,6 +21,12 @@ fields:
   - type: file
     name: image
     label: Image
-  - type: text
-    name: about
+  - name: about
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
     label: About
