@@ -4,20 +4,20 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: field_group_list
   name: gallery
-  label: gallery
+  label: Gallery
   fields:
   - type: file
     name: image
-    label: image
+    label: Image
   - type: text
     name: image_title
-    label: image_title
+    label: Image Title
   - type: text
     name: description
-    label: description
+    label: Description
 - type: textarea
   name: side_content
-  label: side_content
+  label: Side Content
