@@ -12,3 +12,5 @@ fields:
   - type: file
     name: banner
     label: Banner
+pages:
+- content/get_involved/_index.md

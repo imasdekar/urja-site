@@ -5,6 +5,5 @@ cascade:
 menu:
   nav:
     weight: 5
-    name: Get Involved
 
 ---
