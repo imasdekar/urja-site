@@ -15,6 +15,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - about-partners-funders
   - we-work
   - vision-mission
   - about-organization-milestone
