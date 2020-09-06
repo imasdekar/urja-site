@@ -78,3 +78,5 @@ fields:
     - type: textarea
       name: about
       label: About
+pages:
+- content/about/teams.md
