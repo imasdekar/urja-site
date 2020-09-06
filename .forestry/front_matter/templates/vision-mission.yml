@@ -11,6 +11,10 @@ fields:
 - type: textarea
   name: vision_body
   label: vision_body
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
 - type: text
   name: mission_title
   label: mission_title
