@@ -1,0 +1,20 @@
+---
+label: 'Impact: Media'
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: text
+  name: explore_button
+  label: explore_button
+- type: field_group
+  name: cascade
+  label: cascade
+  fields:
+  - type: file
+    name: banner
+    label: banner
