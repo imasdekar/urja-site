@@ -35,6 +35,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - impact-case-stories
   - impact-page
 - type: directory
   path: content/events
