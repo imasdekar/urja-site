@@ -55,6 +55,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - get-involved-csr-philantrophy
   - get-involved-donate
   - get-involved-page
 - type: directory
