@@ -1,0 +1,16 @@
+---
+label: 'Get Involved: Donate'
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: file
+  name: banner
+  label: banner
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: donate_button_text
+  label: donate_button_text
