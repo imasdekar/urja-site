@@ -52,7 +52,7 @@ sections:
 - type: directory
   path: content/get_involved
   label: Get Involved
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - taxonomy
