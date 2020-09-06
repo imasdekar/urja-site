@@ -55,7 +55,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
-  - taxonomy
+  - get-involved-donate
   - get-involved-page
 - type: directory
   path: content/blog
