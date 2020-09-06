@@ -1,0 +1,19 @@
+---
+label: Vision & Mission
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: vision_title
+  label: vision_title
+- type: textarea
+  name: vision_body
+  label: vision_body
+- type: text
+  name: mission_title
+  label: mission_title
+- type: textarea
+  name: mission_body
+  label: mission_body
