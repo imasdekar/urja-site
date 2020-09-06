@@ -35,6 +35,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - volunteer-testimonials
   - impact-covid-response
   - impact-case-stories
   - impact-page
