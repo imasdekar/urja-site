@@ -1,0 +1,50 @@
+---
+label: 'Get Involved: Volunteer & Intern'
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: text
+  name: gallery_title
+  label: gallery_title
+- type: field_group_list
+  name: gallery
+  label: gallery
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: image_title
+    label: image_title
+  - type: text
+    name: description
+    label: description
+- type: text
+  name: volunteer_title
+  label: volunteer_title
+- type: textarea
+  name: volunteer_description
+  label: volunteer_description
+- type: text
+  name: intern_title
+  label: intern_title
+- type: textarea
+  name: intern_description
+  label: intern_description
+- type: text
+  name: explore_button
+  label: explore_button
+- type: text
+  name: desc_title
+  label: desc_title
+- type: textarea
+  name: description
+  label: description
+- type: file
+  name: desc_image
+  label: desc_image
