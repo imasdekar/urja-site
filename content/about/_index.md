@@ -8,7 +8,7 @@ side_image: "/images/uploads/urja.jpg"
 side_image_2: "/images/uploads/bg_3.jpg"
 menu:
   nav:
-    weight: 2
     name: About
+    weight: 2
 
 ---

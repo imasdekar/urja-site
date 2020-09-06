@@ -26,3 +26,5 @@ fields:
 - type: file
   name: side_image_2
   label: side_image_2
+pages:
+- content/about/_index.md
