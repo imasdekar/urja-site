@@ -4,30 +4,30 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: file
   name: banner
-  label: banner
+  label: Banner
 - type: field_group
   name: story_1
-  label: story_1
+  label: First Story
   fields:
   - type: file
     name: image
-    label: image
+    label: Image
   - type: textarea
     name: content
-    label: content
+    label: Content
 - type: field_group
   name: story_2
-  label: story_2
+  label: Second Story
   fields:
   - type: file
     name: image
-    label: image
+    label: Image
   - type: textarea
     name: content
-    label: content
+    label: Content
