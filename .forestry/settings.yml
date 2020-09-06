@@ -30,6 +30,11 @@ sections:
   templates:
   - approach
 - type: directory
+  path: content/impact
+  label: Impact
+  create: all
+  match: "**/*"
+- type: directory
   path: content/events
   label: Events
   create: documents
