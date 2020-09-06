@@ -1,0 +1,23 @@
+---
+label: 'Impact: Covid Response'
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group_list
+  name: gallery
+  label: gallery
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: image_title
+    label: image_title
+  - type: text
+    name: description
+    label: description
+- type: textarea
+  name: side_content
+  label: side_content
