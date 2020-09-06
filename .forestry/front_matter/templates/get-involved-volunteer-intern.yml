@@ -4,47 +4,48 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: type
-  label: type
+  label: Type
+  hidden: true
 - type: text
   name: gallery_title
-  label: gallery_title
+  label: Gallery Title
 - type: field_group_list
   name: gallery
-  label: gallery
+  label: Gallery
   fields:
   - type: file
     name: image
-    label: image
+    label: Image
   - type: text
     name: image_title
-    label: image_title
+    label: Image Title
   - type: text
     name: description
-    label: description
+    label: Description
 - type: text
   name: volunteer_title
-  label: volunteer_title
+  label: Volunteer Title
 - type: textarea
   name: volunteer_description
-  label: volunteer_description
+  label: Volunteer Description
 - type: text
   name: intern_title
-  label: intern_title
+  label: Intern Title
 - type: textarea
   name: intern_description
-  label: intern_description
+  label: Intern Description
 - type: text
   name: explore_button
-  label: explore_button
+  label: Explore Button
 - type: text
   name: desc_title
-  label: desc_title
+  label: Description Title
 - type: textarea
   name: description
-  label: description
+  label: Description
 - type: file
   name: desc_image
-  label: desc_image
+  label: Description Image
