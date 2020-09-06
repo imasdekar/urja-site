@@ -4,7 +4,7 @@ theme = "welfare"
 title = "Urja"
 [[menu.nav]]
 name = "DONATE"
-url = "/donate/"
+url = "/get_involved/donate/"
 weight = 7
 [[menu.nav]]
 name = "Home"

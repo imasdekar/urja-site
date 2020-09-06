@@ -1,19 +1,9 @@
 {{ define "main" }}
-<div
-  class="hero-wrap"
-  style="background-image: url('{{ .Params.hero_image }}');"
-  data-stellar-background-ratio="0.5"
->
+<div class="hero-wrap" style="background-image: url('{{ .Params.hero_image }}');" data-stellar-background-ratio="0.5">
   <div class="overlay"></div>
   <div class="container">
-    <div
-      class="row no-gutters slider-text align-items-center justify-content-center"
-      data-scrollax-parent="true"
-    >
-      <div
-        class="col-md-7 ftco-animate text-center"
-        data-scrollax=" properties: { translateY: '70%' }"
-      >
+    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+      <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
         <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
           <span class="mr-2"><a href="/">Home</a></span> <span>About</span>
         </p>
@@ -57,10 +47,8 @@
   <div class="container">
     <div class="row d-flex">
       <div class="col-md-6 d-flex ftco-animate">
-        <div
-          class="img img-about align-self-stretch"
-          style="background-image: url('{{ .Params.banner }}'); width: 100%;"
-        ></div>
+        <div class="img img-about align-self-stretch"
+          style="background-image: url('{{ .Params.banner }}'); width: 100%;"></div>
       </div>
       <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg">
         <h2 class="mb-4">{{ .Title }}</h2>
@@ -77,10 +65,7 @@
     <div class="row d-flex">
       <div class="item">
         <div class="cause-entry">
-          <a
-            class="img"
-            style="background-image: url('{{ .Params.banner }}');"
-          ></a>
+          <a class="img" style="background-image: url('{{ .Params.banner }}');"></a>
           <div class="text p-3 p-md-4">
             <h3>
               <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
@@ -108,10 +93,8 @@
         <p>{{ .Content }}</p>
       </div>
       <div class="col-md-4 d-flex ftco-animate">
-        <div
-          class="img img-about align-self-stretch"
-          style="background-image: url('{{ .Params.banner }}'); width: 100%;"
-        ></div>
+        <div class="img img-about align-self-stretch"
+          style="background-image: url('{{ .Params.banner }}'); width: 100%;"></div>
       </div>
     </div>
   </div>
@@ -135,9 +118,11 @@
           <img src="{{ $element.image }}" width="100%" class="z-depth-1" alt="{{ $element.name }}">
         </div>
         <h5 class="font-weight-bold mt-4 mb-3" data-toggle="modal" data-target="#{{ $index }}">{{ $element.name }}</h5>
-        <p class="text-uppercase blue-text" data-toggle="modal" data-target="#{{ $index }}"><strong>{{ $element.role }}</strong></p>
+        <p class="text-uppercase blue-text" data-toggle="modal" data-target="#{{ $index }}">
+          <strong>{{ $element.role }}</strong></p>
         <!-- Modal -->
-        <div class="modal fade" id="{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}" aria-hidden="true">
+        <div class="modal fade" id="{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}"
+          aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -184,9 +169,11 @@
           <img src="{{ $element.image }}" width="100%" class="rounded-circle z-depth-1" alt="{{ $element.name }}">
         </div>
         <h5 class="font-weight-bold mt-4 mb-3" data-toggle="modal" data-target="#{{ $index }}">{{ $element.name }}</h5>
-        <p class="text-uppercase blue-text" data-toggle="modal" data-target="#{{ $index }}"><strong>{{ $element.role }}</strong></p>
+        <p class="text-uppercase blue-text" data-toggle="modal" data-target="#{{ $index }}">
+          <strong>{{ $element.role }}</strong></p>
         <!-- Modal -->
-        <div class="modal fade" id="{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}" aria-hidden="true">
+        <div class="modal fade" id="{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}"
+          aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -237,9 +224,11 @@
             <div class="avatar mx-auto" data-toggle="modal" data-target="#partner_{{ $index }}">
               <img src="{{ $element.image }}" width="100%" class="z-depth-1" alt="{{ $element.name }}">
             </div>
-            <h5 class="font-weight-bold mt-4 mb-3" data-toggle="modal" data-target="#partner_{{ $index }}">{{ $element.name }}</h5>
+            <h5 class="font-weight-bold mt-4 mb-3" data-toggle="modal" data-target="#partner_{{ $index }}">
+              {{ $element.name }}</h5>
             <!-- Modal -->
-            <div class="modal fade" id="partner_{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}" aria-hidden="true">
+            <div class="modal fade" id="partner_{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}"
+              aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -264,15 +253,12 @@
 {{ end }}
 
 {{ with .Site.GetPage "/about/awards.md" }}
-<section class="ftco-section">
+<section class="ftco-section" id="awards">
   <div class="container">
     <div class="row d-flex">
       <div class="item col-sm-12">
         <div class="cause-entry">
-          <a
-            class="img"
-            style="background-image: url('{{ .Params.banner }}');"
-          ></a>
+          <a class="img" style="background-image: url('{{ .Params.banner }}');"></a>
           <div class="text p-3 p-md-4">
             <h3>
               <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
