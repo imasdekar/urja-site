@@ -4,17 +4,18 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: type
-  label: type
+  label: Type
+  hidden: true
 - type: text
   name: explore_button
-  label: explore_button
+  label: Explore Button
 - type: field_group
   name: cascade
-  label: cascade
+  label: Cascade
   fields:
   - type: file
     name: banner
-    label: banner
+    label: Banner
