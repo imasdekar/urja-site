@@ -16,8 +16,7 @@
                 {{ $element.subtitle }}
               </p>
               <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-                <a href="{{ $element.video_link }}"
-                  class="btn btn-white btn-outline-white px-4 py-3 popup-vimeo">{{ $element.video_text }}</a>
+                <a href="{{ $element.button_link }}" class="btn btn-white btn-outline-white px-4 py-3">{{ $element.button_text }}</a>
               </p>
             </div>
           </div>
@@ -36,7 +35,61 @@
   </a>
 </div>
 
-{{ partial "counter_section.html" . }} {{ with .Site.GetPage "/about/organization.md" }}
+{{ partial "counter_section.html" . }}
+
+{{ with .Site.GetPage "/about/vision_mission.md" }}
+<section class="ftco-section" id="vision_mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+        <div class="media block-6 d-flex services p-3 py-4 d-block">
+          <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
+          <div class="media-body pl-4">
+            <h3 class="heading">{{ .Params.vision_title }}</h3>
+            <p>{{ .Params.vision_body }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+        <div class="media block-6 d-flex services p-3 py-4 d-block">
+          <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
+          <div class="media-body pl-4">
+            <h3 class="heading">{{ .Params.mission_title }}</h3>
+            <p>{{ .Params.mission_body }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/about/homeless_young_women.md" }}
+<section class="ftco-section">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="item">
+        <div class="cause-entry">
+          <a class="img" style="background-image: url('{{ .Params.banner }}');"></a>
+          <div class="text p-3 p-md-4">
+            <h3>
+              <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
+            </h3>
+            {{ if not (eq .Summary "") }}
+            <p>{{ .Summary }}</p>
+            <p>
+              <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
+            </p>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/about/organization.md" }}
 <section class="ftco-section">
   <div class="container">
     <div class="row d-flex">

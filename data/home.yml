@@ -3,20 +3,20 @@ active: true
 logo: "/images/uploads/logo.png"
 slides:
 - hero_image: "/images/uploads/yw.jpg"
-  title: Intersectional, Rights Based Approach
+  title: Covid19 Response
   subtitle: ''
-  video_link: ''
-  video_text: ''
+  button_link: '/impact/#covid_response'
+  button_text: 'Read more'
 - hero_image: "/images/uploads/girls.jpg"
   title: Journey With Homeless Young Women
   subtitle: ''
-  video_link: "/about"
-  video_text: About Us
+  button_link: "/about"
+  button_text: About Us
 - hero_image: "/images/uploads/urja.jpg"
   title: Creating Empowering and Safe Spaces For Homeless Young Women
   subtitle: A second small subtitle
-  video_link: "/events"
-  video_text: Our Approach
+  button_link: "/events"
+  button_text: Our Approach
 volunteer_background: "/images/uploads/bg_6.jpg"
 volunteer_form_title: Be a volunteer
 volunteer_body_text: |
