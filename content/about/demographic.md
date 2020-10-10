@@ -8,7 +8,6 @@ menu:
     parent: About
     url: "/about/#demographic"
     weight: 3
-draft: true
 
 ---
 > _"Richa was married off at an early age of 11, as per their community customs. She faced great violence at the hands of her husband and his family, being forced to leave the house just after mere 2 years of marriage. She was found sleeping on the streets of Mumbai by two people, who under the garb of supporting her sold her for Rs 50,000. She was fortunately rescued the same night in a police raid. However, soon after she found herself in an abusive marriage with two children, turning to prostitution to earn some money.”_
@@ -19,6 +18,6 @@ We work with such **Homeless Young Women** and in certain cases their children, 
 * Malnutritioned, poor health, no access to health services and rights- physical, sexual and mental health, low educational levels and skill sets, which has a severe impact on their overall mental health and holistic development.
 * Social, economic and political rights being denied, further leading to a downward spiral into homelessness.
 
-   **OUR ROOTS**
+**OUR ROOTS**
 
 Our Founders, Deepali Kamble and Altaf Shaikh, have experienced gender, caste and religious violence up close personally. They have witnessed how women and children were the worst affected during the different communal riots, calamities and disasters, leaving several families without homes overnight. These experiences have played a key role in making them reach out to those rendered homeless due to various socio- economic and political factors. The critical need for working with homeless young women from religious minorities and other marginalised sections of the society with an intersectional rights based perspective, is what prompted them to start URJA TRUST.
