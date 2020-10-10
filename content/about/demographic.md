@@ -10,7 +10,7 @@ menu:
     weight: 3
 
 ---
-We work with such **Homeless Young Women** and in certain cases their children, between the ages of **18-35 years,**who in the bid to escape violence ( physical, mental, emotional and sexual) and other reasons including, but not limited to, a desire to improve their circumstances and lead a life of their own choice, break free from the vicious circle of poverty, dysfunctional families, discrimination faced by them or the community they belong to, etc. are forced to , or thrown out of “their homes”.
+We work with such **Homeless Young Women** and in certain cases their children, between the ages of **18-35 years**, who in the bid to escape violence ( physical, mental, emotional and sexual) and other reasons including, but not limited to, a desire to improve their circumstances and lead a life of their own choice, break free from the vicious circle of poverty, dysfunctional families, discrimination faced by them or the community they belong to, etc. are forced to , or thrown out of “their homes”.
 
 * These women more than often belong to the most marginalised communities in terms of class, caste and religion.
 * Malnutritioned, poor health, no access to health services and rights- physical, sexual and mental health, low educational levels and skill sets, which has a severe impact on their overall mental health and holistic development.
