@@ -11,27 +11,23 @@ board:
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: 'She began working towards social change when she was 18 years old, questioning
+    about: She began working towards social change when she was 18 years old, questioning
       the injustice faced by women and individuals from lower classes and castes.
-      She was inspired by the life of Dr. Babasaheb Ambedkar among many others and
-      began to encourage young girls, like herself, to understand and raise their
-      voices against social injustice. Deepali’s love for taking risks and her resolve
-      in addressing challenges eventually led her to advocate for the cause of homeless
-      young women. She truly believes that this group of individuals, albeit vulnerable,
-      is brave enough to challenge discriminatory social norms and holds a chance
-      at molding their own destiny.Deepali has a Master’s degree in Economics and
-      is currently pursuing her Management Studies. She has extensively worked with
-      youth and women for the past 18 years and has advocated for them in various
-      government bodies like the Juvenile Justice Board and the Department of Women
-      and Child Development. To help deal with instances of conflict with law, Deepali
-      has been conducting police training sessions on the rights of juveniles, and
-      has also been involved in research on the Aftercare Program for vulnerable individuals
-      in Maharashtra. Furthermore, she has been holding training sessions for other
-      stakeholders: NGOs, young women and so on. As an emerging leader, Deepali has
-      collaborated with different human rights movements and networks all over the
-      country. She has used her experience and learning to fuel the mission of Urja,
-      which in turn has allowed her to work compassionately with young women and the
-      government alike.'
+      She is inspired by the life of Dr. Babasaheb Ambedkar, encouraging young girls
+      and women from the marginalised communities, to understand and raise their voices
+      against social injustice. She has extensively worked with youth and women for
+      the past 20 years and is a staunch advocate for their rights, working closely
+      with the juvenile justice system and the Department of Women and Child Development.
+      She was also part of research-“Girls on the run” done by CRY and SAATHI.. As
+      a trainer, she has facilitated various sessions with government systems around
+      the issues of child rights, violence against women, homelessness and mental
+      health. She is part of the core committee of Maitri Network- a national level
+      network of organisations working with marginalised communities. Deepali has
+      a Master’s degree in Economics and is currently pursuing her Management Studies.She
+      has used her experience and learning to fuel the mission of Urja, strengthening
+      and amplifying the voices of marginalised women. She is a nature lover and pursues
+      farming in her free time. which in turn has allowed her to work compassionately
+      with young women and the government alike.
   - name: Aditi Naik
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: Co-founder
