@@ -18,13 +18,24 @@ partners:
 - name: Karuna Trust (UK)
   image: "/images/uploads/bg_7.jpg"
   about: Something about funders
+- name: 'SKLPC (UK) '
+  image: "/images/uploads/bg_6.jpg"
+  about: Something about funder
+- name: SOS-Enfants Abandonnes asbl
+  image: "/images/uploads/bg_5.jpg"
+  about: something about funder
+- name: Women and Child Development Ministry (GOI)
+  image: "/images/uploads/bg_1.jpg"
+  about: something about funder
+- name: The FeedEm Movement, Yes Foundation
+  image: "/images/uploads/bg_2.jpg"
+  about: something about funder
 menu:
   nav:
     name: Partners
     parent: About
     url: "/about/#partners"
     weight: 6
-draft: true
 
 ---
 _The continued support of our partners, funders and individual well wishers and donors have helped us in strengthening and amplifying the voices of homeless young women._
