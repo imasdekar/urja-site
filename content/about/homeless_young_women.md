@@ -8,9 +8,9 @@ The Census of India 2011 defines 'houseless household' as, 'households who do no
 
 Exploring the issue of ‘Homelessness’ through an intersectional lens of different structures of power like gender, caste, religion and sexuality, brings forth that even today Indian women rarely have spaces that they can call as their own. Most of the women across the different class and caste still do not have claim to their ancestral property, rendering them in a vulnerable position and forcing them to compromise and face violence silently. According to National Family Health Survey-4, conducted between 2015-16, almost 30% of married women reported facing domestic violence and abuse.
 
-<!--more-->
-
 **“_Richa married at the age of 11, but was forced to leave home after just 2 years because of emotional and physical abuse from her husband's family. She was found sleeping on the streets by two people who led her to believe they would take her to a safe place, instead they sold her for Rs 50,000. Richa was fortunate, as the same night she was sold there was a raid by the police, and she was rescued. However, soon after Richa found herself in an abusive marriage with two children, turning to prostitution to earn some money.”_**
+
+<!--more-->
 
 Richa’s is not a lone instance, there are several women like her , who In the bid to escape violence ( physical, mental, emotional and sexual) and other reasons including, but not limited to, a desire to improve their circumstances and lead a life of their own choice, break free from the vicious circle of poverty, dysfunctional families, discrimination faced by them or the community they belong to, etc. are forced to , or thrown out of “their homes”.
 
