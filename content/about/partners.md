@@ -9,12 +9,15 @@ partners:
 - name: FUNDACIÓN SONRISAS DE BOMBAY
   image: "/images/uploads/bg_3.jpg"
   about: something about funder
-- name: Partner 2
+- name: Garware Polyester Ltd
   image: "/images/uploads/bg_3.jpg"
-  about: something about partner
-- name: Partner 2
+  about: something about funder
+- name: Inox Air Products
   image: "/images/uploads/bg_3.jpg"
-  about: something about partner
+  about: something about funder
+- name: Karuna Trust (UK)
+  image: "/images/uploads/bg_7.jpg"
+  about: Something about funders
 menu:
   nav:
     name: Partners
