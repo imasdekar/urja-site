@@ -30,23 +30,6 @@ fields:
   - type: text
     name: video_text
     label: Video Text
-- type: field_group_list
-  name: gallery
-  label: Gallery
-  fields:
-  - type: file
-    name: image
-    label: image
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: description
-    type: text
-    config:
-      required: false
-    label: Description
 - type: file
   name: volunteer_background
   label: Volunteer Background
