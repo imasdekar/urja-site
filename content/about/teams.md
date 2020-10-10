@@ -91,7 +91,10 @@ board:
       Work (TISS-2015) with a focus on Field work in Criminology and Justice.
 team:
   title: Team Members
-  subtitle: Unsung heroes
+  subtitle: We believe in diversity and inclusivity. Our team comprises young professionals
+    from diverse socio-cultural and educational backgrounds. We are a fairly non hierarchical
+    organisation and believe in working together rather than in silos, most of the
+    team working across different programmatic interventions.
   members:
   - name: Deepali Vandana
     image: https://www.tollywood.net/wp-content/uploads/2019/01/Kiara-Advani-goes-de-glam-for-the-First-Time.jpg
