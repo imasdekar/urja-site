@@ -8545,7 +8545,7 @@ h3 {
   }
 }
 body {
-  font-family: "Overpass", Arial, sans-serif;
+  font-family: "Mukta", sans-serif;
   background: #faf7f3ff;
   font-size: 16px;
   line-height: 1.8;
@@ -8584,7 +8584,7 @@ h5,
 .h5 {
   line-height: 1.4;
   color: #000000;
-  font-family: "Dosis", Arial, sans-serif;
+  font-family: "Karma", serif;
   font-weight: 400;
 }
 
@@ -9043,7 +9043,7 @@ h5,
   border: 1px solid transparent;
   background: #0b5394ff;
   color: #ffffff;
-  box-shadow: 0 2px 6px 0 #faf7f3ff, 0 7px 5px 0 #faf7f3ff;
+  box-shadow: 0 2px 6px 0 #faf7f3ff, 0 7px 5px 0 #000000;
 }
 .btn.btn-white {
   background: #ffffff;
@@ -9803,7 +9803,7 @@ textarea.form-control {
   text-transform: uppercase;
   letter-spacing: 0.5em;
   color: #d4d4d4;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Karma", serif;
   font-weight: 300;
 }
 .ftco-section .ftco-primary-title {
@@ -10946,7 +10946,7 @@ section.section h2 {
 }
 section.section p.sub-heading {
   font-size: 16px;
-  font-family: "Overpass", Arial, sans-serif;
+  font-family: "Karma", serif;
   font-weight: 300;
   text-align: center;
   margin-bottom: 40px;
@@ -10988,7 +10988,7 @@ section.triad-section .triad-sub-section {
 }
 
 section p.detail-paragraph {
-  font-family: "Dosis", Arial, sans-serif;
+  font-family: "Mukta", sans-serif;
   margin-top: 40px;
   font-size: 18px;
   color: #000000;
@@ -11087,7 +11087,7 @@ strong {
 }
 .gallery_slider .slider-control .control.disabled {
   pointer-events: none;
-  background: #D0CECE;
+  background: #d0cece;
 }
 .gallery_slider .slider-control .control.disabled .icon {
   opacity: 0.5;
