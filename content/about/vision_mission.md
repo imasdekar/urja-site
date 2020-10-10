@@ -5,6 +5,7 @@ vision_body: Our Vision of a just, equitable and compassionate society where you
   women pursue their lives with freedom and dignity.
 mission_title: MISSION
 mission_body: Our Mission is to act as a catalyst for homeless young women by facilitating
+  their Our Mission is to act as a catalyst for homeless young women by facilitating
   their journey to access fundamental needs, reclaim their identity by building an
   exemplary, replicable model that provides opportunities for their economic, psychological,
   emotional, civil and social development.
