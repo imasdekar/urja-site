@@ -6,9 +6,9 @@ partners:
 - name: MINISTRY OF WOMEN AND CHILD DEVELOPMENT
   image: "/images/uploads/bg_3.jpg"
   about: something about partner
-- name: Partner 2
+- name: FUNDACIÓN SONRISAS DE BOMBAY
   image: "/images/uploads/bg_3.jpg"
-  about: something about partner
+  about: something about funder
 - name: Partner 2
   image: "/images/uploads/bg_3.jpg"
   about: something about partner
