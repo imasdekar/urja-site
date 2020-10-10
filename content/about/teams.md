@@ -225,5 +225,6 @@ menu:
     parent: About
     url: "/about/#team"
     weight: 4
+draft: true
 
 ---
