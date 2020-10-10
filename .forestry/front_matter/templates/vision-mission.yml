@@ -26,3 +26,5 @@ fields:
 - type: textarea
   name: mission_body
   label: Mission Body
+pages:
+- content/about/vision_mission.md
