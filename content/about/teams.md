@@ -1,5 +1,5 @@
 ---
-title: Meet our Team
+title: OUR PILLARS OF SUPPORT AND CO-TRAVELLERS
 date: 2020-08-19:56:58.000+00:00
 board:
   title: Board Members
