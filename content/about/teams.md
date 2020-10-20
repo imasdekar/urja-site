@@ -113,28 +113,20 @@ team:
       level interventions. Ankita is a postgraduate in Social psychology, queer affirmative
       counsellor and has prior experience of working as a researcher in the development
       sector.
-  - name: Aditi Naik
+  - name: Charu Chaturvedi
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
-    role: Co-founder
+    role: Leadership Team
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: At Pratha, she started her career with the implementation of the Slum Sanitation
-      Program in the slums of Mumbai. Presently, she is involved with the project
-      management services of MCGM for monitoring the activities under the Slum Sanitation
-      Program (SSP). Her experience in sanitation for the last four years gave her
-      tremendous insight into other related issues like seepage management, health
-      and hygiene, sustainable sanitation and improving the quality of sanitation
-      facilities provided by MCGM. She is an expert in her own right when it comes
-      to working in slum communities of Mumbai, community mobilization, formation
-      of Community Based Organizations, report writing, networking, conducting surveys,
-      hosting trainings and events, and forming liaisons with MCGM and various other
-      government departments. In 2004, Aditi and Deepali worked together on a rehabilitation
-      program for street children, understanding in the process their similar individual
-      strengths. Aditi had always wanted to work for the rights of women and Urja
-      proved to be the perfect avenue to actualize her passion. She works with renewed
-      dedication with our young women and is the link between them and the opportunities
-      provided by the outside world.
+    about: Charu is the Resource Programme Manager at URJA where along with fundraising-monetary
+      and kind, she also brings in individual as well as organisational connects and
+      resources. She is a part of the communications team as well. Charu has a Master’s
+      in Social Work and has been connected to the development sector for more than
+      7 years now. Her focus of work is women, equity and inclusivity, having worked
+      with various organisations in different roles. Charu would like to further explore
+      the sexual and reproductive rights movement in India, and globally, along the
+      policy changes that have come in effect.
   - name: Altaf Shaikh
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: Co-founder
