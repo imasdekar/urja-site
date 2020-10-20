@@ -14,20 +14,20 @@ board:
     about: She began working towards social change when she was 18 years old, questioning
       the injustice faced by women and individuals from lower classes and castes.
       She is inspired by the life of Dr. Babasaheb Ambedkar, encouraging young girls
-      and women from the marginalised communities, to understand and raise their voices
+      and women from the marginalized communities, to understand and raise their voices
       against social injustice. She has extensively worked with youth and women for
       the past 20 years and is a staunch advocate for their rights, working closely
       with the juvenile justice system and the Department of Women and Child Development.
-      She was also part of research-“Girls on the run” done by CRY and SAATHI.. As
-      a trainer, she has facilitated various sessions with government systems around
-      the issues of child rights, violence against women, homelessness and mental
-      health. She is part of the core committee of Maitri Network- a national level
-      network of organisations working with marginalised communities. Deepali has
-      a Master’s degree in Economics and is currently pursuing her Management Studies.She
-      has used her experience and learning to fuel the mission of Urja, strengthening
-      and amplifying the voices of marginalised women. She is a nature lover and pursues
-      farming in her free time. which in turn has allowed her to work compassionately
-      with young women and the government alike.
+      She was also part of a research study titled-“Girls on the run” done by CRY
+      and SAATHI. As a trainer, she has facilitated various sessions with government
+      systems on issues of child rights, violence against women, homelessness and
+      mental health. She is part of the core committee of Maitri Network- a national
+      level network of organizations working with marginalized communities. Deepali
+      has a Master’s degree in Economics and is currently pursuing her Management
+      Studies.She has used her experience and learning to fuel the mission of Urja,
+      strengthening and amplifying the voices of marginalized women. She is a nature
+      lover and pursues farming in her free time.which in turn has allowed her to
+      work compassionately with young women and the government alike.
   - name: Aditi Naik
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: Co-founder
