@@ -35,21 +35,20 @@ board:
     twitter: https://twitter.com
     instagram: https://instagram.com
     about: At Pratha, she started her career with the implementation of the Slum Sanitation
-      Program in the slums of Mumbai. Presently, she is involved with the project
-      management services of MCGM for monitoring the activities under the Slum Sanitation
-      Program (SSP). Her experience in sanitation for the last four years gave her
-      tremendous insight into other related issues like seepage management, health
-      and hygiene, sustainable sanitation and improving the quality of sanitation
-      facilities provided by MCGM. She is an expert in her own right when it comes
-      to working in slum communities of Mumbai, community mobilization, formation
-      of Community Based Organizations, report writing, networking, conducting surveys,
-      hosting trainings and events, and forming liaisons with MCGM and various other
-      government departments. In 2004, Aditi and Deepali worked together on a rehabilitation
-      program for street children, understanding in the process their similar individual
-      strengths. Aditi had always wanted to work for the rights of women and Urja
-      proved to be the perfect avenue to actualize her passion. She works with renewed
-      dedication with our young women and is the link between them and the opportunities
-      provided by the outside world.
+      Program in the slums of Mumbai. She has worked with MCGM for monitoring the
+      activities under the Slum Sanitation Program (SSP). Her experience in sanitation
+      for the last four years gave her tremendous insight into other related issues
+      like seepage management, health and hygiene, sustainable sanitation and improving
+      the quality of sanitation facilities provided by MCGM. She is an expert in her
+      own right when it comes to working in slum communities of Mumbai, community
+      mobilization, formation of Community Based Organizations, report writing, networking,
+      conducting surveys, hosting trainings and events, and forming liaisons with
+      MCGM and various other government departments. In 2004, Aditi and Deepali worked
+      together on a rehabilitation program for street children, understanding in the
+      process their similar individual strengths. Aditi had always wanted to work
+      for the rights of women and Urja proved to be the perfect avenue to actualize
+      her passion. She works with renewed dedication with our young women and is the
+      link between them and the opportunities provided by the outside world.
   - name: Altaf Shaikh
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: Co-founder
@@ -228,5 +227,6 @@ menu:
     parent: About
     url: "/about/#team"
     weight: 4
+draft: true
 
 ---
