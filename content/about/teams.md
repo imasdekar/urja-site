@@ -158,25 +158,17 @@ team:
       projects on homelessness amongst young women, and support in preparing content
       in the local language on mental health which is easily understood by all. She
       has a MA.B.ed and is currently pursuing her Master’s in Social Work.
-  - name: Dr. Roshni Nair-Shaikh
+  - name: Shweta Pokle
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
-    role: NA
+    role: Leadership Team
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Roshni has been working with the Centre for Criminology and Justice (CCJ),
-      School of Social Work, TISS, Mumbai since 2006, and currently is the Chairperson
-      of the Centre.Prior to 2006, worked for twelve years with an NGO she was a founder
-      member of, which has done pioneering work in the area of  street living youth
-      and runaway girls. She has also been part of networks, advocacy related programs,
-      curriculum building and training. She is engaged with designing and conducting
-      sessions related to self and personal and professional effectiveness. She is
-      also connected with themes of child and youth rights, work with victims, criminal
-      justice social work and a focus on self. Of twenty-seven years of a career connected
-      with Social Work, she has spent equal time being a social work practitioner
-      and educator. Roshni has completed her MA in Social Work with a specialisation
-      in Criminology and Correctional Administration (TISS-1993) and Ph.D. in Social
-      Work (TISS-2015) with a focus on Field work in Criminology and Justice.
+    about: As part of the Mental Health program, Shweta works closely with the homeless
+      young women as a counsellor and looks after their mental healthcare needs. She
+      is interested in exploring further the relationship between homelessness and
+      mental health. She has a Masters degree in Psychology along with PG Diploma
+      in Counselling Psychology.
   - name: Dr. Roshni Nair-Shaikh
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: NA
