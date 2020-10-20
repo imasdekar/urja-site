@@ -89,39 +89,30 @@ board:
       Correctional Administration (TISS-1993) and Ph.D. in Social Work (TISS-2015)
       with a focus on Field Work in Criminology and Justice. '
 team:
-  title: Team Members
+  title: Our Team
   subtitle: We believe in diversity and inclusivity. Our team comprises young professionals
     from diverse socio-cultural and educational backgrounds. We are a fairly non hierarchical
     organisation and believe in working together rather than in silos, most of the
     team working across different programmatic interventions.
   members:
-  - name: Deepali Vandana
+  - name: Ankita Kohirkar
     image: https://www.tollywood.net/wp-content/uploads/2019/01/Kiara-Advani-goes-de-glam-for-the-First-Time.jpg
-    role: Co-founder
+    role: Leadership Team
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: 'She began working towards social change when she was 18 years old, questioning
-      the injustice faced by women and individuals from lower classes and castes.
-      She was inspired by the life of Dr. Babasaheb Ambedkar among many others and
-      began to encourage young girls, like herself, to understand and raise their
-      voices against social injustice. Deepali’s love for taking risks and her resolve
-      in addressing challenges eventually led her to advocate for the cause of homeless
-      young women. She truly believes that this group of individuals, albeit vulnerable,
-      is brave enough to challenge discriminatory social norms and holds a chance
-      at molding their own destiny.Deepali has a Master’s degree in Economics and
-      is currently pursuing her Management Studies. She has extensively worked with
-      youth and women for the past 18 years and has advocated for them in various
-      government bodies like the Juvenile Justice Board and the Department of Women
-      and Child Development. To help deal with instances of conflict with law, Deepali
-      has been conducting police training sessions on the rights of juveniles, and
-      has also been involved in research on the Aftercare Program for vulnerable individuals
-      in Maharashtra. Furthermore, she has been holding training sessions for other
-      stakeholders: NGOs, young women and so on. As an emerging leader, Deepali has
-      collaborated with different human rights movements and networks all over the
-      country. She has used her experience and learning to fuel the mission of Urja,
-      which in turn has allowed her to work compassionately with young women and the
-      government alike.'
+    about: As coordinator of the Rehabilitation program at URJA, Ankita leads the
+      caseworkers and team members towards the implementation of various activities
+      at the field level-such as provision of primary health care, counselling, education,
+      vocational training, livelihood and legal support services to homeless young
+      women. She is also involved in planning new strategies, strengthening case management,
+      volunteer engagement and co-leading the One Stop Center program. She is interested
+      in studying social determinants of homelessness and mental health and the interplay
+      of marginalised gender, sexuality and caste identities. She aspires to build
+      upon research tools and advocacy programs to affect community based and policy
+      level interventions. Ankita is a postgraduate in Social psychology, queer affirmative
+      counsellor and has prior experience of working as a researcher in the development
+      sector.
   - name: Aditi Naik
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: Co-founder
