@@ -127,26 +127,24 @@ team:
       with various organisations in different roles. Charu would like to further explore
       the sexual and reproductive rights movement in India, and globally, along the
       policy changes that have come in effect.
-  - name: Altaf Shaikh
+  - name: Ipsita Gauri
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
-    role: Co-founder
+    role: Leadership Team
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: In his 35 years in the development sector, Altaf started off as a volunteer
-      working with children living on the streets and went on to become one of the
-      founder members of Saathi, an NGO which works with youth living on the streets
-      and their rehabilitation.This intense and ongoing engagement has not only exposed
-      him to various dimensions of work with children and young adults, and various
-      strategies of interventions but also the nuances of organizational functioning
-      like governance, leadership facilitation, program planning, monitoring and evaluation.
-      Altaf has been using the ‘Outward-Bound’ Learning Methodology (OBL) to stimulate
-      and motivate participants. The framework and design of these wilderness programs
-      are built to create a series of intense, life-like experiences and simulations
-      that engage participants by enabling them to get in touch with their mental
-      and physical capacities, things that may have been corroded over years. Altaf’s
-      expertise has been strengthening and conditioning the foundation of the organization
-      and encouraging the journey forward.
+    about: Ipsita has a long standing association with URJA since 2012. She currently
+      works as a consultant with the organization, as part of the resource mobilization
+      team-writing grant proposals, documents for funder pitch, online fundraising
+      drives on different portals, and documentation- funder reports, content for
+      website, social media platforms, annual report etc. She has been working in
+      the development sector since the past 9 years in the field of child rights,
+      gender based violence, sexuality, young people’s rights , and early and child
+      marriage , as a program manager,  feminist researcher, counselor and facilitator,
+      in the different parts of the country. She has a Masters in Social Work with
+      specialization in children and family and developmental counseling from Tata
+      Institute of Social Sciences, Mumbai, and Post Graduate Diploma in Buddhist
+      Psychology and Psychotherapy, Savitribai Phule Pune University, Pune.
   - name: Dr. Roshni Nair-Shaikh
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: NA
