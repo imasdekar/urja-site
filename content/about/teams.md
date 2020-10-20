@@ -58,7 +58,7 @@ board:
     about: In his 35 years in the development sector, Altaf started off as a volunteer
       working with children living on the streets and went on to become one of the
       founder members of Saathi, an NGO which works with youth living on the streets
-      and their rehabilitation.This intense and ongoing engagement has not only exposed
+      and their rehabilitation. This intense and ongoing engagement has not only exposed
       him to various dimensions of work with children and young adults, and various
       strategies of interventions but also the nuances of organizational functioning
       like governance, leadership facilitation, program planning, monitoring and evaluation.
