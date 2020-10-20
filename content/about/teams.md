@@ -120,11 +120,11 @@ team:
     twitter: https://twitter.com
     instagram: https://instagram.com
     about: Charu is the Resource Programme Manager at URJA where along with fundraising-monetary
-      and kind, she also brings in individual as well as organisational connects and
+      and kind, she also brings in individual as well as organizational connects and
       resources. She is a part of the communications team as well. Charu has a Master’s
       in Social Work and has been connected to the development sector for more than
       7 years now. Her focus of work is women, equity and inclusivity, having worked
-      with various organisations in different roles. Charu would like to further explore
+      with various organizations in different roles. Charu would like to further explore
       the sexual and reproductive rights movement in India, and globally, along the
       policy changes that have come in effect.
   - name: Ipsita Gauri
