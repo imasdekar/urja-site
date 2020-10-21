@@ -168,8 +168,8 @@
         <div class="avatar mx-auto" data-toggle="modal" data-target="#{{ $index }}">
           <img src="{{ $element.image }}" width="100%" class="rounded-circle z-depth-1" alt="{{ $element.name }}">
         </div>
-        <h5 class="font-weight-bold mt-4 mb-3" data-toggle="modal" data-target="#{{ $index }}">{{ $element.name }}</h5>
-        <p class="text-uppercase blue-text" data-toggle="modal" data-target="#{{ $index }}">
+        <h6 class="font-weight-bold mt-4 mb-3 text-center" data-toggle="modal" data-target="#{{ $index }}">{{ $element.name }}</h6>
+        <p class="text-uppercase blue-text text-center" data-toggle="modal" data-target="#{{ $index }}">
           <strong>{{ $element.role }}</strong></p>
         <!-- Modal -->
         <div class="modal fade" id="{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}"
@@ -188,7 +188,7 @@
             </div>
           </div>
         </div>
-        <ul class="list-unstyled mb-0">
+        <ul class="list-unstyled mb-0 text-center">
           <!-- Facebook -->
           <a class="p-2 fa-lg fb-ic" href="{{ $element.facebook }}">
             <span class="icon-facebook"></span>
