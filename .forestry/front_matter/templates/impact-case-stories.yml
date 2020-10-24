@@ -21,6 +21,10 @@ fields:
   - type: textarea
     name: content
     label: Content
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
 - type: field_group
   name: story_2
   label: Second Story
@@ -31,5 +35,9 @@ fields:
   - type: textarea
     name: content
     label: Content
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
 pages:
 - content/impact/case_stories.md
