@@ -21,3 +21,5 @@ fields:
 - type: textarea
   name: side_content
   label: Side Content
+pages:
+- content/impact/covid_response.md
