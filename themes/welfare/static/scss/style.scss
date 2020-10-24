@@ -332,6 +332,11 @@ h5,
       font-size: 40px;
     }
   }
+  h4,
+  h5 {
+    color: $white !important;
+    line-height: 1.2;
+  }
   p {
     font-size: 20px;
     line-height: 1.5;

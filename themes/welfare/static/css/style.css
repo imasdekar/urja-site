@@ -8832,6 +8832,11 @@ h5,
     font-size: 40px;
   }
 }
+.slider-text h4,
+.slider-text h5 {
+  color: #ffffff !important;
+  line-height: 1.2;
+}
 .slider-text p {
   font-size: 20px;
   line-height: 1.5;
