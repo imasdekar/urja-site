@@ -6,13 +6,13 @@ gallery:
 - image: "/images/uploads/safe-spaces.jpg"
   image_title: SAFE SPACES
   description: Place to stay safe
-- image: "/images/uploads/holistic-health-and-wellbeing.jpeg"
+- image: "/images/uploads/yw.jpg"
   image_title: HOLISTIC HEALTH AND WELLBEING
   description: Holistic health and wellbeing
 - image: "/images/uploads/transformation-education-livelihood.jpeg"
   image_title: TRANSFORMATION
   description: transformation
-- image: "/images/uploads/access-to-civil-and-political-rights.jpg"
+- image: "/images/uploads/website-covid.jpeg"
   image_title: ACCESS TO CIVIL AND POLITICAL RIGHTS
   description: access to civil and political rights
 volunteer_title: Volunteer
