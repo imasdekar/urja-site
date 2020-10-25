@@ -114,14 +114,14 @@
     <div class="row">
       {{ range $index, $element := .Params.board.members }}
       <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
-        <div class="avatar mx-auto" data-toggle="modal" data-target="#{{ $index }}">
+        <div class="avatar mx-auto" data-toggle="modal" data-target="#board-{{ $index }}">
           <img src="{{ $element.image }}" width="100%" class="z-depth-1" alt="{{ $element.name }}">
         </div>
         <h5 class="font-weight-bold mt-4 mb-3" data-toggle="modal" data-target="#{{ $index }}">{{ $element.name }}</h5>
         <p class="text-uppercase blue-text" data-toggle="modal" data-target="#{{ $index }}">
           <strong>{{ $element.role }}</strong></p>
         <!-- Modal -->
-        <div class="modal fade" id="{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}"
+        <div class="modal fade" id="board-{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}"
           aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
@@ -165,14 +165,14 @@
     <div class="row">
       {{ range $index, $element := .Params.team.members }}
       <div class="col-lg-2 col-md-4 mb-lg-0 mb-5">
-        <div class="avatar mx-auto" data-toggle="modal" data-target="#{{ $index }}">
+        <div class="avatar mx-auto" data-toggle="modal" data-target="#team-{{ $index }}">
           <img src="{{ $element.image }}" width="100%" class="rounded-circle z-depth-1" alt="{{ $element.name }}">
         </div>
         <h6 class="font-weight-bold mt-4 mb-3 text-center" data-toggle="modal" data-target="#{{ $index }}">{{ $element.name }}</h6>
         <p class="text-uppercase blue-text text-center" data-toggle="modal" data-target="#{{ $index }}">
           <strong>{{ $element.role }}</strong></p>
         <!-- Modal -->
-        <div class="modal fade" id="{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}"
+        <div class="modal fade" id="team-{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="{{ $index }}"
           aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">

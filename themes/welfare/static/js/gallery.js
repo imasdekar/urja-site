@@ -1,9 +1,9 @@
 // buttons
-var sliderControl = document.querySelector('.slider-control')
+const sliderControl = document.querySelector('.slider-control')
 
 // slides informations
-var slides = document.querySelectorAll('.slide'),
-  slidesLength = slides.length
+const slides = document.querySelectorAll('.slide')
+const slidesLength = slides.length
 
 // slides array
 var slidesArr = [].slice.call(slides)
