@@ -96,7 +96,7 @@ team:
     team working across different programmatic interventions.
   members:
   - name: Ankita Kohirkar
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/ankita.jpeg"
     role: Leadership Team
     facebook: https://facebook.com
     twitter: https://twitter.com
@@ -114,7 +114,7 @@ team:
       counsellor and has prior experience of working as a researcher in the development
       sector.
   - name: Charu Chaturvedi
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/charu.png"
     role: Leadership Team
     facebook: https://facebook.com
     twitter: https://twitter.com
@@ -128,7 +128,7 @@ team:
       the sexual and reproductive rights movement in India, and globally, along the
       policy changes that have come in effect.
   - name: Ipsita Gauri
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/ipsita-gauri.jpg"
     role: Leadership Team
     facebook: https://facebook.com
     twitter: https://twitter.com
@@ -146,7 +146,7 @@ team:
       Institute of Social Sciences, Mumbai, and Post Graduate Diploma in Buddhist
       Psychology and Psychotherapy, Savitribai Phule Pune University, Pune.
   - name: Reshma Thosar
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/reshma.jpeg"
     role: Leadership Team
     facebook: https://facebook.com
     twitter: https://twitter.com
@@ -159,7 +159,7 @@ team:
       in the local language on mental health which is easily understood by all. She
       has a MA.B.ed and is currently pursuing her Master’s in Social Work.
   - name: Shweta Pokle
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/shweta.jpeg"
     role: Leadership Team
     facebook: https://facebook.com
     twitter: https://twitter.com
@@ -170,103 +170,147 @@ team:
       mental health. She has a Masters degree in Psychology along with PG Diploma
       in Counselling Psychology.
   - name: Arpita Sharma
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/arpita.jpeg"
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Arpita has completed her bachelors in women's studies and holds the fort as the administrative manager at URJA. She is actively involved in ensuring smooth running of the day to day activities of the office and the shelter. Arpita’s creative energy can also be seen in some of our communication material.
-
+    about: Arpita has completed her bachelors in women's studies and holds the fort
+      as the administrative manager at URJA. She is actively involved in ensuring
+      smooth running of the day to day activities of the office and the shelter. Arpita’s
+      creative energy can also be seen in some of our communication material.
   - name: Bhavna Waghmare
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Bhavna comes with more than 7 years of experience in the development sector. She is one of the Night Care Attendants at URJA, ensuring that the young women are safe and initiating different processes at the shelter during the period. She has finished her highschool education (12th Std) along with a paraprofessional course and wishes to explore  working around the issues of health with young women.
-
+    about: Bhavna comes with more than 7 years of experience in the development sector.
+      She is one of the Night Care Attendants at URJA, ensuring that the young women
+      are safe and initiating different processes at the shelter during the period.
+      She has finished her highschool education (12th Std) along with a paraprofessional
+      course and wishes to explore  working around the issues of health with young
+      women.
   - name: Kavita Sangle
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/kavita.jpeg"
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Kavita is one of the youngest team members of URJA and looks after the accounts of the organisation. After completing her B.Com, rather than following the usual part of pursuing a job in the corporate sector, she chose to work in the development sector. Kavita is diligent, hard working with a keen interest and openness to learning and updated with regards to the issues and developments in the social sector. She wishes to further strengthen her skills in content writing.
-
+    about: Kavita is one of the youngest team members of URJA and looks after the
+      accounts of the organisation. After completing her B.Com, rather than following
+      the usual part of pursuing a job in the corporate sector, she chose to work
+      in the development sector. Kavita is diligent, hard working with a keen interest
+      and openness to learning and updated with regards to the issues and developments
+      in the social sector. She wishes to further strengthen her skills in content
+      writing.
   - name: Nilam Jadhav
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/nilam.jpeg"
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Nilam is part of the Child and Mother Care programme at URJA. She also works as a support team member for other programmes such as Outreach, health, Shelter and Case referrals. She comes with 5 years of prior experience of working with ICDS (Indian Child Development Society) and believes in doing her share to bring about a positive change in the society. Along with work, she is also pursuing MSW through distance education.
-
+    about: Nilam is part of the Child and Mother Care programme at URJA. She also
+      works as a support team member for other programmes such as Outreach, health,
+      Shelter and Case referrals. She comes with 5 years of prior experience of working
+      with ICDS (Indian Child Development Society) and believes in doing her share
+      to bring about a positive change in the society. Along with work, she is also
+      pursuing MSW through distance education.
   - name: Rahee Majumdar
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/rahee.jpeg"
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Rahee works as a case worker, outreach worker and is part of the advocacy team. She is keen on strengthening the implementation of government schemes for homeless young women. As a trained theatre artist and dancer she hopes to explore the same with young women around different issues. She has completed her B.A. in sociology and MSW and interned with MAVIM, Kripa Foundation, Rural development program, Amaria (UP), Kalpavriksh Environment action group.
-
+    about: Rahee works as a case worker, outreach worker and is part of the advocacy
+      team. She is keen on strengthening the implementation of government schemes
+      for homeless young women. As a trained theatre artist and dancer she hopes to
+      explore the same with young women around different issues. She has completed
+      her B.A. in sociology and MSW and interned with MAVIM, Kripa Foundation, Rural
+      development program, Amaria (UP), Kalpavriksh Environment action group.
   - name: Sakshi Pawar
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/sakshi.jpg"
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Sakshi joined URJA as part of the day shelter support team. Having worked before in the sector, she quickly adapted to the workings of the shelter and now confidently leads several of the shelter processes. She is quite happy about the fact that her journey with URJA presented her with the opportunity to not only develop new skills as a professional but to also work on several other aspects of her life
-
+    about: Sakshi joined URJA as part of the day shelter support team. Having worked
+      before in the sector, she quickly adapted to the workings of the shelter and
+      now confidently leads several of the shelter processes. She is quite happy about
+      the fact that her journey with URJA presented her with the opportunity to not
+      only develop new skills as a professional but to also work on several other
+      aspects of her life
   - name: Sanjivani Dambhare
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/sanjivani.jpg"
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Sanjeevani is a Senior Social Worker at URJA and works as a case worker directly with the women. She also plays a supportive role in other projects, such as livelihood , Outbound and Physical Activity. She comes with vast experience of working directly with young women, and was part of the Day Care and Education team at Saathi. Sanjivani has completed her B.A. and holds a Masters degree in Physical Education.
-
+    about: Sanjeevani is a Senior Social Worker at URJA and works as a case worker
+      directly with the women. She also plays a supportive role in other projects,
+      such as livelihood , Outbound and Physical Activity. She comes with vast experience
+      of working directly with young women, and was part of the Day Care and Education
+      team at Saathi. Sanjivani has completed her B.A. and holds a Masters degree
+      in Physical Education.
   - name: Sushma Jadhav
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/sushma.jpeg"
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Sushma is part of the Administrative team looking after the smooth functioning of the office and shelter program. She also works closely with the homeless young women at the shelter, co-ordinating between them, case manager and case worker for smooth transition. She hopes to work more closely with different stakeholders as part of the community engagement program. She has a Masters in Pali literature.
-
-
+    about: Sushma is part of the Administrative team looking after the smooth functioning
+      of the office and shelter program. She also works closely with the homeless
+      young women at the shelter, co-ordinating between them, case manager and case
+      worker for smooth transition. She hopes to work more closely with different
+      stakeholders as part of the community engagement program. She has a Masters
+      in Pali literature.
   - name: Swati Jadhav
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/swati.jpeg"
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Swati works as part of the outreach and case work team, specifically looking after the health needs of the women at the shelter. All the data and documentation pertaining to their health needs are maintained by her to ensure smooth co-ordination between the different case workers, administration and the women. Swati has prior experience of working in the corporate sector. She has completed her graduation and has enrolled for an MSW degree.
-
+    about: Swati works as part of the outreach and case work team, specifically looking
+      after the health needs of the women at the shelter. All the data and documentation
+      pertaining to their health needs are maintained by her to ensure smooth co-ordination
+      between the different case workers, administration and the women. Swati has
+      prior experience of working in the corporate sector. She has completed her graduation
+      and has enrolled for an MSW degree.
   - name: Uttara Jadhav
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/uttara.jpg"
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Uttara is part of the livelihood program, working with the young women to ensure their access to different vocational training programs and livelihood opportunities. She is also a part of the outreach team as well as a case worker. Uttara is interested in ensuring the young women’s rightful access to different livelihood options and government schemes and contributing towards strengthening the mental health program at URJA. She has a Master’s degree in Social Work and 5 years of prior experience in the field.
-
-
+    about: Uttara is part of the livelihood program, working with the young women
+      to ensure their access to different vocational training programs and livelihood
+      opportunities. She is also a part of the outreach team as well as a case worker.
+      Uttara is interested in ensuring the young women’s rightful access to different
+      livelihood options and government schemes and contributing towards strengthening
+      the mental health program at URJA. She has a Master’s degree in Social Work
+      and 5 years of prior experience in the field.
   - name: Vinaya Sarmalkar
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/vinaya.jpeg"
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Vinaya started her career with Saathi as a care-taker for the young women they worked with. She moved on to URJA Trust and is currently the Night Care Attendant, where she ensures that the young women are safe at the shelter and also initiates and coordinates different shelter processes during the period. Though she started working late in her life, she has had an ascending growth curve, grabbing at different learning opportunities to strengthen her skills. She has completed her high school education ( 12th Std)
-
+    about: Vinaya started her career with Saathi as a care-taker for the young women
+      they worked with. She moved on to URJA Trust and is currently the Night Care
+      Attendant, where she ensures that the young women are safe at the shelter and
+      also initiates and coordinates different shelter processes during the period.
+      Though she started working late in her life, she has had an ascending growth
+      curve, grabbing at different learning opportunities to strengthen her skills.
+      She has completed her high school education ( 12th Std)
   - name: Pratibha Bangar
-    image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
+    image: "/images/uploads/pratibha.jpeg"
     role: Team Member
     facebook: https://facebook.com
     twitter: https://twitter.com
     instagram: https://instagram.com
-    about: Pratibha is the shelter incharge at URJA TRUSt and comes with 6 years of experience in the development sector. She hopes to further strengthen her skills and work in different capacities with the organisation.
-
+    about: Pratibha is the shelter incharge at URJA TRUSt and comes with 6 years of
+      experience in the development sector. She hopes to further strengthen her skills
+      and work in different capacities with the organisation.
 menu:
   nav:
     name: Team
