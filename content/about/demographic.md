@@ -24,7 +24,7 @@ Our Founders, Deepali Kamble and Altaf Shaikh, have experienced gender, caste an
 
 **WHERE WE WORK**
 
-MAP info-graphic
+![MAP info-graphic of Urja](/images/uploads/urja-infographics-map-india.png "where we work")
 
 **We are based in Mumbai, Maharashtra, but are actively involved at National and International level through our advocacy initiatives.**
 
