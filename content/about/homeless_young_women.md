@@ -1,7 +1,7 @@
 ---
 title: HOMELESS YOUNG WOMEN
 date: 2020-06-02T06:56:58.000+00:00
-banner: "/images/uploads/bg_4.jpg"
+banner: "/images/uploads/urja-infographics-cycle-of-violence.jpg"
 
 ---
 The Census of India 2011 defines 'houseless household' as, 'households who do not live in buildings or census houses but live in the open on roadside, pavements, in huge pipes, under flyovers and staircases, or in the open in places of worship, mandaps, railway platforms, etc.”
