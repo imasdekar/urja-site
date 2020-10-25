@@ -4,7 +4,6 @@ date: 2020-06-02T06:56:58.000+00:00
 banner: "/images/uploads/urja.jpg"
 
 ---
-![Cycle of Violence](/images/uploads/urja-infographics-cycle-of-violence.jpg "Cycle of Violence")
 
 The Census of India 2011 defines 'houseless household' as, 'households who do not live in buildings or census houses but live in the open on roadside, pavements, in huge pipes, under flyovers and staircases, or in the open in places of worship, mandaps, railway platforms, etc.”
 
@@ -14,7 +13,10 @@ Exploring the issue of ‘Homelessness’ through an intersectional lens of diff
 
 <!--more-->
 
-Richa’s is not a lone instance, there are several women like her , who In the bid to escape violence ( physical, mental, emotional and sexual) and other reasons including, but not limited to, a desire to improve their circumstances and lead a life of their own choice, break free from the vicious circle of poverty, dysfunctional families, discrimination faced by them or the community they belong to, etc. are forced to , or thrown out of “their homes”.
+Richa’s is not a lone instance, there are several women like her , who In the bid to escape violence ( physical, mental, emotional and sexual) and other reasons including, but not limited circumstances and lead a life of their own choice, break free from the vicious circle of poverty, dysfunctional families, discrimination faced by them or the community they belong to, etc. are forced to , or thrown out of “their homes”.
+
+  
+![Cycle of Violence](/images/uploads/urja-infographics-cycle-of-violence.jpg "Cycle of Violence")
 
 Though the data with regard to homeless young women in the country is sketchy, we can estimate the gravity of the situation from the figures below-
 
