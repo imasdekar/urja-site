@@ -1,7 +1,7 @@
 ---
-title: We Work with / Demographic
+title: We Work with
 date: 2020-08-16T06:56:58.000+00:00
-banner: "/images/uploads/urja.jpg"
+banner: "/images/uploads/copy-of-urja-infographics-approach-01.jpg"
 menu:
   nav:
     name: Demographic
