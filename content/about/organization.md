@@ -1,11 +1,11 @@
 ---
 title: About Organization and Milestone
 date: 2020-08-16T06:56:58.000+00:00
-banner: "/images/uploads/bg_4.jpg"
+banner: "/images/uploads/urja-infographics-milestones.jpg"
 menu:
   nav:
-    parent: About
     name: Organization and Milestone
+    parent: About
     url: "/about/#organization"
     weight: 1
 
