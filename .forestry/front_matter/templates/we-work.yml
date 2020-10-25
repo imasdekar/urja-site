@@ -11,3 +11,5 @@ fields:
 - type: file
   name: banner
   label: Banner
+pages:
+- content/about/demographic.md
