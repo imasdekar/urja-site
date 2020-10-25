@@ -11,6 +11,6 @@ fields:
   default: now
 - type: file
   name: banner
-  label: banner
+  label: Side Image
 pages:
 - content/about/organization.md
