@@ -2767,3 +2767,9 @@ strong {
     }
   }
 }
+
+.news-entry {
+  .d-block {
+    min-height: 345px !important;
+  }
+}

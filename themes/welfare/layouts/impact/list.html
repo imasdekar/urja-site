@@ -138,7 +138,7 @@
 
 {{ with .Site.GetPage "/impact/volunteer_testimonials.md" }}
 <!-- Section: Testimonials v.2 -->
-<section class="text-center ftco-section" id="volunteer_testimonials">
+<section class="text-justify ftco-section" id="volunteer_testimonials">
   <hr>
   <div class="container">
     <!-- Section heading -->
@@ -155,18 +155,20 @@
           <!--slide-->
           {{ range $index, $element := .Params.testimonials }}
           <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
-            <div class="testimonial">
+            <div class="testimonial row">
               <!--Avatar-->
-              <div class="avatar mb-4 mx-auto">
-                <img src="{{ $element.image }}" width="250px" class="rounded-circle img-fluid"
+              <div class="avatar mb-4 mx-auto col-sm-12 col-md-4">
+                <img src="{{ $element.image }}" class="img-fluid"
                   alt="{{ $element.name }}">
               </div>
               <!--Content-->
-              <p class="markdown-content">
-                <i class="fas fa-quote-left"></i>
+              <div class="col-sm-12 col-md-8">
+                <p class="markdown-content">
+                <i class="fas fa-quote-left mr-2"></i>
                 {{ $element.content | markdownify }}
-              </p>
-              <h4 class="font-weight-bold">{{ $element.name }}</h4>
+                </p>
+                <h4 class="text-center font-weight-bold">{{ $element.name }}</h4>
+              </div>
             </div>
           </div>
           {{ end }}
@@ -174,7 +176,7 @@
         </div>
         <!--Slides-->
         <!--Controls-->
-        <div>
+        <div class="text-center">
           <a class="btn-floating btn-lg darken-4" href="#carousel-example-1" data-slide="prev">
             <i class="fas fa-chevron-left" aria-hidden="true"></i>
           </a>
@@ -193,12 +195,12 @@
 <!-- Section: Testimonials v.2 -->
 {{ end }}
 
-{{ with .Site.GetPage "/impact/media" }}
-<section class="mb-4 ftco-section" id="media">
+{{ with .Site.GetPage "/impact/news" }}
+<section class="mb-4 ftco-section" id="news">
   {{ .Render "li" }}
   <div class="container">
     <div class="row align-items-center justify-content-center">
-      <a href="media" class="btn btn-white px-3 py-2 mt-2">{{ .Params.explore_button }}</a>
+      <a href="news" class="btn btn-white px-3 py-2 mt-2">{{ .Params.explore_button }}</a>
     </div>
   </div>
 </section>

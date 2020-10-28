@@ -11164,4 +11164,8 @@ strong {
   clip-path: inset(0 0 0 0);
 }
 
+.news-entry .d-block {
+  min-height: 345px !important;
+}
+
 /*# sourceMappingURL=style.css.map */
