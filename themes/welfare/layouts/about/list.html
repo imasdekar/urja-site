@@ -15,6 +15,24 @@
   </div>
 </div>
 
+
+<!-- Quote section -->
+<section class="ftco-section bg-primary " id="quote">
+  <div class="container">
+    <div class="row">
+      <div class="align-self-stretch d-flex">
+        <blockquote class="blockquote">
+          <p class="p-5">
+            
+            <strong>{{ .Params.qoute }}</strong>
+            
+          </p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ with .Site.GetPage "/about/vision_mission.md" }}
 <section class="ftco-section" id="vision_mission">
   <div class="container">
@@ -42,41 +60,39 @@
 </section>
 {{ end }}
 
-{{ with .Site.GetPage "/about/homeless_young_women.md" }}
-<section class="ftco-section">
-  <div class="container">
-    <div class="row d-flex">
-      <div class="item">
-        <div class="cause-entry">
-          <a class="img" style="background-image: url('{{ .Params.banner }}');"></a>
-          <div class="text p-3 p-md-4">
-            <h3>
-              <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
-            </h3>
-            {{ if not (eq .Summary "") }}
-            <p>{{ .Summary }}</p>
-            <p>
-              <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
-            </p>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
 
-{{ with .Site.GetPage "/about/demographic.md" }}
-<section class="ftco-section" id="demographic">
+{{ with .Site.GetPage "/about/we_work_with.md" }}
+<section class="ftco-section" id="we_work_with">
   <div class="container">
     <div class="row d-flex">
       <div class="col-md-6 d-flex ftco-animate">
-        <div class="img img-about align-self-stretch"
-          style="background-image: url('{{ .Params.banner }}'); width: 100%;"></div>
+        <div class="img img-about "
+          style="background-image: url('{{ .Params.banner }}'); width: 100%; height: 100%;">
+          </div>
       </div>
       <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg">
         <h2 class="mb-4">{{ .Title }}</h2>
+          {{ with .Site.GetPage "/about/homeless_young_women.md" }}
+            
+              <div class="container">
+                <div class="row d-flex">
+                  <div class="item">
+                    <div class="">
+                      <div class="text p-3 p-md-4">
+                        {{ if not (eq .Summary "") }}
+                        <p>{{ .Summary }}</p>
+                        <p>
+                          <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
+                        </p>
+                        {{ end }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            {{ end }}
+
         <p>{{ .Content }}</p>
       </div>
     </div>
@@ -84,17 +100,42 @@
 </section>
 {{ end }}
 
-{{ with .Site.GetPage "/about/organization.md" }}
-<section class="ftco-section" id="organization">
+{{ with .Site.GetPage "/about/our_roots.md" }}
+<section class="ftco-section" id="our_roots">
+  <div class="container" >
+      
+    <div class="row d-flex align-items-center">
+        
+      <div class="col-md-6" >
+      <h2 style="text-align:center;">{{ .Title }}</h2>  
+        
+          <p style=" display: flex;align-items: center;
+    ">{{ .Content }}</p>
+      </div>
+      <div class="col-md-6 d-flex ftco-animate">
+        <div class="img img-about align-self-stretch"
+          style="background-image: url('{{ .Params.banner }}'); width: 100%; height: 1150px; background-size: cover;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+{{ with .Site.GetPage "/about/where_we_work.md" }}
+
+<section class="ftco-section" id="we_work_with">
   <div class="container">
     <div class="row d-flex">
-      <div class="markdown-content col-md-8 ftco-animate ftco-degree-bg">
-        <h2 class="mb-4">{{ .Title }}</h2>
-        <p>{{ .Content }}</p>
+      <div class="col-md-6 d-flex ftco-animate">
+        <div class="img img-about "
+          style="background-image: url('{{ .Params.banner }}'); width: 100%; height: 100%;">
+          </div>
       </div>
-      <div class="col-md-4 d-flex ftco-animate">
-        <div class="img img-about align-self-stretch"
-          style="background-image: url('{{ .Params.banner }}'); width: 100%;"></div>
+      <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg">
+        <h2 class="mb-4">{{ .Title }}</h2>
+          
+        <p>{{ .Content }}</p>
       </div>
     </div>
   </div>

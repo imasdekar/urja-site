@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row justify-content-center mb-5 pb-3">
+    <div class="col-md-7 heading-section ftco-animate text-center">
+      <h2 class="mb-4">{{ .Title }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    {{ range .Pages | first 3 }}
+    <div class="col-md-4 ftco-animate">
+      <div class="blog-entry align-self-stretch news-entry">
+        <a
+          href="{{ .Params.newsLink }}"
+          target="blank"
+          rel="noopener noreferrer"
+          class="block-20"
+          style="background-image: url('{{ .Params.banner }}');"
+        ></a>
+        <div class="text p-4 d-block">
+          {{ if not .Date.IsZero }}
+          <div class="meta mb-3">
+            <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+          </div>
+          {{ end }}
+          <h3 class="heading md-4">
+            <a
+              href="{{ .Params.newsLink }}"
+              target="blank"
+              rel="noopener noreferrer"
+              >{{ .Title }}</a
+            >
+          </h3>
+          {{ if gt (len .Summary) 45 }}
+          <p>{{ slicestr .Summary 0 50 | markdownify }}...</p>
+          <p>
+            <a href="{{ .Params.newsLink }}" target="blank" rel="noopener noreferrer"
+              >Read more<i class="ion-ios-arrow-forward"></i
+            ></a>
+          </p>
+          {{ else }}
+          <p>{{ .Summary | markdownify }}</p>
+          <a href="{{ .Params.newsLink }}" target="blank" rel="noopener noreferrer"
+            >Read more<i class="ion-ios-arrow-forward"></i
+          ></a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>

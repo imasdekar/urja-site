@@ -8,3 +8,4 @@ dist
 .env.*
 .project
 public/*
+.ipynb_checkpoints
