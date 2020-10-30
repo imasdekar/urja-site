@@ -1,11 +1,10 @@
 ---
 title: Objectives
-date: 2020-08-16T06:56:58.000+00:00
+date: '2020-08-16T06:56:58.000+00:00'
 banner: "/images/uploads/bg_3.jpg"
 menu:
   nav:
     parent: Approach
-    name: Objectives
     url: "/approach/#objectives"
     weight: 3
 
@@ -26,4 +25,3 @@ find themselves homeless. In due course, the outreach programme was initiated wh
 the team regularly surveyed railway stations to identify and approach vulnerable
 women. This allowed Urja to build a very strong network of stakeholders including
 police, railway officials and lawyers at these places.
-

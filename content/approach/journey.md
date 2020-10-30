@@ -1,12 +1,12 @@
 ---
 title: About Organization and Milestone
-date: 2020-08-16T06:56:58.000+00:00
+date: '2020-08-16T06:56:58.000+00:00'
 banner: "/images/uploads/bg_4.jpg"
-vacancy_button_text: "Job Vacancies"
+vacancy_button_text: Job Vacancies
 menu:
   nav:
-    parent: Approach
     name: Journey
+    parent: Approach
     url: "/approach/#journey"
     weight: 4
 

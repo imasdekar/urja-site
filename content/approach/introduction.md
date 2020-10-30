@@ -1,11 +1,10 @@
 ---
 title: Introduction
-date: 2020-08-16T06:56:58.000+00:00
+date: '2020-08-16T06:56:58.000+00:00'
 banner: "/images/uploads/urja.jpg"
 menu:
   nav:
     parent: Approach
-    name: Introduction
     url: "/approach/#introduction"
     weight: 1
 
@@ -33,4 +32,3 @@ are hardly any working with homeless young women from religious minorities and o
 marginalised sections of the society  with an intersectional rights based perspective.
 The critical need for working with this group is what prompted them to start URJA
 TRUST.
-

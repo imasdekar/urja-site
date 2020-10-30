@@ -27,6 +27,6 @@ menu:
   nav:
     parent: Impact
     url: "/impact/#case_stories"
-    weight: 3
+    weight: 1
 
 ---

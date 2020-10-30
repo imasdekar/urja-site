@@ -5,7 +5,6 @@ banner: "/images/uploads/urja.jpg"
 menu:
   nav:
     parent: About
-    name: Awards
     url: "/about/#awards"
     weight: 8
 

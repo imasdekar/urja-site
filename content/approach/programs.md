@@ -1,11 +1,11 @@
 ---
 title: About Organization and Milestone
-date: 2020-08-16T06:56:58.000+00:00
+date: '2020-08-16T06:56:58.000+00:00'
 banner: "/images/uploads/bg_4.jpg"
 menu:
   nav:
-    parent: Approach 
     name: Programs
+    parent: Approach
     url: "/approach/#programs"
     weight: 5
 

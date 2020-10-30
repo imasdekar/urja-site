@@ -8,6 +8,6 @@ menu:
   nav:
     parent: Impact
     url: "/impact/#news"
-    weight: 5
+    weight: 4
 
 ---

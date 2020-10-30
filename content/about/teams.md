@@ -316,6 +316,6 @@ menu:
     name: Team
     parent: About
     url: "/about/#team"
-    weight: 4
+    weight: 6
 
 ---

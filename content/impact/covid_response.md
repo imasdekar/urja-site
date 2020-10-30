@@ -23,7 +23,7 @@ menu:
     name: Covid Response
     parent: Impact
     url: "/impact/#covid_response"
-    weight: 3
+    weight: 2
 
 ---
 ##### Homeless Young Women at our Shelter

@@ -7,10 +7,9 @@ menu:
     name: We Work
     parent: About
     url: "/about/#where_we_work"
-    weight: 3
+    weight: 4
 
 ---
-
 **We are based in Mumbai, Maharashtra, but are actively involved at National and International level through our advocacy initiatives.**
 
 Our shelter home is based out of Dadar, Mumbai, which provides a safe space to homeless young women and their children coming to Mumbai from all across the country.  
