@@ -2,42 +2,19 @@
 <section class="ftco-counter ftco-intro" id="section-counter">
   <div class="container">
     <div class="row no-gutters">
-      <div class="col-md-5 d-flex justify-content-center counter-wrap ftco-animate">
-        <div class="block-18 color-1 align-items-stretch">
+      <div class="col-md-10 d-flex counter-wrap ftco-animate mt-60">
+        <div class="block-18 align-items-stretch">
           <div class="text">
-            <span>{{ $counter_data.count_title }}</span>
+            <h4 class="color-tertiary italic">{{ $counter_data.title }}</h4>
+            <span>{{ $counter_data.body }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 counter-wrap">
+        <div class="block-18 shadow rounded-circle z-depth-1 color-3 align-items-stretch">
+          <div class="text m-auto">
             <strong class="number" data-number="{{ $counter_data.count_total }}">0</strong>
-            <span>{{ $counter_data.count_subtitle }}</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-        <div class="block-18 color-2 align-items-stretch">
-          <div class="text">
-            <h4 class="mb-4">{{ $counter_data.mid_tile_title }}</h4>
-            <p>{{ $counter_data.mid_tile_subtitle }}</p>
-            <p>
-              <a
-                href="{{ $counter_data.mid_tile_button_link }}"
-                class="btn btn-white px-3 py-2 mt-2"
-                >{{ $counter_data.mid_tile_button_text }}</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-        <div class="block-18 color-3 align-items-stretch">
-          <div class="text">
-            <h4 class="mb-4">{{ $counter_data.last_tile_title }}</h4>
-            <p>{{ $counter_data.last_tile_subtitile }}</p>
-            <p>
-              <a
-                href="{{ $counter_data.last_tile_button_link }}"
-                class="btn btn-white px-3 py-2 mt-2"
-                >{{ $counter_data.last_tile_button_text }}</a
-              >
-            </p>
+            <p class="color-tertiary">{{ $counter_data.tile_text }}</p>
           </div>
         </div>
       </div>
