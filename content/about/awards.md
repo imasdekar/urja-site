@@ -6,7 +6,7 @@ menu:
   nav:
     parent: About
     url: "/about/#awards"
-    weight: 8
+    weight: 7
 
 ---
 - Award 1

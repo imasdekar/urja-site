@@ -36,7 +36,6 @@ $tertiary: #0b5394ff;
   transition: all $transition ease;
 }
 
-
 body {
   font-family: $font-secondary;
   background: $body-background;
@@ -1313,7 +1312,7 @@ textarea.form-control {
     padding-top: 1px !important;
   }
   div {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
   .ftco-sub-title {
     font-size: 16px;
@@ -1362,7 +1361,7 @@ textarea.form-control {
   padding: 2em 0 2em;
   position: relative;
   @include media-breakpoint-down(sm) {
-    padding: 6em 0;
+    padding: 2em 0;
   }
 }
 
@@ -1616,17 +1615,35 @@ textarea.form-control {
   background-position: center center;
 }
 
-.img {
+.img-approach {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
+  width: 970px;
+  height: 480px;
+  @include media-breakpoint-down(sm) {
+    width: 330px;
+    height: 350px;
+  }
 }
 
-
 .img-about {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 540px;
+  height: 900px;
+  &.img-map {
+    width: 540px;
+    height: 600px;
+    @include media-breakpoint-down(sm) {
+      width: 330px;
+      height: 230px;
+    }
+  }
   @include media-breakpoint-down(sm) {
-    height: 400px;
-    margin-bottom: 30px;
+    width: 330px;
+    height: 430px;
   }
 }
 
@@ -1784,6 +1801,7 @@ textarea.form-control {
   }
   .media-body {
     .heading {
+      text-align: center !important;
     }
     p {
       font-size: 16px;
@@ -2793,10 +2811,22 @@ strong {
   }
 }
 
-.carousel-control-next{
- color: $black;
+.carousel-control-next {
+  color: $black;
+  opacity: 0.8 !important;
+  width: 10%;
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
 }
 
-.carousel-control-prev{
- color: $black;
+.carousel-control-prev {
+  color: $black;
+  opacity: 0.8 !important;
+  width: 10%;
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
 }

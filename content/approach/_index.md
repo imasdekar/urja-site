@@ -1,5 +1,5 @@
 ---
-text: Our Approach
+title: Our Approach
 active: true
 Kind: approach
 slides:

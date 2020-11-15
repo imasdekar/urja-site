@@ -21,12 +21,12 @@
               <h4 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                 {{ $element.text }}
               </h4>
-              {{ if (isset $element "footer_text") | or (not (eq $element.footer_text "")) }}
+              {{ if not (eq $element.footer_text "")  }}
               <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                 {{ $element.footer_text }}
               </p>
               {{ end }}
-              {{ if (isset $element "button_text") | or (not (eq $element.button_text "")) }}
+              {{ if not (eq $element.button_text "") }}
               <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                 <a
                   href="{{ $element.button_link }}"
@@ -52,75 +52,52 @@
   </a>
 </div>
 
-{{ with .Site.GetPage "/approach/introduction.md" }}
-<section class="ftco-section" id="introduction">
+{{ with .Site.GetPage "/approach/pronged_approach.md" }}
+<section class="ftco-section" id="homeless_by_birth">
   <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 heading-section ftco-animate text-center">
+        <h2 class="mb-4">{{ .Params.story_title }}</h2>
+      </div>
+    </div>
     <div class="row d-flex">
-      <div class="item">
-        <div class="cause-entry">
-          <a class="img" style="background-image: url('{{ .Params.banner }}');"></a>
-          <div class="text p-3 p-md-4">
-            <h3>
-              <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
-            </h3>
-            <p>{{ .Content }}</p>
-          </div>
-        </div>
+      <div class="markdown-content col-md-12 pl-md-5 ftco-animate ftco-degree-bg">
+        <p>{{ .Params.story_description }}</p>
       </div>
     </div>
   </div>
 </section>
-{{ end }}
 
-{{ with .Site.GetPage "/approach/pronged.md" }}
-<section class="ftco-section" id="pronged">
+<!-- Quote section -->
+<section class="ftco-section bg-primary" id="quote">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services p-3 py-4 d-block">
-          <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
-          <div class="media-body pl-4">
-            <h3 class="heading">{{ .Params.first_approach_title }}</h3>
-            <p>{{ .Params.first_approach_body }}</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services p-3 py-4 d-block">
-          <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
-          <div class="media-body pl-4">
-            <h3 class="heading">{{ .Params.second_approach_title }}</h3>
-            <p>{{ .Params.second_approach_body }}</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services p-3 py-4 d-block">
-          <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
-          <div class="media-body pl-4">
-            <h3 class="heading">{{ .Params.third_approach_title }}</h3>
-            <p>{{ .Params.third_approach_body }}</p>
-          </div>
-        </div>
+      <div class="align-self-stretch d-flex">
+        <blockquote class="blockquote">
+          <p class="p-5">
+            <i class="fas fa-quote-left"></i>
+            <strong>{{ .Params.quote }}</strong>
+            <i class="fas fa-quote-right"></i>
+          </p>
+        </blockquote>
       </div>
     </div>
   </div>
 </section>
-{{ end }}
 
-{{ with .Site.GetPage "/approach/objectives.md" }}
-<section class="ftco-section" id="journey">
+<section class="ftco-section" id="pronged_approach">
   <div class="container">
-    <div class="row d-flex">
-      <div class="col-md-6 d-flex ftco-animate">
-        <div
-          class="img img-about align-self-stretch"
-          style="background-image: url('{{ .Params.banner }}'); width: 100%;"
-        ></div>
-      </div>
-      <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg">
-        <h2 class="mb-4">{{ .Title }}</h2>
-        <p>{{ .Content }}</p>
+    <div class="row">
+      <div class="col-sm-12 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+        <div class="media block-6 d-flex services py-4 d-block">
+          <div class="media-body pl-4 align-items-center">
+            <h2 class="heading">{{ .Title }}</h2>
+            <div
+              class="img img-approach"
+              style="background-image: url('{{ .Params.pronged_image }}');"
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -131,26 +108,38 @@
 <section class="ftco-section" id="journey">
   <div class="container">
     <div class="row d-flex">
-      <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
-        <p>{{ .Content }}</p>
-        <a
-          href="/approach/#"
-          class="btn btn-white px-3 py-2 mt-2"
-          >{{ .Params.vacancy_button_text }}</a
-        >
+      <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg">
+        <h2 class="mb-4">{{ .Title }}</h2>
+        {{ if not (eq .Summary "") }}
+        <p>{{ .Summary }}</p>
+        <p>
+          <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
+        </p>
+        {{ end }}
       </div>
-      <div class="col-md-4 d-flex ftco-animate">
-        <div
-          class="img img-about align-self-stretch"
-          style="background-image: url('{{ .Params.banner }}'); width: 100%;"
-        ></div>
+
+      <div class="col-sm-6 d-flex ftco-animate">
+        <div class="img img-approach" style="background-image: url('{{ .Params.banner }}'); "></div>
       </div>
     </div>
   </div>
 </section>
 {{ end }}
 
-{{ partial "gallery_section.html" . }}
+{{ with .Site.GetPage "/approach/holistic_health.md" }}
+<section class="ftco-section" id="holistic_health">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section ftco-animate text-center">
+        <h2 class="mb-2">{{ .Params.title }}</h2>
+      </div>
+    </div>
+  </div>
+
+  {{ partial "gallery_section.html" . }}
+</section>
+{{ end }}
+
 {{ with .Site.GetPage "/approach/programs.md" }}
 <section class="ftco-section" id="programs">
   <div class="container">
@@ -160,7 +149,7 @@
       </div>
       <div class="col-md-4 d-flex ftco-animate">
         <div
-          class="img img-about align-self-stretch"
+          class="img img-approach align-self-stretch"
           style="background-image: url('{{ .Params.banner }}'); width: 100%;"
         ></div>
       </div>

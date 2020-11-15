@@ -13,6 +13,6 @@ menu:
   nav:
     parent: About
     url: "/about/#vision_mission"
-    weight: 2
+    weight: 1
 
 ---

@@ -9813,7 +9813,7 @@ textarea.form-control {
   padding-top: 1px !important;
 }
 .ftco-section div {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 .ftco-section .ftco-sub-title {
   font-size: 16px;
@@ -9851,7 +9851,7 @@ textarea.form-control {
 }
 @media (max-width: 767.98px) {
   .ftco-section {
-    padding: 6em 0;
+    padding: 2em 0;
   }
 }
 
@@ -10079,16 +10079,41 @@ textarea.form-control {
   background-position: center center;
 }
 
-.img {
+.img-approach {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
+  width: 970px;
+  height: 480px;
+}
+@media (max-width: 767.98px) {
+  .img-approach {
+    width: 330px;
+    height: 350px;
+  }
 }
 
+.img-about {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 540px;
+  height: 900px;
+}
+.img-about.img-map {
+  width: 540px;
+  height: 600px;
+}
+@media (max-width: 767.98px) {
+  .img-about.img-map {
+    width: 330px;
+    height: 230px;
+  }
+}
 @media (max-width: 767.98px) {
   .img-about {
-    height: 400px;
-    margin-bottom: 30px;
+    width: 330px;
+    height: 430px;
   }
 }
 
@@ -10233,6 +10258,9 @@ textarea.form-control {
 
 .block-6 {
   margin-bottom: 40px;
+}
+.block-6 .media-body .heading {
+  text-align: center !important;
 }
 .block-6 .media-body p {
   font-size: 16px;
@@ -11187,10 +11215,20 @@ strong {
 
 .carousel-control-next {
   color: #000000;
+  opacity: 0.8 !important;
+  width: 10%;
+}
+.carousel-control-next:hover, .carousel-control-next:focus {
+  color: #fab73c;
 }
 
 .carousel-control-prev {
   color: #000000;
+  opacity: 0.8 !important;
+  width: 10%;
+}
+.carousel-control-prev:hover, .carousel-control-prev:focus {
+  color: #fab73c;
 }
 
 /*# sourceMappingURL=style.css.map */

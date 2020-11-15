@@ -1,3 +1,48 @@
+{{ define "main" }}
+<div
+  class="hero-wrap"
+  style="background-image: url('{{ .Params.banner }}');"
+  data-stellar-background-ratio="0.5"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div
+      class="row no-gutters slider-text align-items-center justify-content-center"
+      data-scrollax-parent="true"
+    >
+      <div
+        class="col-md-7 ftco-animate text-center"
+        data-scrollax=" properties: { translateY: '70%' }"
+      >
+        <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+          <span class="mr-2"
+            ><a
+              href="{{ .CurrentSection.Parent.Permalink }}"
+              >{{ .CurrentSection.Parent.Title }}</a
+            ></span
+          >
+          <span class="mr-2"
+            ><a href="{{ .CurrentSection.Permalink }}">{{ .CurrentSection.Title }}</a></span
+          >
+          <span>{{ .Title }}</span>
+        </p>
+        <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+          {{ .Title }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="ftco-section " id="holistic_health">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section ftco-animate text-center">
+        <h2 class="mb-2">{{ .Params.title }}</h2>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row">
       <div class="container-fluid small-screen-gallery">
@@ -55,9 +100,13 @@
         {{ if not (eq .Summary "") }}
           <p>{{ .Summary }}</p>
           <p>
-          <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
           </p>
         {{ end }}
       </div>
+    <div class="markdown-content ftco-animate ftco-degree-bg">
+      <p>{{ .Content }}</p>
+    </div>
     </div>
   </div>
+</section>
+{{ end }}
