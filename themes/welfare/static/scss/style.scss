@@ -97,6 +97,17 @@ h5,
     color: $white;
   }
 
+  .logo-fixed {
+    position: fixed;
+    margin-top: -15px;
+  }
+
+  .navbar-collapse {
+    @include media-breakpoint-down(md) {
+      margin-top: 70px;
+    }
+  }
+
   .navbar-nav {
     > .nav-item {
       > .nav-link {
@@ -111,6 +122,10 @@ h5,
           color: $primary;
         }
         opacity: 1 !important;
+      }
+
+      > .btn {
+        margin-top: 3px;
       }
 
       .dropdown-menu {
