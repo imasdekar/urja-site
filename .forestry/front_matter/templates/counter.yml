@@ -1,0 +1,16 @@
+---
+label: Counter
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: number
+  name: count_total
+  label: count_total
+- type: textarea
+  name: body
+  label: body
+- type: text
+  name: tile_text
+  label: tile_text
