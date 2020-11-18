@@ -6,7 +6,7 @@ quote: URJA TRUST  works with homeless young women, with a rights based intersec
   gender, caste, mental health and violence.
 Kind: about
 active: true
-hero_image: "/images/uploads/about-us-cover-photo.jpg"
+hero_image: "/images/uploads/bg_1.jpg"
 menu:
   nav:
     name: About
