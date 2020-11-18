@@ -10,4 +10,4 @@ fields:
   label: Date
 - type: file
   name: banner
-  label: Banner
+  label: Banner Image
