@@ -4,13 +4,13 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: number
   name: count_total
-  label: count_total
+  label: Count Total
 - type: textarea
   name: body
-  label: body
+  label: Body Text
 - type: text
   name: tile_text
-  label: tile_text
+  label: Counter Text
