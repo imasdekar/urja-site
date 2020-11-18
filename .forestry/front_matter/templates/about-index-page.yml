@@ -4,19 +4,26 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: datetime
   name: date
-  label: date
+  label: Date
+  default: now
 - type: textarea
   name: quote
-  label: quote
+  label: Quote
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
 - type: text
   name: Kind
   label: Kind
+  hidden: true
 - type: boolean
   name: active
   label: active
+  hidden: true
 - type: file
   name: hero_image
-  label: hero_image
+  label: Main Image
