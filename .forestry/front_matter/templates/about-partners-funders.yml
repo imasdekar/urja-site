@@ -13,7 +13,7 @@ fields:
   label: Banner
 - type: field_group_list
   name: partners
-  label: Partners
+  label: Partners/Funders
   fields:
   - type: text
     name: name
