@@ -1,0 +1,22 @@
+---
+label: 'About: Index Page'
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: textarea
+  name: quote
+  label: quote
+- type: text
+  name: Kind
+  label: Kind
+- type: boolean
+  name: active
+  label: active
+- type: file
+  name: hero_image
+  label: hero_image
