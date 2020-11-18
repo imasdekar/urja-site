@@ -12,5 +12,3 @@ fields:
 - type: file
   name: banner
   label: Infographic
-pages:
-- content/about/organization.md
