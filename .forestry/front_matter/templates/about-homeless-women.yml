@@ -11,3 +11,5 @@ fields:
 - type: file
   name: banner
   label: Banner Image
+pages:
+- content/about/we_work_with.md
