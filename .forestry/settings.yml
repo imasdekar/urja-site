@@ -15,13 +15,14 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - about-index-page
+  - vision-mission
+  - about-we-work-with
+  - about-our-roots
+  - meet-our-team
+  - about-where-we-work
   - about-awards
   - about-partners-funders
-  - we-work
-  - vision-mission
-  - about-organization-milestone
-  - meet-our-team
-  - about-page
 - type: directory
   path: content/approach
   label: Approach
