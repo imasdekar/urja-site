@@ -1,12 +1,13 @@
 ---
 title: Journey
 type: journey
-date: 2020-08-16T06:56:58.000+00:00
+date: '2020-08-16T06:56:58.000+00:00'
 banner: "/images/uploads/bg_4.jpg"
-summary: Our Journey with homeless young women is through an empowering holistic approach of safe spaces, holistic health and nutrition, therapy, skill and knowledge building, and ensuring access to their civil rights.
+summary: Our Journey with homeless young women is through an empowering holistic approach
+  of safe spaces, holistic health and nutrition, therapy, skill and knowledge building,
+  and ensuring access to their civil rights.
 menu:
   nav:
-    name: Journey
     parent: Approach
     url: "/approach/#journey"
     weight: 1

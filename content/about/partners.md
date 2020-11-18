@@ -32,10 +32,9 @@ partners:
   about: something about funder
 menu:
   nav:
-    name: Partners
     parent: About
     url: "/about/#partners"
-    weight: 7
+    weight: 6
 
 ---
 _The continued support of our partners, funders and individual well wishers and donors have helped us in strengthening and amplifying the voices of homeless young women._
