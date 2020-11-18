@@ -5,40 +5,26 @@ fields:
 - type: boolean
   name: active
   label: active
+  hidden: true
 - type: file
   name: logo
-  label: logo
+  label: Logo
 - type: field_group_list
   name: slides
   label: slides
   fields:
   - type: file
     name: hero_image
-    label: hero_image
+    label: Image
   - type: text
     name: title
-    label: title
+    label: Image Title
   - type: text
     name: subtitle
-    label: subtitle
+    label: Image Subtitle
   - type: text
     name: button_link
-    label: button_link
+    label: Button Link
   - type: text
     name: button_text
-    label: button_text
-  - type: text
-    name: video_link
-    label: video_link
-  - type: text
-    name: video_text
-    label: video_text
-- type: file
-  name: volunteer_background
-  label: volunteer_background
-- type: text
-  name: volunteer_form_title
-  label: volunteer_form_title
-- type: textarea
-  name: volunteer_body_text
-  label: volunteer_body_text
+    label: Button Text
