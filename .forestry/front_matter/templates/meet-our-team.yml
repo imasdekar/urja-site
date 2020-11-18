@@ -25,6 +25,9 @@ fields:
     - type: text
       name: name
       label: Name
+    - type: textarea
+      name: about
+      label: About
     - type: file
       name: image
       label: Image
@@ -40,9 +43,6 @@ fields:
     - type: text
       name: instagram
       label: Instagram
-    - type: textarea
-      name: about
-      label: About
 - type: field_group
   name: team
   label: Team
@@ -60,6 +60,9 @@ fields:
     - type: text
       name: name
       label: Name
+    - type: textarea
+      name: about
+      label: About
     - type: file
       name: image
       label: Image
@@ -75,8 +78,5 @@ fields:
     - type: text
       name: instagram
       label: Instagram
-    - type: textarea
-      name: about
-      label: About
 pages:
 - content/about/teams.md
