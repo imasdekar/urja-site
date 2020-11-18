@@ -26,4 +26,4 @@ fields:
   hidden: true
 - type: file
   name: hero_image
-  label: Main Image
+  label: Banner Image
