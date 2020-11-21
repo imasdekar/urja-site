@@ -50,33 +50,6 @@
 
 {{ partial "counter_section.html" . }}
 
-{{ with .Site.GetPage "/about/vision_mission.md" }}
-<section class="ftco-section" id="vision_mission">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services p-3 py-4 d-block">
-          <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
-          <div class="media-body pl-4">
-            <h3 class="heading">{{ .Params.vision_title }}</h3>
-            <p>{{ .Params.vision_body }}</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services p-3 py-4 d-block">
-          <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
-          <div class="media-body pl-4">
-            <h3 class="heading">{{ .Params.mission_title }}</h3>
-            <p>{{ .Params.mission_body }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-
 {{ with .Site.GetPage "/about/homeless_young_women.md" }}
 <section class="ftco-section">
   <div class="container">
@@ -94,6 +67,26 @@
               <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
             </p>
             {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/approach/pronged_approach.md" }}
+<section class="ftco-section" id="pronged_approach">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+        <div class="media block-6 d-flex services py-4 d-block">
+          <div class="media-body pl-4 align-items-center">
+            <h2 class="heading">{{ .Title }}</h2>
+            <div
+              class="img img-approach"
+              style="background-image: url('{{ .Params.pronged_image }}');"
+            ></div>
           </div>
         </div>
       </div>
