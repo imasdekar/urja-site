@@ -8550,6 +8550,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 300;
+  text-align: justify !important;
   color: gray;
 }
 body.menu-show {
@@ -10105,12 +10106,33 @@ textarea.form-control {
   }
 }
 
+.img-programs {
+  width: 370px;
+  height: 370px;
+}
+@media (max-width: 767.98px) {
+  .img-programs {
+    width: 330px;
+    height: 350px;
+  }
+}
+
 .img-about {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
   width: 540px;
   height: 900px;
+}
+.img-about.img-vision {
+  width: 380px;
+  height: 290px;
+}
+@media (max-width: 767.98px) {
+  .img-about.img-vision {
+    width: 330px;
+    height: 230px;
+  }
 }
 .img-about.img-map {
   width: 540px;
@@ -10127,6 +10149,45 @@ textarea.form-control {
     width: 330px;
     height: 430px;
   }
+}
+
+.img-impact {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 540px;
+  height: 900px;
+}
+.img-impact.img-case-story {
+  width: 340px;
+  height: 340px;
+}
+@media (max-width: 767.98px) {
+  .img-impact.img-case-story {
+    width: 330px;
+    height: 230px;
+  }
+}
+.img-impact.img-covid {
+  width: 730px;
+  height: 400px;
+}
+@media (max-width: 767.98px) {
+  .img-impact.img-covid {
+    width: 330px;
+    height: 230px;
+  }
+}
+@media (max-width: 767.98px) {
+  .img-impact {
+    width: 330px;
+    height: 430px;
+  }
+}
+
+.img-volunteer {
+  width: 340px;
+  height: 340px;
 }
 
 .image-popup {

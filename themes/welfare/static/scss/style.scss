@@ -42,6 +42,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 300;
+  text-align: justify !important;
   color: lighten($black, 50%);
   &.menu-show {
     overflow: hidden;
@@ -1642,12 +1643,28 @@ textarea.form-control {
   }
 }
 
+.img-programs {
+  width: 370px;
+  height: 370px;
+  @include media-breakpoint-down(sm) {
+    width: 330px;
+    height: 350px;
+  }
+}
 .img-about {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
   width: 540px;
   height: 900px;
+  &.img-vision {
+    width: 380px;
+    height: 290px;
+    @include media-breakpoint-down(sm) {
+      width: 330px;
+      height: 230px;
+    }
+  }
   &.img-map {
     width: 540px;
     height: 600px;
@@ -1660,6 +1677,38 @@ textarea.form-control {
     width: 330px;
     height: 430px;
   }
+}
+
+.img-impact {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 540px;
+  height: 900px;
+  &.img-case-story {
+    width: 340px;
+    height: 340px;
+    @include media-breakpoint-down(sm) {
+      width: 330px;
+      height: 230px;
+    }
+  }
+  &.img-covid {
+    width: 730px;
+    height: 400px;
+    @include media-breakpoint-down(sm) {
+      width: 330px;
+      height: 230px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    width: 330px;
+    height: 430px;
+  }
+}
+.img-volunteer {
+  width: 340px;
+  height: 340px;
 }
 
 // magnific pop up

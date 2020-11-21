@@ -3,7 +3,7 @@ title: Case Stories
 date: 2020-08-16T06:56:58.000+00:00
 banner: "/images/uploads/bg_3.jpg"
 story_1:
-  image: "/images/uploads/bg_3.jpg"
+  image: "/images/uploads/impact_case_story-1.jpg"
   content: "**STORY OF STRUGGLE, AND COURAGE AGAINST ALL ODDS** \n\nAarti, aged 20
     years, belongs to a tribal community and has hearing impairment since her birth.
     At an early age she had been abducted by a man who forcefully married her. She
@@ -18,7 +18,7 @@ story_1:
     short stay home. Along with her job, she is also preparing for her 12th exams
     through distance learning."
 story_2:
-  image: "/images/uploads/bg_4.jpg"
+  image: "/images/uploads/impact_case_story-2.jpg"
   content: |-
     **COPING BETRAYALS AND MENTAL ILLNESS WITH A WARRIOR SPIRIT!**
 

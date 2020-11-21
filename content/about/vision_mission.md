@@ -1,5 +1,7 @@
 ---
 date: 2020-08-16T06:56:58.000+00:00
+banner: "/images/uploads/vission_mission.jpg"
+menu:
 vision_title: VISION
 vision_body: Our Vision is of a just, equitable and compassionate society where young
   women pursue their lives with freedom and dignity.

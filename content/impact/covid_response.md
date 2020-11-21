@@ -1,23 +1,13 @@
 ---
 title: Our Covid Response
-gallery:
-- image: "/images/uploads/safe-spaces.jpg"
-  image_title: SAFE SPACES
-  description: Place to stay safe
-- image: "/images/uploads/website-covid.jpeg"
-  image_title: HOLISTIC HEALTH AND WELLBEING
-  description: Holistic health and wellbeing
-- image: "/images/uploads/transformation-education-livelihood.jpeg"
-  image_title: TRANSFORMATION
-  description: transformation
-- image: "/images/uploads/girls.jpg"
-  image_title: ACCESS TO CIVIL AND POLITICAL RIGHTS
-  description: access to civil and political rights
+covid_image: "/images/uploads/impact_covid-1.jpg"
 side_content: |-
   The nationwide lockdown that followed the onset of the global pandemic has not been so easy of marginalised and vulnerable sections of society, especially homeless young women that we work with. Our team has been working round the clock during the emergency situation, seeing to it that we reach out to homeless young women and other vulnerable groups to the best of our abilities.
 
   **Through our Covid-19 Responses we have reached out to  homeless young women and vulnerable families. Our efforts were focussed at providing them with not only monthly ration, but also supporting them to pay their monthly rent, phone top ups, and providing them with counselling and referrals to police and shelter homes.**
 banner: "/images/uploads/website-covid.jpeg"
+donate_button_text: Support our ongoing project
+donate_button_link: "/donate"
 menu:
   nav:
     name: Covid Response
@@ -39,4 +29,3 @@ We recognise that one time support is not enough for those worst affected by the
 
 We have started a fund-raiser on Milaap to keep assisting these groups Milaap. To support click [here](#)
 
-**[Support our ongoing project](/get_involved/donate)**

@@ -51,24 +51,40 @@
 {{ partial "counter_section.html" . }}
 
 {{ with .Site.GetPage "/about/homeless_young_women.md" }}
-<section class="ftco-section">
+
+<!-- Quote section -->
+<section class="ftco-section" id="quote">
   <div class="container">
-    <div class="row d-flex">
-      <div class="item">
-        <div class="cause-entry">
-          <a class="img" style="background-image: url('{{ .Params.banner }}');"></a>
-          <div class="text p-3 p-md-4">
-            <h3>
-              <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
-            </h3>
-            {{ if not (eq .Summary "") }}
-            <p>{{ .Summary }}</p>
-            <p>
-              <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
-            </p>
-            {{ end }}
-          </div>
-        </div>
+    <div class="row">
+      <div class="align-self-stretch d-flex">
+        <blockquote class="blockquote">
+          {{ if not (eq .Summary "") }}
+          <strong>
+            <i class="fas fa-quote-left fa-2x"></i>
+            {{ .Summary }}
+            <i class="fas fa-quote-right fa-2x"></i>
+          </strong>
+          <p>
+            <a href="/about/#we_work_with">Read more<i class="ion-ios-arrow-forward"></i></a>
+          </p>
+          {{ end }}
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/about/vision_mission.md" }}
+
+<!-- Quote section -->
+<section class="ftco-section bg-primary" id="quote">
+  <div class="container">
+    <div class="row">
+      <div class="align-self-stretch d-flex">
+        <blockquote class="blockquote">
+          <p>{{ .Params.mission_body }}</p>
+        </blockquote>
       </div>
     </div>
   </div>
@@ -95,9 +111,9 @@
 </section>
 {{ end }}
 
-{{ with .Site.GetPage "/approach/holistic_health.md" }}
+{{ with .Site.GetPage "/approach/programs.md" }}
 <section class="ftco-section">
-  {{ partial "gallery_section.html" . }}
+  {{ partial "programs_section.html" . }}
 </section>
 {{ end }}
 {{ with .Site.GetPage "/events" }}

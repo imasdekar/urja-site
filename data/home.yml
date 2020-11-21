@@ -2,22 +2,22 @@
 active: true
 logo: "/images/uploads/logo.png"
 slides:
-- hero_image: "/images/uploads/cover-bnw.jpeg"
-  title: Covid19 Response
+- hero_image: "/images/uploads/Home_Slider-1.jpg"
+  title: 
   subtitle: ''
   button_link: "/impact/#covid_response"
   button_text: Read more
   video_link: ''
   video_text: ''
-- hero_image: "/images/uploads/girls.jpg"
-  title: Journey With Homeless Young Women
+- hero_image: "/images/uploads/impact_case_story-1.jpg"
+  title: 
   subtitle: ''
   button_link: "/about"
   button_text: About Us
   video_link: ''
   video_text: ''
-- hero_image: "/images/uploads/urja.jpg"
-  title: Creating Empowering and Safe Spaces For Homeless Young Women
+- hero_image: "/images/uploads/impact_slider-1.jpg"
+  title: 
   subtitle: A second small subtitle
   button_link: "/events"
   button_text: Our Approach

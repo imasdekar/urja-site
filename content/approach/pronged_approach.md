@@ -1,5 +1,5 @@
 ---
-title: Three Pronged Approach
+title: Our Approach
 date: '2020-08-16T06:56:58.000+00:00'
 story_title: Homeless by Birth
 story_description: In the casteist, patriarchal Indian society, women’s identity is

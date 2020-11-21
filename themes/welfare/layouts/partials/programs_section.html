@@ -1,0 +1,61 @@
+<section class="text-justify ftco-section" id="programs">
+  <hr />
+  <div class="container">
+    <!-- Section heading -->
+    <div class="heading-section ftco-animate text-center">
+      <h2 class="mb-4">{{ .Title }}</h2>
+    </div>
+
+    <div class="wrapper-carousel-fix">
+      <!-- Carousel Wrapper -->
+      <div
+        id="carousel-example-1"
+        class="carousel no-flex testimonial-carousel carousel-fade"
+        data-ride="carousel"
+        data-interval="false"
+      >
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <!--slide-->
+          {{ range $index, $element := .Params.gallery }}
+          <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
+            <div class="testimonial row d-flex align-items-center">
+              <!--Avatar-->
+              <div class="avatar mb-4 mx-auto col-sm-12 col-md-4">
+                <img
+                  src="{{ $element.image }}"
+                  class="img-programs"
+                  alt="{{ $element.image_title }}"
+                />
+                <h4 style="text-align: center">{{ $element.image_title }}</h4>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+          <!--slide-->
+        </div>
+        <!--Slides-->
+        <!--Controls-->
+        <div class="text-center">
+          <a
+            class="carousel-control-prev btn-floating btn-lg darken-4"
+            href="#carousel-example-1"
+            data-slide="prev"
+          >
+            <i class="fas fa-chevron-left fa-2x" aria-hidden="true"></i>
+          </a>
+          <a
+            class="carousel-control-next btn-floating btn-lg darken-4"
+            href="#carousel-example-1"
+            data-slide="next"
+          >
+            <i class="fas fa-chevron-right fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <!--Controls-->
+      </div>
+      <!-- Carousel Wrapper -->
+    </div>
+  </div>
+  <hr />
+</section>

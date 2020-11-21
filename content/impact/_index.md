@@ -1,13 +1,12 @@
 ---
 title: Impact
 date: 2020-08-02T11:40:49.000+00:00
-cascade:
-  banner: "/images/uploads/bg_5.jpg"
-banner: "/images/uploads/bg_1.jpg"
-quote: Our Mission is to act as a catalyst for homeless young women by facilitating
-  their journey to access fundamental needs, reclaim their identity by building an
-  exemplary, replicable model that provides opportunities for their economic, psychological,
-  emotional, civil and social development.
+slides:
+- hero_image: "/images/uploads/impact_slider-1.jpg"
+  text: Impact
+  footer_text: ''
+quote: I measure the progress of a community by the degree of progress which women have achieved.
+quote_author: Dr. B.R.Ambedkar
 menu:
   nav:
     weight: 4
