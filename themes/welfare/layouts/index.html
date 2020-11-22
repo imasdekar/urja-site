@@ -6,7 +6,7 @@
       <div
         class="hero-wrap"
         style="background-image: url('{{ $element.hero_image }}');"
-        data-stellar-background-ratio="0.5"
+        
       >
         <div class="overlay"></div>
         <div class="container">
@@ -18,13 +18,13 @@
               class="col-md-7 ftco-animate text-center"
               data-scrollax=" properties: { translateY: '70%' }"
             >
-              <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+              <h1 class="mb-4" >
                 {{ $element.title }}
               </h1>
-              <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+              <p class="mb-5" >
                 {{ $element.subtitle }}
               </p>
-              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+              <p >
                 <a
                   href="{{ $element.button_link }}"
                   class="btn btn-white btn-outline-white px-4 py-3"
@@ -119,6 +119,32 @@
 {{ with .Site.GetPage "/events" }}
 <section class="ftco-section">
   {{ .Render "li" }}
+</section>
+{{ end }}
+
+{{ with .Site.GetPage "/impact/case_stories.md" }}
+<section class="ftco-section" id="case_stories">
+  <div class="container">
+    <h2 style="text-align: center">Impact</h2>
+    <div class="row d-flex">
+      <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
+        {{ if gt (len .Params.story_2.content) 500 }}
+        <p>{{ slicestr .Params.story_2.content 0 500 | markdownify }}</p>
+        {{ else }}
+        <p>{{ .Params.story_2.content | markdownify }}</p>
+        {{ end }}
+        <p>
+          <a href="/impact/#case_stories">Read more<i class="ion-ios-arrow-forward"></i></a>
+        </p>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div
+          class="img img-impact img-case-story align-self-stretch"
+          style="background-image: url('{{ .Params.story_2.image }}');"
+        ></div>
+      </div>
+    </div>
+  </div>
 </section>
 {{ end }}
 

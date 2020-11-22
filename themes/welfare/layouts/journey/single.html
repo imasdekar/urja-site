@@ -1,32 +1,16 @@
 {{ define "main" }}
-<div
-  class="hero-wrap"
-  style="background-image: url('{{ .Params.banner }}');"
-  data-stellar-background-ratio="0.5"
->
+<div class="hero-wrap" style="background-image: url('{{ .Params.banner }}');">
   <div class="overlay"></div>
   <div class="container">
     <div
-      class="row no-gutters slider-text align-items-center justify-content-center"
+      class="row no-gutters slider-text align-items-end justify-content-center"
       data-scrollax-parent="true"
     >
       <div
         class="col-md-7 ftco-animate text-center"
         data-scrollax=" properties: { translateY: '70%' }"
       >
-        <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-          <span class="mr-2"
-            ><a
-              href="{{ .CurrentSection.Parent.Permalink }}"
-              >{{ .CurrentSection.Parent.Title }}</a
-            ></span
-          >
-          <span class="mr-2"
-            ><a href="{{ .CurrentSection.Permalink }}">{{ .CurrentSection.Title }}</a></span
-          >
-          <span>{{ .Title }}</span>
-        </p>
-        <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+        <h1 class="mb-3">
           {{ .Title }}
         </h1>
       </div>
@@ -36,18 +20,75 @@
 
 <section class="ftco-section" id="journey">
   <div class="container">
-    <div class="row d-flex">
-      <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg">
-        <h2 class="mb-4">{{ .Title }}</h2>
-        <p>{{ .Summary }}</p>
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6">
+        <h4 style="display: flex; align-items: center">{{ .Params.side_story }}</h4>
       </div>
-      <div class="col-sm-6 d-flex ftco-animate">
-        <div class="img img-approach" style="background-image: url('{{ .Params.banner }}'); "></div>
+      <div class="col-sm-12 col-md-6 d-flex ftco-animate">
+        <div
+          class="img img-about"
+          style="background-image: url('{{ .Params.side_image }}'); "
+        ></div>
       </div>
-    </div>
-    <div class="markdown-content ftco-animate ftco-degree-bg">
-      <p>{{ .Content }}</p>
     </div>
   </div>
 </section>
+{{ range $index, $element := .Params.programmes }}
+<section class="ftco-section" id="safe_spaces">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section ftco-animate text-center">
+        <h2 class="mb-2">{{ $element.program_title }}</h2>
+        <h2 class="mb-2">{{ $element.sub_title }}</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-8 d-flex ftco-animate">
+        <div
+          class="img img-impact img-covid"
+          style="background-image: url('{{ $element.image }}');"
+        ></div>
+      </div>
+      <div class="text-justify markdown-content col-lg-4 ftco-animate ftco-degree-bg">
+        <h2 class="mb-2" style="text-align: center">{{ $element.side_title }}</h2>
+        <p>{{ $element.side_content | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ftco-section bg-primary" id="journey">
+  <div class="container">
+    <div class="row">
+      <div class="align-self-stretch d-flex" style="text-align: center">
+        <blockquote class="blockquote">
+          {{ if not (eq $element.quote "") }}
+          <h4>
+            <strong
+              ><i>{{ $element.quote }}</i></strong
+            >
+          </h4>
+          {{ end }}
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ftco-section" id="">
+  <div class="container">
+    <div class="row">
+      <div class="align-self-stretch d-flex" style="text-align: center">
+        {{ if not (eq $element.content "") }}
+        <p>{{ $element.content | markdownify }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="text-justify markdown-content ftco-animate ftco-degree-bg">
+      <p style="text-align: center"></p>
+    </div>
+  </div>
+</section>
+{{ end }}
 {{ end }}

@@ -2,7 +2,7 @@
 <div
   class="hero-wrap"
   style="background-image: url('{{ .Params.banner }}');"
-  data-stellar-background-ratio="0.5"
+  
 >
   <div class="overlay"></div>
   <div class="container">
@@ -14,7 +14,7 @@
         class="col-md-7 ftco-animate text-center"
         data-scrollax=" properties: { translateY: '70%' }"
       >
-        <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+        <p class="breadcrumbs" >
           <span class="mr-2"
             ><a
               href="{{ .CurrentSection.Parent.Permalink }}"
@@ -26,7 +26,7 @@
           >
           <span>{{ .Title }}</span>
         </p>
-        <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+        <h1 class="mb-3 bread" >
           {{ .Title }}
         </h1>
       </div>

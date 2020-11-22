@@ -20,6 +20,7 @@ $disabled-color: #d0cece;
 $primary: #fab73c;
 $secondary: #434343ff;
 $tertiary: #0b5394ff;
+$red: #c22830;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -337,32 +338,36 @@ h5,
 }
 
 .slider-text {
-  color: $white;
+  color: $black;
   height: 700px;
+  font-size: 30px;
   h1 {
-    font-size: 60px;
-    color: $white;
+    color: $black;
     line-height: 1.2;
-    font-weight: 400;
+    font-weight: 850;
     @include media-breakpoint-down(md) {
-      font-size: 40px;
+      font-size: 20px;
+    }
+    &.img-black {
+      color: $primary;
     }
   }
   h4,
   h5 {
-    color: $white !important;
+    color: $black !important;
     line-height: 1.2;
+    font-weight: 600;
   }
   p {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.5;
-    font-weight: 300;
-    color: rgba($white, 0.8);
+    font-weight: 500;
+    color: $white;
     a {
-      color: $white;
+      color: $black;
       border-bottom: 2px solid rgba($white, 0.3);
       span {
-        color: $white;
+        color: $black;
       }
     }
   }
@@ -494,6 +499,22 @@ h5,
 
 .bg-primary {
   background: $primary;
+  &.government {
+    h4 {
+      color: $red !important;
+    }
+  }
+}
+.bg-red {
+  background: $red;
+  &.journey {
+    a {
+      color: $primary !important;
+    }
+    h4 {
+      color: $primary !important;
+    }
+  }
 }
 
 //BUTTON
@@ -565,6 +586,32 @@ h5,
         background: $tertiary;
         color: $white;
         box-shadow: 0 2px 6px 0 $body-background, 0 7px 5px 0 $black;
+      }
+    }
+  }
+  &.btn-yellow {
+    background: $primary;
+    border: 1px solid $white;
+    color: $red;
+    @include border-radius(0);
+    // box-shadow: 0 5px 20px -5px rgba($black,.5) !important;
+    &:hover {
+      border: 1px solid $black;
+      background: $black;
+      color: $white;
+    }
+    &.btn-outline-white {
+      border-color: rgba($white, 0.8);
+      background: none;
+      @include border-radius(0);
+      border-width: 1px;
+      color: $white;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $white;
+        border-color: $white;
+        color: $primary;
       }
     }
   }

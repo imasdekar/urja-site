@@ -3,26 +3,21 @@
   <div class="carousel-inner">
     {{ range $index, $element := .Params.slides }}
     <div class="carousel-item {{ if ( eq $index 0) }}active{{ end }}">
-      <div
-        class="hero-wrap"
-        style="background-image: url('{{ $element.hero_image }}');"
-        data-stellar-background-ratio="0.5"
-      >
-        <div class="overlay"></div>
+      <div class="hero-wrap" style="background-image: url('{{ $element.hero_image }}');">
         <div class="container">
-          <div
-            class="row no-gutters slider-text align-items-center justify-content-center"
-            data-scrollax-parent="true"
-          >
-            <div
-              class="col-md-7 ftco-animate text-center"
-              data-scrollax=" properties: { translateY: '70%' }"
-            >
-              <h4 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+          <div class="row no-gutters slider-text align-items-end justify-content-center">
+            <div class="col-md-7 ftco-animate text-center">
+              {{ if ( eq $index 3) }}
+              <h1 class="mb-4 img-black">
                 {{ $element.text }}
-              </h4>
+              </h1>
+              {{ else }}
+              <h1 class="mb-4">
+                {{ $element.text }}
+              </h1>
+              {{ end }}
               {{ if not (eq $element.footer_text "")  }}
-              <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+              <p class="mb-5">
                 {{ $element.footer_text }}
               </p>
               {{ end }}
@@ -74,11 +69,9 @@
     <div class="row">
       <div class="align-self-stretch d-flex">
         <blockquote class="blockquote">
-          <p class="p-5">
-            <i class="fas fa-quote-left"></i>
+          <h4 class="">
             <strong>{{ .Params.quote }}</strong>
-            <i class="fas fa-quote-right"></i>
-          </p>
+          </h4>
         </blockquote>
       </div>
     </div>
@@ -105,57 +98,73 @@
 {{ end }}
 
 {{ with .Site.GetPage "/approach/journey.md" }}
-<section class="ftco-section" id="journey">
-  <div class="container">
-    <div class="row d-flex">
-      <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg">
-        <h2 class="mb-4">{{ .Title }}</h2>
-        {{ if not (eq .Summary "") }}
-        <p>{{ .Summary }}</p>
-        <p>
-          <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
-        </p>
-        {{ end }}
-      </div>
 
-      <div class="col-sm-6 d-flex ftco-animate">
-        <div class="img img-approach" style="background-image: url('{{ .Params.banner }}'); "></div>
+<section class="ftco-section bg-red journey" id="quote">
+  <div class="container">
+    <div class="row">
+      <div class="align-self-stretch d-flex">
+        <blockquote class="blockquote">
+          {{ if not (eq .Summary "") }}
+          <h4>
+            <strong>{{ .Summary }}</strong>
+          </h4>
+          <p>
+            <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
+          </p>
+          {{ end }}
+        </blockquote>
       </div>
     </div>
   </div>
 </section>
+
 {{ end }}
 
-{{ with .Site.GetPage "/approach/holistic_health.md" }}
-<section class="ftco-section" id="holistic_health">
-  <div class="container">
-    <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-2">{{ .Params.title }}</h2>
-      </div>
-    </div>
-  </div>
+<br />
+{{ with .Site.GetPage "/approach/government.md" }}
 
-  {{ partial "gallery_section.html" . }}
-</section>
-{{ end }}
-
-{{ with .Site.GetPage "/approach/programs.md" }}
-<section class="ftco-section" id="programs">
+<section class="ftco-section bg-primary government" id="journey">
   <div class="container">
-    <div class="row d-flex">
-      <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
-        <p>{{ .Content }}</p>
-      </div>
-      <div class="col-md-4 d-flex ftco-animate">
-        <div
-          class="img img-approach align-self-stretch"
-          style="background-image: url('{{ .Params.banner }}'); width: 100%;"
-        ></div>
+    <div class="row">
+      <div class="align-self-stretch d-flex">
+        <blockquote class="blockquote">
+          {{ if not (eq .Summary "") }}
+          <h4>
+            <strong>{{ .Summary }}</strong>
+          </h4>
+          <p>
+            <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
+          </p>
+          {{ end }}
+        </blockquote>
       </div>
     </div>
   </div>
 </section>
-{{ end }}
 
+{{ end }}
+<br />
+
+<section class="ftco-section bg-yellow journey" id="journey">
+  <div class="container">
+    <div class="row">
+      <div class="align-self-stretch d-flex">
+        <blockquote class="blockquote">
+          <h4>
+            <strong>{{ .Params.donate_text }} </strong>
+          </h4>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <a
+        href="{{ .Params.donate_link }}"
+        class="btn btn-white px-3 py-2 mt-2"
+        >{{ .Params.donate_button_text }}</a
+      >
+    </div>
+  </div>
+</section>
+
+<br />
 {{ end }}

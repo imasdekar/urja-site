@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="hero-wrap" style="background-image: url('{{ .Params.banner }}');" >
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+      <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+        <p class="breadcrumbs" >
+          <span class="mr-2"><a href="{{ .Page.Parent.Permalink }}">{{ .Page.Parent.Title }}</a></span>
+          <span class="mr-2"><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></span>
+        </p>
+        <h1 class="mb-3 bread" >
+          {{ .Title }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row d-flex">
+      {{ template "_internal/pagination.html" . }} {{ range .Paginator.Pages }} <div class="col-md-6 col-sm-12">
+        {{ .Render "summary"}} </div>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
