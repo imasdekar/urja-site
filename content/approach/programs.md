@@ -13,6 +13,9 @@ gallery:
 - image: "/images/uploads/impact_slider-1.jpg"
   image_title: TRANSFORMATION
   description: transformation
+- image: "/images/uploads/girls.jpg"
+  image_title: HOLISTIC HEALTH AND WELLBEING
+  description: Holistic health and wellbeing
 menu:
   nav:
     name: Programs

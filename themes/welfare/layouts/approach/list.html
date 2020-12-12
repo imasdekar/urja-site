@@ -97,53 +97,11 @@
 </section>
 {{ end }}
 
-{{ with .Site.GetPage "/approach/journey.md" }}
-
-<section class="ftco-section bg-red journey" id="quote">
-  <div class="container">
-    <div class="row">
-      <div class="align-self-stretch d-flex">
-        <blockquote class="blockquote">
-          {{ if not (eq .Summary "") }}
-          <h4>
-            <strong>{{ .Summary }}</strong>
-          </h4>
-          <p>
-            <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
-          </p>
-          {{ end }}
-        </blockquote>
-      </div>
-    </div>
-  </div>
+{{ with .Site.GetPage "/approach/approach_types" }}
+<section class="ftco-section">
+  {{ .Render "li" }}
 </section>
-
 {{ end }}
-
-<br />
-{{ with .Site.GetPage "/approach/government.md" }}
-
-<section class="ftco-section bg-primary government" id="journey">
-  <div class="container">
-    <div class="row">
-      <div class="align-self-stretch d-flex">
-        <blockquote class="blockquote">
-          {{ if not (eq .Summary "") }}
-          <h4>
-            <strong>{{ .Summary }}</strong>
-          </h4>
-          <p>
-            <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
-          </p>
-          {{ end }}
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</section>
-
-{{ end }}
-<br />
 
 <section class="ftco-section bg-yellow journey" id="journey">
   <div class="container">

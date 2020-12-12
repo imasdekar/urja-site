@@ -1,8 +1,7 @@
 ---
 title: Our Covid Response
 covid_image: "/images/uploads/impact_covid-1.jpg"
-side_content: |-
-  The nationwide lockdown that followed the onset of the global pandemic has not been so easy of marginalised and vulnerable sections of society, especially homeless young women that we work with. Our team has been working round the clock during the emergency situation, seeing to it that we reach out to homeless young women and other vulnerable groups to the best of our abilities.
+side_content: The nationwide lockdown that followed the onset of the global pandemic has not been so easy of marginalised and vulnerable sections of society, especially homeless young women that we work with. Our team has been working round the clock during the emergency situation, seeing to it that we reach out to homeless young women and other vulnerable groups to the best of our abilities.
 
   **Through our Covid-19 Responses we have reached out to  homeless young women and vulnerable families. Our efforts were focussed at providing them with not only monthly ration, but also supporting them to pay their monthly rent, phone top ups, and providing them with counselling and referrals to police and shelter homes.**
 banner: "/images/uploads/website-covid.jpeg"

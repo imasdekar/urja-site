@@ -3,11 +3,7 @@
   <div class="carousel-inner">
     {{ range $index, $element := .Params.slides }}
     <div class="carousel-item {{ if ( eq $index 0) }}active{{ end }}">
-      <div
-        class="hero-wrap"
-        style="background-image: url('{{ $element.hero_image }}');"
-        
-      >
+      <div class="hero-wrap" style="background-image: url('{{ $element.hero_image }}');">
         <div class="overlay"></div>
         <div class="container">
           <div
@@ -18,11 +14,11 @@
               class="col-md-7 ftco-animate text-center"
               data-scrollax=" properties: { translateY: '70%' }"
             >
-              <h4 class="mb-4" >
+              <h4 class="mb-4">
                 {{ $element.text }}
               </h4>
               {{ if not (eq $element.footer_text "")  }}
-              <p class="mb-5" >
+              <p class="mb-5">
                 {{ $element.footer_text }}
               </p>
               {{ end }}
@@ -49,7 +45,7 @@
     <div class="row">
       <div class="align-self-stretch d-flex">
         <blockquote class="blockquote">
-          <p class="p-5">
+          <p class="">
             <strong>{{ .Params.quote }}</strong>
           </p>
         </blockquote>

@@ -1,43 +1,30 @@
 ---
 title: Volunteer & Intern
 type: volunteer_intern
-gallery_title: Gallery Title
-gallery:
-- image: "/images/uploads/safe-spaces.jpg"
-  image_title: SAFE SPACES
-  description: Place to stay safe
-- image: "/images/uploads/yw.jpg"
-  image_title: HOLISTIC HEALTH AND WELLBEING
-  description: Holistic health and wellbeing
-- image: "/images/uploads/transformation-education-livelihood.jpeg"
-  image_title: TRANSFORMATION
-  description: transformation
-- image: "/images/uploads/website-covid.jpeg"
-  image_title: ACCESS TO CIVIL AND POLITICAL RIGHTS
-  description: access to civil and political rights
+description: If you would like to be a changemaker, donate your time and join our global community of volunteers and interns.
+volunteer_button_text: EXPLORE
+volunteer_form_button_text: Volunteering Form
 volunteer_title: Volunteer
-volunteer_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-  sunt in culpa qui officia deserunt mollit anim id est laborum.
-intern_title: Intern
-intern_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-  qui officia deserunt mollit anim id est laborum.
-explore_button: Explore
-desc_title: Desc Title
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-  nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-  officia deserunt mollit anim id est laborum.
-desc_image: "/images/uploads/bg_2.jpg"
+slides:
+- hero_image: "/images/uploads/get_involved_volunteer.jpeg"
+  text: Volunteer & Intern
+  footer_text: 
+  button_link: 
+  button_text: 
+
+quote: We believe a better world is possible if we work together
+gain_title: What would you gain?
+gain_content: " - First hand knowledge of the ground realities which shape many decisions, schemes and policies
+
+- A chance to put your skills to meaningful use
+
+- You get to meet and work with courageous and strong women who chose to live their life with dignity
+
+- A letter of acknowledgement by the organisation
+"
+gain_image: "/images/uploads/volunteer_gain.jpg"
+supporter_content: Our wonderful supporters have now become spokespersons for the homeless young women! Be a part of this experience!
+internship_contact_line: For Internships please reach out to ankita@urjatrust.org
 menu:
   nav:
     name: Volunteer and Intern
@@ -46,3 +33,4 @@ menu:
     weight: 3
 
 ---
+If you would like to be a changemaker, donate your time and join our global community of volunteers and interns. We have had some wonderful individuals become our co-traveller, students and professionals alike. They have worked with us on office as well as ground projects closely with the team as well as the homeless young women. The support varied from tutoring, conducting sessions to designing creatives and project documents. 

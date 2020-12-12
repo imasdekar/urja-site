@@ -1,115 +1,103 @@
 {{ define "main" }}
-<div class="hero-wrap" style="background-image: url('{{ .Params.banner }}');" >
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-      <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-        <p class="breadcrumbs" >
-          <span class="mr-2"><a
-              href="{{ .CurrentSection.Parent.Permalink }}">{{ .CurrentSection.Parent.Title }}</a></span>
-          <span class="mr-2"><a href="{{ .CurrentSection.Permalink }}">{{ .CurrentSection.Title }}</a></span>
-        </p>
-        <h1 class="mb-3 bread" >
-          {{ .Title }}
-        </h1>
-      </div>
-    </div>
-  </div>
-</div>
-<section class="ftco-section" id="organization">
-  <div class="container">
-    <div class="row d-flex">
-      <div class="markdown-content col-md-8 ftco-animate ftco-degree-bg">
-        <h2 class="mb-4">{{ .Params.desc_title }}</h2>
-        <p>{{ .Params.description }}</p>
-      </div>
-      <div class="col-md-4 d-flex ftco-animate">
-        <div class="img img-about align-self-stretch"
-          style="background-image: url('{{ .Params.desc_image }}'); width: 100%;"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="ftco-section " id="volunteer_intern">
-  <div class="container">
-    <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-4">{{ .Params.gallery_title }}</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid small-screen-gallery">
-    <div class="d-md-flex row">
-      {{ range $index, $element := .Params.gallery }}
-      {{ if eq (len $element) $index }}
-      <a href="{{ .image }}"
-        class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
-        style="background-image: url('{{ .image }}');" title="{{ .image_title }}" data-description="{{ .description }}">
-        <div class="icon d-flex justify-content-center align-items-center">
-          <span class="icon-search"></span>
-        </div>
-      </a>
-      {{ else }}
-      <a href="{{ .image }}"
-        class="gallery image-popup justify-content-center align-items-center img ftco-animate d-none"
-        style="background-image: url('{{ .image }}');" title="{{ .image_title }}" data-description="{{ .description }}">
-        <div class="icon d-flex justify-content-center align-items-center">
-          <span class="icon-search"></span>
-        </div>
-      </a>
-      {{ end }}
-      {{ end }}
-    </div>
-  </div>
-
-  <div class="gallery_slider">
-    <div class="large-screen-gallery">
-      <div class="slider-ctr">
-        {{ range $index, $element := .Params.gallery }}
-        {{ if eq (len $element) $index }}
-        <figure class="slide text-on"><img src="{{ .image }}" alt="{{ .image_title }}" />
-          {{ else }}
-          <figure class="slide"><img src="{{ .image }}" alt="{{ .image_title }}" />
-            {{ end }}
-            <figcaption>
-              <div class="title">{{ .image_title }}</div>
-              <div class="author">{{ .description }}</div>
-            </figcaption>
-          </figure>
-          {{ end }}
-          <div class="slider-control">
-            <div class="control prev disabled">
-              <div class="icon fas fa-chevron-left"></div>
-            </div>
-            <div class="control next">
-              <div class="icon fas fa-chevron-right"></div>
+<div id="heroCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    {{ range $index, $element := .Params.slides }}
+    <div class="carousel-item {{ if ( eq $index 0) }}active{{ end }}">
+      <div class="hero-wrap" style="background-image: url('{{ $element.hero_image }}');">
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center">
+            <div class="col-md-7 ftco-animate text-center">
+              {{ if ( eq $index 3) }}
+              <h1 class="mb-4" style="margin-top: 250px">
+                {{ $element.text }}
+              </h1>
+              {{ else }}
+              <h1 class="mb-4" style="margin-top: 250px">
+                {{ $element.text }}
+              </h1>
+              {{ end }}
+              {{ if not (eq $element.footer_text "")  }}
+              <p class="mb-5">
+                {{ $element.footer_text }}
+              </p>
+              {{ end }}
+              {{ if not (eq $element.button_text "") }}
+              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                <a
+                  href="{{ $element.button_link }}"
+                  class="btn btn-white btn-outline-white px-4 py-3"
+                  >{{ $element.button_text }}</a
+                >
+              </p>
+              {{ end }}
             </div>
           </div>
+        </div>
       </div>
     </div>
+    {{ end }}
   </div>
-</section>
-<section class="ftco-section">
-
+  <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<section class="ftco-section bg-primary" id="quote">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services p-3 py-4 d-block">
-          <div class="media-body pl-4">
-            <h2 class="heading">{{ .Params.volunteer_title }}</h2>
-            <p>{{ .Params.volunteer_description }}</p>
-          </div>
+      <div class="col-md-12 heading-section ftco-animate text-center">
+        <blockquote class="blockquote">
+          <p class="">
+            <i class="fas fa-quote-left fa-2x"></i>
+            <strong>{{ .Params.quote }}</strong>
+            <i class="fas fa-quote-right fa-2x"></i>
+          </p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ftco-section ftco-degree-bg">
+  <div class="container">
+    <div class="markdown-content ftco-animate ftco-degree-bg">
+      <p>{{ .Content }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section" id="gain">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-md-12 heading-section ftco-animate text-center">
+        <h2 class="mb-4">{{ .Params.gain_title }}</h2>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex ftco-animate">
+        <div
+          class="img img-involved img-fund-raiser"
+          style="background-image: url('{{ .Params.gain_image }}'); "
+        ></div>
+      </div>
+      <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg align-items-center">
+        <p style="display: flex; align-items: center">{{ .Params.gain_content | markdownify }}</p>
+      </div>
+      <div class="container">
+        <div class="markdown-content ftco-animate ftco-degree-bg text-center">
+          <p>{{ .Params.supporter_content }}</p>
         </div>
       </div>
-      <div class="col-md-6 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services p-3 py-4 d-block">
-          <div class="media-body pl-4">
-            <h2 class="heading">{{ .Params.intern_title }}</h2>
-            <p>{{ .Params.intern_description }}</p>
-          </div>
-        </div>
+    </div>
+    <div class="d-flex align-items-center flex-column">
+      <a href="/get_involved/company" class="btn btn-impact-donate">
+        {{ .Params.volunteer_form_button_text }}</a
+      >
+    </div>
+    <div class="container">
+      <div class="markdown-content ftco-animate ftco-degree-bg text-center mt-4">
+        <p>{{ .Params.internship_contact_line | markdownify }}</p>
       </div>
     </div>
   </div>

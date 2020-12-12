@@ -5,13 +5,11 @@
     </div>
   </div>
   <div class="row">
-    {{ range .Pages | first 3 }}
-    <div class="col-md-4 ftco-animate">
-      <div class="blog-entry align-self-stretch news-entry">
+    {{ range .Pages | first 4 }}
+    <div class="col-md-6 ftco-animate approach-types">
+      <div class="blog-entry align-self-stretch">
         <a
-          href="{{ .Params.newsLink }}"
-          target="blank"
-          rel="noopener noreferrer"
+          href="{{ .Permalink }}"
           class="block-20"
           style="background-image: url('{{ .Params.banner }}');"
         ></a>
@@ -22,25 +20,15 @@
           </div>
           {{ end }}
           <h3 class="heading md-4">
-            <a
-              href="{{ .Params.newsLink }}"
-              target="blank"
-              rel="noopener noreferrer"
-              >{{ .Title }}</a
-            >
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
           </h3>
-          {{ if gt (len .Summary) 45 }}
-          <p>{{ slicestr .Summary 0 50 | markdownify }}...</p>
+          {{ if gt (len .Summary) 150 }}
+          <p>{{ slicestr .Summary 0 150 | markdownify }}...</p>
           <p>
-            <a href="{{ .Params.newsLink }}" target="blank" rel="noopener noreferrer"
-              >Read more<i class="ion-ios-arrow-forward"></i
-            ></a>
+            <a href="{{ .Permalink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
           </p>
           {{ else }}
           <p>{{ .Summary | markdownify }}</p>
-          <a href="{{ .Params.newsLink }}" target="blank" rel="noopener noreferrer"
-            >Read more<i class="ion-ios-arrow-forward"></i
-          ></a>
           {{ end }}
         </div>
       </div>

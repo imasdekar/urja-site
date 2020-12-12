@@ -1,0 +1,57 @@
+{{ define "main" }}
+<div id="heroCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    {{ range $index, $element := .Params.slides }}
+    <div class="carousel-item {{ if ( eq $index 0) }}active{{ end }}">
+      <div class="hero-wrap" style="background-image: url('{{ $element.hero_image }}');">
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-end justify-content-center">
+            <div class="col-md-7 ftco-animate text-center">
+              {{ if ( eq $index 3) }}
+              <h1 class="mb-4 img-black">
+                {{ $element.text }}
+              </h1>
+              {{ else }}
+              <h1 class="mb-4">
+                {{ $element.text }}
+              </h1>
+              {{ end }}
+              {{ if not (eq $element.footer_text "")  }}
+              <p class="mb-5">
+                {{ $element.footer_text }}
+              </p>
+              {{ end }}
+              {{ if not (eq $element.button_text "") }}
+              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                <a
+                  href="{{ $element.button_link }}"
+                  class="btn btn-white btn-outline-white px-4 py-3"
+                  >{{ $element.button_text }}</a
+                >
+              </p>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<section class="ftco-section ftco-degree-bg">
+  <div class="container">
+    <div class="markdown-content ftco-animate ftco-degree-bg">
+      <p>{{ .Content }}</p>
+    </div>
+  </div>
+</section>
+{{ end }}
