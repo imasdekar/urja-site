@@ -3,11 +3,7 @@
   <div class="carousel-inner">
     {{ range $index, $element := $data.slides }}
     <div class="carousel-item {{ if ( eq $index 0) }}active{{ end }}">
-      <div
-        class="hero-wrap"
-        style="background-image: url('{{ $element.hero_image }}');"
-        
-      >
+      <div class="hero-wrap" style="background-image: url('{{ $element.hero_image }}');">
         <div class="overlay"></div>
         <div class="container">
           <div
@@ -18,13 +14,13 @@
               class="col-md-7 ftco-animate text-center"
               data-scrollax=" properties: { translateY: '70%' }"
             >
-              <h1 class="mb-4" >
+              <h1 class="mb-4">
                 {{ $element.title }}
               </h1>
-              <p class="mb-5" >
+              <p class="mb-5">
                 {{ $element.subtitle }}
               </p>
-              <p >
+              <p>
                 <a
                   href="{{ $element.button_link }}"
                   class="btn btn-white btn-outline-white px-4 py-3"
@@ -78,11 +74,11 @@
 {{ with .Site.GetPage "/about/vision_mission.md" }}
 
 <!-- Quote section -->
-<section class="ftco-section bg-primary" id="quote">
+<section class="ftco-section bg-red" id="quote">
   <div class="container">
     <div class="row">
       <div class="align-self-stretch d-flex">
-        <blockquote class="blockquote">
+        <blockquote class="blockquote font-primary-color">
           <p>{{ .Params.mission_body }}</p>
         </blockquote>
       </div>
@@ -148,10 +144,50 @@
 </section>
 {{ end }}
 
-{{ with .Site.GetPage "/get_involved" }}
+{{ with .Site.GetPage "/updates" }}
 <section class="ftco-section">
   {{ .Render "li" }}
 </section>
 {{ end }}
+{{ with .Site.GetPage "/get_involved" }}
+<section class="ftco-section"></section>
+<!-- Quote section -->
+<section class="ftco-section" id="get_involved">
+  <div class="container">
+    <div class="row align-items-center justify-content-center pt-2 mt-2">
+      <blockquote class="blockquote align-items-center justify-content-center">
+        <h2 class="">
+          <strong
+            ><i>{{ .Params.homepage_summary }}</i></strong
+          >
+        </h2>
+      </blockquote>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <a href="/get_involved" class="btn btn-impact-donate">{{ .Title }}</a>
+    </div>
+  </div>
+</section>
+{{ end }}
 
+<section class="ftco-section bg-primary" id="news_letter">
+  <div class="container">
+    <div class="row align-items-center justify-content-center pt-3 mt-3">
+      <blockquote class="blockquote align-items-center justify-content-center">
+        <h2 class="">
+          <strong>{{ $data.newsletter_heading }}</strong>
+        </h2>
+      </blockquote>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <blockquote class="blockquote align-items-center justify-content-center">
+        <p class="font-black-color">
+          <strong
+            ><i>{{ $data.newsletter_text }}</i></strong
+          >
+        </p>
+      </blockquote>
+    </div>
+  </div>
+</section>
 {{ end }}

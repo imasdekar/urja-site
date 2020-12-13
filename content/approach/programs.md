@@ -4,18 +4,18 @@ date: '2020-08-16T06:56:58.000+00:00'
 banner: "/images/uploads/bg_4.jpg"
 gallery_title: Our Programs
 gallery:
-- image: "/images/uploads/impact_covid-1.jpg"
-  image_title: SAFE SPACES
-  description: Place to stay safe
-- image: "/images/uploads/girls.jpg"
-  image_title: HOLISTIC HEALTH AND WELLBEING
-  description: Holistic health and wellbeing
-- image: "/images/uploads/impact_slider-1.jpg"
-  image_title: TRANSFORMATION
-  description: transformation
-- image: "/images/uploads/girls.jpg"
-  image_title: HOLISTIC HEALTH AND WELLBEING
-  description: Holistic health and wellbeing
+- image: "/images/uploads/programs-1.jpeg"
+  image_title: Access to Civil and Political Rights
+  description: Access to Civil and Political Rights
+- image: "/images/uploads/programs-2.JPG"
+  image_title: Development and Growth
+  description: Development and Growth
+- image: "/images/uploads/programs-3.JPG"
+  image_title: Holistic Health
+  description: Holistic Health
+- image: "/images/uploads/programs-4.jpg"
+  image_title: Safe Space
+  description: Safe Space
 menu:
   nav:
     name: Programs

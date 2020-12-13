@@ -9,37 +9,6 @@
 
   <div class="container">
     <div class="row">
-      <div class="container-fluid small-screen-gallery">
-        <div class="d-md-flex row">
-          {{ range $index, $element := .Params.gallery }}
-          {{ if eq (len $element) $index }}
-          <a
-            href="{{ .image }}"
-            class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
-            style="background-image: url('{{ .image }}');"
-            title="{{ .image_title }}"
-            data-description="{{ .description }}"
-          >
-            <div class="icon d-flex justify-content-center align-items-center">
-              <span class="icon-search"></span>
-            </div>
-          </a>
-          {{ else }}
-          <a
-            href="{{ .image }}"
-            class="gallery image-popup justify-content-center align-items-center img ftco-animate d-none"
-            style="background-image: url('{{ .image }}');"
-            title="{{ .image_title }}"
-            data-description="{{ .description }}"
-          >
-            <div class="icon d-flex justify-content-center align-items-center">
-              <span class="icon-search"></span>
-            </div>
-          </a>
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
       <div class="container-fluid large-screen-gallery">
         <div class="d-md-flex row">
           {{ range $index, $element := .Params.gallery }}
