@@ -6,21 +6,17 @@
   </div>
   <section class="ftco-section" id="sustainable_goals">
     <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-md-12">
-          <div class="row">
-            {{ range $index, $element := .Params.goals }}
-            <div class="col-lg-3 col-md-6 mb-4">
-              <div class="avatar mx-auto">
-                <img src="{{ $element.image }}" width="100%" alt="{{ $element.name }}" />
-              </div>
-            </div>
-            {{ end }}
-          </div>
-          <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg">
-            <p>{{ .Params.description }}</p>
+      <div class="row">
+        {{ range $index, $element := .Params.goals }}
+        <div class="col-md-3">
+          <div class="avatar csr-sgd">
+            <img src="{{ $element.image }}" alt="{{ $element.name }}" />
           </div>
         </div>
+        {{ end }}
+      </div>
+      <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg">
+        <p>{{ .Params.description }}</p>
       </div>
     </div>
   </section>

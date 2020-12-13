@@ -1688,7 +1688,17 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
+.csr-sgd {
+  img {
+    width: 250px;
+    height: 250px;
+    padding-bottom: 17px;
+    @include media-breakpoint-down(sm) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
 .img-approach {
   background-size: contain;
   background-repeat: no-repeat;

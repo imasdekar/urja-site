@@ -10149,6 +10149,18 @@ textarea.form-control {
   background-position: center center;
 }
 
+.csr-sgd img {
+  width: 250px;
+  height: 250px;
+  padding-bottom: 17px;
+}
+@media (max-width: 767.98px) {
+  .csr-sgd img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .img-approach {
   background-size: contain;
   background-repeat: no-repeat;

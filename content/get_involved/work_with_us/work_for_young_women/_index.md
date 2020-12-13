@@ -23,12 +23,6 @@ gain_content: " - First hand knowledge of the ground realities which shape many 
 gain_image: "/images/uploads/volunteer_gain.jpg"
 supporter_content: Our wonderful supporters have now become spokespersons for the homeless young women! Be a part of this experience!
 internship_contact_line: For Internships please reach out to ankita@urjatrust.org
-menu:
-  nav:
-    name: Volunteer and Intern
-    parent: Get Involved
-    url: "/get_involved/#volunteer_intern"
-    weight: 3
 
 ---
 If you would like to be a changemaker, donate your time and join our global community of volunteers and interns. We have had some wonderful individuals become our co-traveller, students and professionals alike. They have worked with us on office as well as ground projects closely with the team as well as the homeless young women. The support varied from tutoring, conducting sessions to designing creatives and project documents. 
