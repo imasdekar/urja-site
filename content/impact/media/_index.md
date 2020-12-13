@@ -1,5 +1,6 @@
 ---
 title: Media
-banner: "/images/uploads/impact_annual_reports.jpeg"
+cascade:
+  banner: "/images/uploads/impact_slider-1.jpg"
 
 ---

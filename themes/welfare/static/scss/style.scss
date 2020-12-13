@@ -496,7 +496,9 @@ h5,
 .bg-light {
   background: lighten($black, 98%) !important;
 }
-
+.font-primary {
+  color: $primary !important;
+}
 .bg-primary {
   background: $primary;
   &.government {

@@ -1,10 +1,11 @@
 ---
 title: Journey With Homeless Young Women
 type: journey
-date: '2020-08-16T06:56:58.000+00:00'
+date: '2020-08-15T06:56:58.000+00:00'
 banner: "/images/uploads/Approach_Journey.JPG"
 side_image: "/images/uploads/Approach_JOURNEY_Infographic.jpg"
 side_story: We believe that the homeless young women have the capacity and drive to achieve their potential, and that we just walk along with them in their journey and facilitate various transformative processes through which their voices are strengthened.
+
 programmes:
   - program_title: "Safe Spaces"
     sub_title: "Comprehensive Shelter Program"

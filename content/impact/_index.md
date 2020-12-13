@@ -1,6 +1,8 @@
 ---
 title: Impact
 date: 2020-08-02T11:40:49.000+00:00
+cascade:
+  banner: "/images/uploads/impact_slider-1.jpg"
 slides:
 - hero_image: "/images/uploads/impact_slider-1.jpg"
   text: Impact

@@ -3,11 +3,7 @@
   <div class="carousel-inner">
     {{ range $index, $element := .Params.slides }}
     <div class="carousel-item {{ if ( eq $index 0) }}active{{ end }}">
-      <div
-        class="hero-wrap"
-        style="background-image: url('{{ $element.hero_image }}');"
-        
-      >
+      <div class="hero-wrap" style="background-image: url('{{ $element.hero_image }}');">
         <div class="overlay"></div>
         <div class="container">
           <div
@@ -18,11 +14,11 @@
               class="col-md-7 ftco-animate text-center"
               data-scrollax=" properties: { translateY: '70%' }"
             >
-              <h4 class="mb-4" >
+              <h4 class="mb-4">
                 {{ $element.text }}
               </h4>
               {{ if not (eq $element.footer_text "")  }}
-              <p class="mb-5" >
+              <p class="mb-5">
                 {{ $element.footer_text }}
               </p>
               {{ end }}
@@ -188,26 +184,27 @@
     {{ .Render "li" }}
     <div class="container" id="news">
       <div class="row align-items-center justify-content-center">
-        <a href="news" class="btn btn-white px-3 py-2 mt-2">{{ .Params.explore_button }}</a>
+        <a href="/impact/media/news/" class="btn btn-white px-3 py-2 mt-2">{{ .Params.explore_button }}</a>
       </div>
     </div>
 {{ end }}
 </section>
 
 {{ with .Site.GetPage "/impact/media/awards.md" }}
-<section class="ftco-section" id="awards">
+<section class="ftco-section" id="fund_raise">
   <div class="container">
     <div class="row d-flex">
-      <div class="item col-sm-12">
-        <div class="cause-entry">
-          <a class="img" style="background-image: url('{{ .Params.banner }}');"></a>
-          <div class="text p-3 p-md-4">
-            <h3>
-              <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
-            </h3>
-            <p>{{ .Content }}</p>
-          </div>
-        </div>
+      <div class="col-md-12 heading-section ftco-animate text-center">
+        <h2 class="mb-4">{{ .Title }}</h2>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex ftco-animate">
+        <div
+          class="img img-involved img-fund-raiser"
+          style="background-image: url('{{ .Params.awards_image }}'); "
+        ></div>
+      </div>
+      <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg align-items-center">
+        <p style="display: flex; align-items: center">{{ .Content }}</p>
       </div>
     </div>
   </div>
