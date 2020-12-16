@@ -65,25 +65,43 @@ AOS.init({
 
   $('nav .dropdown').hover(
     function () {
+      if (isMobile.any()) {
+        return
+      }
       var $this = $(this)
       // 	 timer;
       // clearTimeout(timer);
-      $this.addClass('show')
+      $this.addClass('show open-once')
       $this.find('> a').attr('aria-expanded', true)
       // $this.find('.dropdown-menu').addClass('animated-fast fadeInUp show');
       $this.find('.dropdown-menu').addClass('show')
     },
     function () {
+      if (isMobile.any()) {
+        return
+      }
       var $this = $(this)
       // timer;
       // timer = setTimeout(function(){
-      $this.removeClass('show')
+      $this.removeClass('show open-once')
       $this.find('> a').attr('aria-expanded', false)
       // $this.find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
       $this.find('.dropdown-menu').removeClass('show')
       // }, 100);
     },
   )
+
+  $('nav .dropdown :first-child').on('click', function () {
+    var $el = $(this).parent()
+    if ($el.hasClass('open-once')) {
+      var $a = $el.children('a.dropdown-toggle')
+      if ($a.length && $a.attr('href')) {
+        location.href = $a.attr('href')
+      }
+    } else {
+      $el.addClass('open-once')
+    }
+  })
 
   $('#dropdown04').on('show.bs.dropdown', function () {
     console.log('show')

@@ -1,7 +1,7 @@
 # vim: set fenc=utf-8 ft=dosini:
 
 [project-run]
-command=hugo server
+command=hugo server --bind 0.0.0.0
 cwd=$(VIM_ROOT)
 output=terminal
 pos=right
