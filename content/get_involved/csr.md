@@ -25,11 +25,8 @@ goals:
   image: "/images/uploads/sustainable_goals-16.png"
 - name: Partnerships for the Goals
   image: "/images/uploads/sustainable_goals-17.png"
-csr_list_title: Desc CSR
-desc_title: Explore CSR
 description: URJA’s values and principles are aligned with UN’s Sustainable Development Goals ensuring good health and wellbeing (Goal 3), Quality Education (Goal 4), Gender Equality (Goal 5), Decent work and economic growth (Goal 8), Reduced Inequality (Goal 10) and Peace and justice strong institutions (Goal 16). 
 quote: Corporate Social Responsibility is an excellent way to engage and support the homeless young women at URJA.  By becoming our co-traveller your organisation can create a valuable impact on our projects ensuring that the young women can lead their lives with dignity.
-desc_image: "/images/uploads/bg_2.jpg"
 collaborate_heading: You can collaborate with us for
 menu:
   nav:

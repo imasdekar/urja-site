@@ -2,7 +2,6 @@
 title: Jobs
 type: jobs
 description: We are a diverse group of passionate social activists who work with a rights based intersectional approach! If you would like to be a part of an organisation where discussions are open, transparent and free flowing with new learning opportunities and growth opportunities do write to us!
-work_button_text: Explore
 slides:
 - hero_image: "/images/uploads/get_involved_jobs.jpg"
   text: Work With Us

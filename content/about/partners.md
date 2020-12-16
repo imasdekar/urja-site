@@ -22,9 +22,6 @@ partners:
 partners_content: The continued support of our partners, funders and individual well wishers and donors have helped us in strengthening and amplifying the voices of homeless young women.
 funders_title: Funders
 funders:
-- name: Bombay Community Public Trust
-  image: "/images/uploads/About_Funder_BCPT.jpg"
-  about: something about partner
 - name: Rotary Club of Bombay Bayview
   image: "/images/uploads/About_Funder_Rotary.jpg"
   about: something about funder

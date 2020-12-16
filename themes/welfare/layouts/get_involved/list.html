@@ -41,14 +41,14 @@
   </a>
 </div>
 
-{{ with .Site.GetPage "/get_involved/donate" }}
+{{ with .Site.GetPage "/get_involved/donate.md" }}
 <section class="ftco-section mt-4 pt-4" id="donate">
   <div class="container">
     <div class="row d-flex">
       <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg">
         <p>{{ .Params.description }}</p>
         <div class="d-flex align-items-end flex-column">
-          <a href="/get_involved/donate" class="btn btn-impact-donate">
+          <a href="{{ .Permalink }}" class="btn btn-impact-donate">
             {{ .Params.donate_button_text }}</a
           >
         </div>
@@ -58,13 +58,13 @@
 </section>
 {{ end }}
 
-{{ with .Site.GetPage "/get_involved/csr_philantrophy" }}
+{{ with .Site.GetPage "/get_involved/csr.md" }}
 <section class="ftco-section" id="csr_philantrophy">
-  {{ .Render "li" }}
+  {{ .Render "sgd" }}
   <div class="container">
     <div class="row align-items-center justify-content-center">
       <div class="d-flex align-items-end flex-column">
-        <a href="/get_involved/csr_philantrophy" class="btn btn-impact-donate btn-corporate">
+        <a href="{{ .Permalink }}" class="btn btn-impact-donate btn-corporate">
           {{ .Params.explore_button }}</a
         >
       </div>
@@ -73,8 +73,8 @@
 </section>
 {{ end }}
 
-{{ with .Site.GetPage "/get_involved/company" }}
-<section class="ftco-section mt-4 pt-4" id="donate">
+{{ with .Site.GetPage "/get_involved/company.md" }}
+<section class="ftco-section mt-4 pt-4" id="company">
   <div class="container">
     <div class="row d-flex">
       <div class="col-md-12 heading-section ftco-animate text-center">
@@ -83,7 +83,7 @@
       <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg">
         <p>{{ .Params.description }}</p>
         <div class="d-flex align-items-end flex-column">
-          <a href="/get_involved/company" class="btn btn-impact-donate">
+          <a href="{{ .Permalink }}" class="btn btn-impact-donate">
             {{ .Params.company_button_text }}</a
           >
         </div>
@@ -93,28 +93,28 @@
 </section>
 {{ end }}
 
-{{ with .Site.GetPage "/get_involved/fund_raise" }}
+{{ with .Site.GetPage "/get_involved/fund_raise.md" }}
 <section class="ftco-section" id="fund_raise">
   <div class="container">
-    <div class="row d-flex">
+    <div class="row d-flex align-items-center">
       <div class="col-md-12 heading-section ftco-animate text-center">
         <h2 class="mb-4">{{ .Title }}</h2>
       </div>
-      <div class="col-sm-12 col-md-6 d-flex ftco-animate">
+      </div>
+    <div class="row d-flex align-items-center">
         <div
           class="img img-involved img-fund-raiser"
           style="background-image: url('{{ .Params.side_image }}'); "
         ></div>
-      </div>
-      <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg align-items-center">
+      <div class="markdown-content col-md-6 ftco-animate ftco-degree-bg">
         <p style="display: flex; align-items: center">{{ .Content }}</p>
       </div>
-    </div>
+      </div>
   </div>
 </section>
 {{ end }}
 
-{{ with .Site.GetPage "/get_involved/volunteer_intern" }}
+{{ with .Site.GetPage "/get_involved/volunteer_intern.md" }}
 <section class="ftco-section mt-4 pt-4" id="volunteer">
   <div class="container">
     <div class="row d-flex">
@@ -124,7 +124,7 @@
       <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg text-center">
         <p>{{ .Params.description }}</p>
         <div class="d-flex align-items-center flex-column mt-5">
-          <a href="/get_involved/volunteer_intern" class="btn btn-impact-donate">
+          <a href="{{ .Permalink }}" class="btn btn-impact-donate">
             {{ .Params.volunteer_button_text }}</a
           >
         </div>
@@ -145,30 +145,30 @@
   </div>
   <div class="container">
     <div class="row">
-{{ with .Site.GetPage "/get_involved/work_with_us/jobs" }}
-      <div class="col-md-6 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+{{ with .Site.GetPage "/get_involved/work_with_us/jobs.md" }}
+      <div class="col-md-6 d-flex align-self-stretch ftco-animate ftco-degree-bg" id="jobs">
         <div class="media block-6 d-flex services d-block">
           <div class="media-body pl-4" style="min-height: 200px;">
             <h2 class="heading">{{ .Title }}</h2>
             <p style="min-height: 125px;">{{ .Params.description }}</p>
             <strong>
           <p>For current job openings please click
-            <a href="/get_involved/work_with_us/jobs">here</i></a>
+            <a href="{{ .Permalink }}">here</i></a>
           </p>
             </strong>
           </div>
         </div>
       </div>
 {{ end }}
-{{ with .Site.GetPage "/get_involved/work_with_us/work_for_young_women" }}
-      <div class="col-md-6 d-flex align-self-stretch ftco-animate ftco-degree-bg">
+{{ with .Site.GetPage "/get_involved/work_with_us/work_for_women.md" }}
+      <div class="col-md-6 d-flex align-self-stretch ftco-animate ftco-degree-bg" id="work_for_women">
         <div class="media block-6 d-flex services d-block">
           <div class="media-body pl-4 " >
             <h2 class="heading">{{ .Title }}</h2>
             <p style="min-height: 125px;">{{ .Params.description }}</p>
             <strong>
           <p class="text-center">
-            <a href="/get_involved/work_with_us/work_for_young_women">Know More<i class="ion-ios-arrow-forward"></i></a>
+            <a href="{{ .Permalink }}">Know More<i class="ion-ios-arrow-forward"></i></a>
           </p>
             </strong>
           </div>
