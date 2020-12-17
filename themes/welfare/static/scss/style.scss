@@ -538,9 +538,7 @@ h5,
   &:focus {
     outline: none;
   }
-  &.btn-impact-donate {
-    width: 250px;
-    height: 50px;
+  &.btn-bg-red-text-primary {
     background: $red;
     border: 1px solid $red;
     color: $primary;
@@ -1699,14 +1697,14 @@ textarea.form-control {
   background-position: center center;
 }
 .csr-sgd {
+  div {
+    padding: 5px !important;
+    margin: 5px !important;
+    flex: 0 0 20% !important;
+  }
   img {
-    width: 250px;
-    height: 250px;
-    padding-bottom: 17px;
-    @include media-breakpoint-down(sm) {
-      width: 150px;
-      height: 150px;
-    }
+    width: 100% !important;
+    height: 100% !important;
   }
 }
 .img-approach {

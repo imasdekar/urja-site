@@ -48,7 +48,7 @@
       <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg">
         <p>{{ .Params.description }}</p>
         <div class="d-flex align-items-end flex-column">
-          <a href="{{ .Permalink }}" class="btn btn-impact-donate">
+          <a href="{{ .Permalink }}" class="btn btn-bg-red-text-primary">
             {{ .Params.donate_button_text }}</a
           >
         </div>
@@ -59,18 +59,7 @@
 {{ end }}
 
 {{ with .Site.GetPage "/get_involved/csr.md" }}
-<section class="ftco-section" id="csr_philantrophy">
   {{ .Render "sgd" }}
-  <div class="container">
-    <div class="row align-items-center justify-content-center">
-      <div class="d-flex align-items-end flex-column">
-        <a href="{{ .Permalink }}" class="btn btn-impact-donate btn-corporate">
-          {{ .Params.explore_button }}</a
-        >
-      </div>
-    </div>
-  </div>
-</section>
 {{ end }}
 
 {{ with .Site.GetPage "/get_involved/company.md" }}
@@ -83,7 +72,7 @@
       <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg">
         <p>{{ .Params.description }}</p>
         <div class="d-flex align-items-end flex-column">
-          <a href="{{ .Permalink }}" class="btn btn-impact-donate">
+          <a href="{{ .Permalink }}" class="btn btn-bg-red-text-primary">
             {{ .Params.company_button_text }}</a
           >
         </div>
@@ -124,7 +113,7 @@
       <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg text-center">
         <p>{{ .Params.description }}</p>
         <div class="d-flex align-items-center flex-column mt-5">
-          <a href="{{ .Permalink }}" class="btn btn-impact-donate">
+          <a href="{{ .Permalink }}" class="btn btn-bg-red-text-primary">
             {{ .Params.volunteer_button_text }}</a
           >
         </div>

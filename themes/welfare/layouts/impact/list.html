@@ -14,9 +14,9 @@
               class="col-md-7 ftco-animate text-center"
               data-scrollax=" properties: { translateY: '70%' }"
             >
-              <h4 class="mb-4">
+              <h1 class="mb-4">
                 {{ $element.text }}
-              </h4>
+              </h1>
               {{ if not (eq $element.footer_text "")  }}
               <p class="mb-5">
                 {{ $element.footer_text }}
@@ -107,7 +107,7 @@
       <p>{{ .Content }}</p>
     </div>
     <div class="row align-items-center justify-content-center">
-      <a href="{{ .Params.donate_button_link }}" class="btn btn-white px-3 py-2 mt-2">{{ .Params.donate_button_text }}</a>
+      <a href="{{ .Params.donate_button_link }}" class="btn btn-bg-red-text-primary">{{ .Params.donate_button_text }}</a>
     </div>
   </div>
 </section>
@@ -184,7 +184,7 @@
     {{ .Render "li" }}
     <div class="container" id="news">
       <div class="row align-items-center justify-content-center">
-        <a href="/impact/media/news/" class="btn btn-white px-3 py-2 mt-2">{{ .Params.explore_button }}</a>
+        <a href="/impact/media/news/" class="btn btn-bg-red-text-primary">{{ .Params.explore_button }}</a>
       </div>
     </div>
 {{ end }}

@@ -1,4 +1,4 @@
-{{ define "main" }}
+﻿{{ define "main" }}
 <div id="heroCarousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     {{ range $index, $element := .Params.slides }}
@@ -14,9 +14,9 @@
               class="col-md-7 ftco-animate text-center"
               data-scrollax=" properties: { translateY: '70%' }"
             >
-              <h4 class="mb-4">
+              <h1 class="mb-4">
                 {{ $element.text }}
-              </h4>
+              </h1>
               {{ if not (eq $element.footer_text "")  }}
               <p class="mb-5">
                 {{ $element.footer_text }}
@@ -227,17 +227,23 @@
         </div>
         <ul class="list-unstyled mb-0">
           <!-- Facebook -->
+          {{ if not (eq $element.facebook "") }}
           <a class="p-2 fa-lg fb-ic" href="{{ $element.facebook }}">
             <span class="icon-facebook"></span>
           </a>
+          {{ end }}
           <!-- Twitter -->
+          {{ if not (eq $element.twitter "") }}
           <a class="p-2 fa-lg tw-ic" href="{{ $element.twitter }}">
             <span class="icon-twitter"></span>
           </a>
+          {{ end }}
           <!-- Instagram -->
+          {{ if not (eq $element.instagram "") }}
           <a class="p-2 fa-lg ins-ic" href="{{ $element.instagram }}">
             <span class="icon-instagram"></span>
           </a>
+          {{ end }}
         </ul>
       </div>
       {{ end }}
@@ -300,17 +306,23 @@
         </div>
         <ul class="list-unstyled mb-0 text-center">
           <!-- Facebook -->
+          {{ if not (eq $element.facebook "") }}
           <a class="p-2 fa-lg fb-ic" href="{{ $element.facebook }}">
             <span class="icon-facebook"></span>
           </a>
+          {{ end }}
           <!-- Twitter -->
+          {{ if not (eq $element.twitter "") }}
           <a class="p-2 fa-lg tw-ic" href="{{ $element.twitter }}">
             <span class="icon-twitter"></span>
           </a>
+          {{ end }}
           <!-- Instagram -->
+          {{ if not (eq $element.instagram "") }}
           <a class="p-2 fa-lg ins-ic" href="{{ $element.instagram }}">
             <span class="icon-instagram"></span>
           </a>
+          {{ end }}
         </ul>
       </div>
       {{ end }}

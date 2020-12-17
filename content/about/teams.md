@@ -8,9 +8,9 @@ board:
   - name: Deepali Vandana
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: Co-founder
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: She began working towards social change when she was 18 years old, questioning
       the injustice faced by women and individuals from lower classes and castes.
       She is inspired by the life of Dr. Babasaheb Ambedkar, encouraging young girls
@@ -31,9 +31,9 @@ board:
   - name: Aditi Naik
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: Co-founder
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: At Pratha, she started her career with the implementation of the Slum Sanitation
       Program in the slums of Mumbai. She has worked with MCGM for monitoring the
       activities under the Slum Sanitation Program (SSP). Her experience in sanitation
@@ -52,9 +52,9 @@ board:
   - name: Altaf Shaikh
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: Co-founder
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: In his 35 years in the development sector, Altaf started off as a volunteer
       working with children living on the streets and went on to become one of the
       founder members of Saathi, an NGO which works with youth living on the streets
@@ -71,10 +71,10 @@ board:
       and encouraging the journey forward.
   - name: Dr. Roshni Nair-Shaikh
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
-    role: NA
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    role: Co-founder
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: 'Roshni has been working as a Faculty with the Centre for Criminology and
       Justice (CCJ), School of Social Work, TISS, Mumbai since 2006.Prior to 2006,
       worked for twelve years with an NGO she was a founder member of, which has done
@@ -98,9 +98,9 @@ team:
   - name: Ankita Kohirkar
     image: "/images/uploads/ankita.jpeg"
     role: Leadership Team
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: As coordinator of the Rehabilitation program at URJA, Ankita leads the
       caseworkers and team members towards the implementation of various activities
       at the field level-such as provision of primary health care, counselling, education,
@@ -116,9 +116,9 @@ team:
   - name: Charu Chaturvedi
     image: "/images/uploads/charu.png"
     role: Leadership Team
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Charu is the Resource Programme Manager at URJA where along with fundraising-monetary
       and kind, she also brings in individual as well as organizational connects and
       resources. She is a part of the communications team as well. Charu has a Master’s
@@ -130,9 +130,9 @@ team:
   - name: Ipsita Gauri
     image: "/images/uploads/ipsita-gauri.jpg"
     role: Leadership Team
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Ipsita has a long standing association with URJA since 2012. She currently
       works as a consultant with the organization, as part of the resource mobilization
       team-writing grant proposals, documents for funder pitch, online fundraising
@@ -148,9 +148,9 @@ team:
   - name: Reshma Thosar
     image: "/images/uploads/reshma.jpeg"
     role: Leadership Team
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: After having worked for 8 years as a teacher, Reshma decided to pursue
       her passion of working in the social sector and joined URJA, as a programme
       coordinator. Presently, she oversees the Shelter, Outreach and One Stop Centre
@@ -161,9 +161,9 @@ team:
   - name: Shweta Pokle
     image: "/images/uploads/shweta.jpeg"
     role: Leadership Team
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: As part of the Mental Health program, Shweta works closely with the homeless
       young women as a counsellor and looks after their mental healthcare needs. She
       is interested in exploring further the relationship between homelessness and
@@ -172,9 +172,9 @@ team:
   - name: Arpita Sharma
     image: "/images/uploads/arpita.jpeg"
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Arpita has completed her bachelors in women's studies and holds the fort
       as the administrative manager at URJA. She is actively involved in ensuring
       smooth running of the day to day activities of the office and the shelter. Arpita’s
@@ -182,9 +182,9 @@ team:
   - name: Bhavna Waghmare
     image: https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Bhavna comes with more than 7 years of experience in the development sector.
       She is one of the Night Care Attendants at URJA, ensuring that the young women
       are safe and initiating different processes at the shelter during the period.
@@ -194,9 +194,9 @@ team:
   - name: Kavita Sangle
     image: "/images/uploads/kavita.jpeg"
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Kavita is one of the youngest team members of URJA and looks after the
       accounts of the organisation. After completing her B.Com, rather than following
       the usual part of pursuing a job in the corporate sector, she chose to work
@@ -207,9 +207,9 @@ team:
   - name: Nilam Jadhav
     image: "/images/uploads/nilam.jpeg"
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Nilam is part of the Child and Mother Care programme at URJA. She also
       works as a support team member for other programmes such as Outreach, health,
       Shelter and Case referrals. She comes with 5 years of prior experience of working
@@ -219,9 +219,9 @@ team:
   - name: Rahee Majumdar
     image: "/images/uploads/rahee.jpeg"
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Rahee works as a case worker, outreach worker and is part of the advocacy
       team. She is keen on strengthening the implementation of government schemes
       for homeless young women. As a trained theatre artist and dancer she hopes to
@@ -231,9 +231,9 @@ team:
   - name: Sakshi Pawar
     image: "/images/uploads/sakshi.jpg"
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Sakshi joined URJA as part of the day shelter support team. Having worked
       before in the sector, she quickly adapted to the workings of the shelter and
       now confidently leads several of the shelter processes. She is quite happy about
@@ -243,9 +243,9 @@ team:
   - name: Sanjivani Dambhare
     image: "/images/uploads/sanjivani.jpg"
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Sanjeevani is a Senior Social Worker at URJA and works as a case worker
       directly with the women. She also plays a supportive role in other projects,
       such as livelihood , Outbound and Physical Activity. She comes with vast experience
@@ -255,9 +255,9 @@ team:
   - name: Sushma Jadhav
     image: "/images/uploads/sushma.jpeg"
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Sushma is part of the Administrative team looking after the smooth functioning
       of the office and shelter program. She also works closely with the homeless
       young women at the shelter, co-ordinating between them, case manager and case
@@ -267,9 +267,9 @@ team:
   - name: Swati Jadhav
     image: "/images/uploads/swati.jpeg"
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Swati works as part of the outreach and case work team, specifically looking
       after the health needs of the women at the shelter. All the data and documentation
       pertaining to their health needs are maintained by her to ensure smooth co-ordination
@@ -279,9 +279,9 @@ team:
   - name: Uttara Jadhav
     image: "/images/uploads/uttara.jpg"
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Uttara is part of the livelihood program, working with the young women
       to ensure their access to different vocational training programs and livelihood
       opportunities. She is also a part of the outreach team as well as a case worker.
@@ -292,9 +292,9 @@ team:
   - name: Vinaya Sarmalkar
     image: "/images/uploads/vinaya.jpeg"
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Vinaya started her career with Saathi as a care-taker for the young women
       they worked with. She moved on to URJA Trust and is currently the Night Care
       Attendant, where she ensures that the young women are safe at the shelter and
@@ -305,9 +305,9 @@ team:
   - name: Pratibha Bangar
     image: "/images/uploads/pratibha.jpeg"
     role: Team Member
-    facebook: https://facebook.com
-    twitter: https://twitter.com
-    instagram: https://instagram.com
+    facebook: "" 
+    twitter: ""
+    instagram: ""
     about: Pratibha is the shelter incharge at URJA TRUSt and comes with 6 years of
       experience in the development sector. She hopes to further strengthen her skills
       and work in different capacities with the organisation.

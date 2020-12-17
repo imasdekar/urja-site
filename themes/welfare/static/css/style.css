@@ -9028,16 +9028,14 @@ h5,
 .btn:hover, .btn:active, .btn:focus {
   outline: none;
 }
-.btn.btn-impact-donate {
-  width: 250px;
-  height: 50px;
+.btn.btn-bg-red-text-primary {
   background: #c22830;
   border: 1px solid #c22830;
   color: #fab73c;
   font-size: 25px !important;
   font-weight: bolder;
 }
-.btn.btn-impact-donate.btn-corporate {
+.btn.btn-bg-red-text-primary.btn-corporate {
   background: #fab73c !important;
   border: 1px solid #fab73c !important;
   color: #c22830 !important;
@@ -10158,16 +10156,14 @@ textarea.form-control {
   background-position: center center;
 }
 
-.csr-sgd img {
-  width: 250px;
-  height: 250px;
-  padding-bottom: 17px;
+.csr-sgd div {
+  padding: 5px !important;
+  margin: 5px !important;
+  flex: 0 0 20% !important;
 }
-@media (max-width: 767.98px) {
-  .csr-sgd img {
-    width: 150px;
-    height: 150px;
-  }
+.csr-sgd img {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .img-approach {

@@ -1,23 +1,26 @@
-<div class="container">
-  <div class="row justify-content-center mb-1 pb-1">
-    <div class="col-md-12 heading-section ftco-animate text-center">
-      <h2 class="mb-4">{{ .Title }}</h2>
+<section class="ftco-section" id="csr_philantrophy">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-sm-6 heading-section ftco-animate text-center">
+        <h2 class="">{{ .Title }}</h2>
+      </div>
+    </div>
+    <div class="row csr-sgd align-items-center justify-content-center">
+      {{ range $index, $element := .Params.goals }}
+      <div class="col-sm-6 col-md-3">
+        <img src="{{ $element.image }}" alt="{{ $element.name }}" />
+      </div>
+      {{ end }}
+    </div>
+    <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg">
+      <p>{{ .Params.description }}</p>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <div class="d-flex align-items-end flex-column">
+        <a href="{{ .Permalink }}" class="btn btn-bg-red-text-primary btn-corporate">
+          {{ .Params.explore_button }}</a
+        >
+      </div>
     </div>
   </div>
-  <section class="ftco-section" id="sustainable_goals">
-    <div class="container">
-      <div class="row">
-        {{ range $index, $element := .Params.goals }}
-        <div class="col-md-3">
-          <div class="avatar csr-sgd">
-            <img src="{{ $element.image }}" alt="{{ $element.name }}" />
-          </div>
-        </div>
-        {{ end }}
-      </div>
-      <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg">
-        <p>{{ .Params.description }}</p>
-      </div>
-    </div>
-  </section>
-</div>
+</section>
