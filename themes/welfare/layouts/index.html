@@ -108,14 +108,7 @@
 {{ end }}
 
 {{ with .Site.GetPage "/approach/programs.md" }}
-<section class="ftco-section">
-  {{ partial "programs_section.html" . }}
-</section>
-{{ end }}
-{{ with .Site.GetPage "/events" }}
-<section class="ftco-section">
-  {{ .Render "li" }}
-</section>
+{{ partial "programs_section.html" . }}
 {{ end }}
 
 {{ with .Site.GetPage "/impact/case_stories.md" }}
