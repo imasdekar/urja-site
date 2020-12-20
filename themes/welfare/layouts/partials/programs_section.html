@@ -1,26 +1,29 @@
 <section class="text-justify ftco-section" id="programs">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-4">{{ .Title }}</h2>
+      <div class="col-md-7 ftco-animate text-center">
+        <h2 class="m-4">{{ .Title }}</h2>
       </div>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="container-fluid large-screen-gallery">
         <div class="d-md-flex row">
           {{ range $index, $element := .Params.gallery }}
           <a
             href="{{ .image }}"
-            class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
+            class="gallery user-img image-popup d-flex flex-wrap justify-content-center align-items-center img ftco-animate"
             style="background-image: url('{{ .image }}');"
             title="{{ .image_title }}"
             data-description="{{ .description }}"
-          >
+            >
             <div class="icon d-flex justify-content-center align-items-center">
               <span class="icon-search"></span>
+            </div>
+            <div style="flex-basis: 100%" class="d-flex justify-content-center align-items-center">
+              <p class="rounded bg-light p-2 color-tertiary">{{ .image_title }}</p>
             </div>
           </a>
           {{ end }}
