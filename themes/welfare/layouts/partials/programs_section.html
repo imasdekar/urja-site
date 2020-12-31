@@ -29,6 +29,26 @@
           {{ end }}
         </div>
       </div>
+      <div class="container-fluid small-screen-gallery">
+        <div class="d-md-flex row">
+          {{ range $index, $element := .Params.gallery }}
+          <a
+            href="{{ .image }}"
+            class="gallery user-img image-popup d-flex flex-wrap justify-content-center align-items-center img ftco-animate"
+            style="background-image: url('{{ .image }}');"
+            title="{{ .image_title }}"
+            data-description="{{ .description }}"
+            >
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="icon-search"></span>
+            </div>
+            <div style="flex-basis: 100%" class="d-flex justify-content-center align-items-center">
+              <p class="rounded bg-light p-2 color-tertiary">{{ .image_title }}</p>
+            </div>
+          </a>
+          {{ end }}
+        </div>
+      </div>
     </div>
   </div>
 </section>

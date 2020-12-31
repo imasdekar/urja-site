@@ -52,7 +52,7 @@
 <section class="ftco-section" id="quote">
   <div class="container">
     <div class="row">
-      <div class="align-self-stretch d-flex">
+      <div class="align-self-stretch p-3 d-flex">
         <blockquote class="blockquote">
           {{ if not (eq .Summary "") }}
           <strong>
@@ -77,7 +77,7 @@
 <section class="ftco-section bg-red" id="quote">
   <div class="container">
     <div class="row">
-      <div class="align-self-stretch d-flex">
+      <div class="align-self-stretch d-flex p-3">
         <blockquote class="blockquote font-primary-color">
           <p>{{ .Params.mission_body }}</p>
         </blockquote>
@@ -93,7 +93,7 @@
     <div class="row">
       <div class="col-sm-12 d-flex align-self-stretch ftco-animate ftco-degree-bg">
         <div class="media block-6 d-flex services py-4 d-block">
-          <div class="media-body pl-4 align-items-center">
+          <div class="media-body pl-3 align-items-center">
             <h2 class="heading">{{ .Title }}</h2>
             <div
               class="img img-approach"
@@ -147,12 +147,10 @@
 <!-- Quote section -->
 <section class="ftco-section" id="get_involved">
   <div class="container">
-    <div class="row align-items-center justify-content-center pt-2 mt-2">
+    <div class="row align-items-center justify-content-center pt-2 pl-3 pr-3 mt-2">
       <blockquote class="blockquote align-items-center justify-content-center">
-        <h2 class="">
-          <strong
-            ><i>{{ .Params.homepage_summary }}</i></strong
-          >
+        <h2 class="heading">
+          <i>{{ .Params.homepage_summary }}</i>
         </h2>
       </blockquote>
     </div>
@@ -167,17 +165,15 @@
   <div class="container">
     <div class="row align-items-center justify-content-center pt-3 mt-3">
       <blockquote class="blockquote align-items-center justify-content-center">
-        <h2 class="">
-          <strong>{{ $data.newsletter_heading }}</strong>
+        <h2 class="heading">
+          {{ $data.newsletter_heading }}
         </h2>
       </blockquote>
     </div>
-    <div class="row align-items-center justify-content-center">
+    <div class="row align-items-center justify-content-center p-3">
       <blockquote class="blockquote align-items-center justify-content-center">
         <p class="font-black-color">
-          <strong
-            ><i>{{ $data.newsletter_text }}</i></strong
-          >
+          <strong><i>{{ $data.newsletter_text }}</i></strong>
         </p>
       </blockquote>
     </div>
