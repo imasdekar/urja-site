@@ -55,11 +55,7 @@
       <div class="align-self-stretch p-3 d-flex">
         <blockquote class="blockquote">
           {{ if not (eq .Summary "") }}
-          <strong>
-            <i class="fas fa-quote-left fa-2x"></i>
-            {{ .Summary }}
-            <i class="fas fa-quote-right fa-2x"></i>
-          </strong>
+          <strong> <i class="fas fa-quote-left fa-2x"></i>{{ .Summary }} </strong>
           <p>
             <a href="/about/#we_work_with">Read more<i class="ion-ios-arrow-forward"></i></a>
           </p>
@@ -114,7 +110,7 @@
 {{ with .Site.GetPage "/impact/case_stories.md" }}
 <section class="ftco-section" id="case_stories">
   <div class="container">
-    <h2 class="m-5" style="text-align: center">Impact</h2>
+    <h2 class="" style="text-align: center">Impact</h2>
     <div class="row d-flex">
       <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
         {{ if gt (len .Params.story_2.content) 500 }}
@@ -173,7 +169,9 @@
     <div class="row align-items-center justify-content-center p-3">
       <blockquote class="blockquote align-items-center justify-content-center">
         <p class="font-black-color">
-          <strong><i>{{ $data.newsletter_text }}</i></strong>
+          <strong
+            ><i>{{ $data.newsletter_text }}</i></strong
+          >
         </p>
       </blockquote>
     </div>

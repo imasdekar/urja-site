@@ -1,16 +1,28 @@
 {{ define "main" }}
-<div class="hero-wrap" style="background-image: url('{{ .Params.banner }}');" >
+<div class="hero-wrap" style="background-image: url('{{ .Params.banner }}');">
   <div class="overlay"></div>
   <div class="container">
-    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-      <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-        <p class="breadcrumbs" >
-          <span class="mr-2"><a
-              href="{{ .CurrentSection.Parent.Permalink }}">{{ .CurrentSection.Parent.Title }}</a></span>
-          <span class="mr-2"><a href="{{ .CurrentSection.Permalink }}">{{ .CurrentSection.Title }}</a></span>
+    <div
+      class="row no-gutters slider-text align-items-center justify-content-center"
+      data-scrollax-parent="true"
+    >
+      <div
+        class="col-md-7 ftco-animate text-center"
+        data-scrollax=" properties: { translateY: '70%' }"
+      >
+        <p class="breadcrumbs">
+          <span class="mr-2"
+            ><a
+              href="{{ .CurrentSection.Parent.Permalink }}"
+              >{{ .CurrentSection.Parent.Title }}</a
+            ></span
+          >
+          <span class="mr-2"
+            ><a href="{{ .CurrentSection.Permalink }}">{{ .CurrentSection.Title }}</a></span
+          >
           <span>{{ .Title }}</span>
         </p>
-        <h1 class="mb-3 bread" >
+        <h1 class="mb-3 bread">
           {{ .Title }}
         </h1>
       </div>
@@ -22,13 +34,13 @@
   <div class="container">
     <div class="row">
       <div class="markdown-content col-md-12 ftco-animate">
-        <h2 class="mb-3">{{ .Title }}</h2>
+        <h2 class="">{{ .Title }}</h2>
         {{ .Content }}
-        {{ with .Params.tags }}
+        {{ with.Params.tags }}
         <div class="tag-widget post-tag-container mb-5 mt-5">
           <div class="tagcloud">
             {{ range . }}
-            <a href='{{ "tags" | absURL }}/{{ . | urlize }}'>{{ . }}</a>
+            <a href="{{ 'tags' | absURL }}/{{ . | urlize }}">{{ . }}</a>
             {{ end }}
           </div>
         </div>

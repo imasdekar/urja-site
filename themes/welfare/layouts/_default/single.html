@@ -1,16 +1,28 @@
 {{ define "main" }}
-<div class="hero-wrap" style="background-image: url('{{ .Params.banner }}');" >
+<div class="hero-wrap" style="background-image: url('{{ .Params.banner }}');">
   <div class="overlay"></div>
   <div class="container">
-    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-      <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-        <p class="breadcrumbs" >
-          <span class="mr-2"><a
-              href="{{ .CurrentSection.Parent.Permalink }}">{{ .CurrentSection.Parent.Title }}</a></span>
-          <span class="mr-2"><a href="{{ .CurrentSection.Permalink }}">{{ .CurrentSection.Title }}</a></span>
+    <div
+      class="row no-gutters slider-text align-items-center justify-content-center"
+      data-scrollax-parent="true"
+    >
+      <div
+        class="col-md-7 ftco-animate text-center"
+        data-scrollax=" properties: { translateY: '70%' }"
+      >
+        <p class="breadcrumbs">
+          <span class="mr-2"
+            ><a
+              href="{{ .CurrentSection.Parent.Permalink }}"
+              >{{ .CurrentSection.Parent.Title }}</a
+            ></span
+          >
+          <span class="mr-2"
+            ><a href="{{ .CurrentSection.Permalink }}">{{ .CurrentSection.Title }}</a></span
+          >
           <span>{{ .Title }}</span>
         </p>
-        <h1 class="mb-3 bread" >
+        <h1 class="mb-3 bread">
           {{ .Title }}
         </h1>
       </div>
@@ -21,9 +33,8 @@
 <section class="ftco-section ftco-degree-bg">
   <div class="container">
     <div class="row">
-      <div
-        class="markdown-content {{ if gt (len .CurrentSection.Pages) 1 }}col-md-8 {{ else }}col-md-12{{ end }} ftco-animate">
-        <h2 class="mb-3">{{ .Title }}</h2>
+      <div class="markdown-content {{ if gt (len .CurrentSection.Pages) 1 }} col-md-8 {{ else }} col-md-12 {{ end }} ftco-animate" >
+        <h2 class="">{{ .Title }}</h2>
         {{ if not .Date.IsZero }}
         <div class="meta mb-3">
           <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
@@ -34,7 +45,7 @@
         <div class="tag-widget post-tag-container mb-5 mt-5">
           <div class="tagcloud">
             {{ range . }}
-            <a href='{{ "tags" | absURL }}/{{ . | urlize }}'>{{ . }}</a>
+            <a href='{ "tags" | absURL }}/{{ . | urlize }}'>{{ . }}</a>
             {{ end }}
           </div>
         </div>
@@ -48,7 +59,9 @@
           <div class="categories">
             <h3>Categories</h3>
             {{ range . }}
-            <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+            <li>
+              <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+            </li>
             {{ end }}
           </div>
         </div>
@@ -57,9 +70,15 @@
           <h3>Recent {{ .CurrentSection.Title }}</h3>
           {{ range ( where .CurrentSection.Pages "Title" "!=" .Title | first 3 ) }}
           <div class="block-21 mb-4 d-flex">
-            <a class="blog-img mr-4" href="{{ .Permalink }}" style="background-image: url('{{ .Params.banner }}');"></a>
+            <a
+              class="blog-img mr-4"
+              href="{{ .Permalink }}"
+              style="background-image: url('{{ .Params.banner }}');"
+            ></a>
             <div class="text">
-              <h3 class="heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <h3 class="heading">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              </h3>
               <div class="meta">
                 <div><span class="icon-calendar"></span> {{ .Date.Format "Mon, Jan 2, 2006" }}</div>
               </div>
@@ -71,8 +90,8 @@
         <div class="sidebar-box ftco-animate">
           <h3>Tag Cloud</h3>
           <div class="tagcloud">
-            {{ range .Site.Taxonomies.tags }}
-            <a href='{{ .Page.Permalink }}'>{{ .Page.LinkTitle }}</a>
+            {{ range.Site.Taxonomies.tags }}
+            <a href="{{ .Page.Permalink }}">{{ .Page.LinkTitle }}</a>
             {{ end }}
           </div>
         </div>

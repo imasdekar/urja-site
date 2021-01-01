@@ -9,24 +9,19 @@
     <div class="col-md-4 ftco-animate">
       <div class="blog-entry updates">
         <div class="text p-4 d-block">
-          <h3 class="heading md-4">
+          <h2 class="heading md-4">
             <a
               href="{{ .Params.update_link }}"
               target="blank"
               rel="noopener noreferrer"
               >{{ .Title }}</a
             >
-          </h3>
-          {{ if gt (len .Summary) 55 }}
-          <p>{{ slicestr .Summary 0 55 | markdownify }}...</p>
+          </h2>
           <p>
             <a href="{{ .Params.update_link }}" target="blank" rel="noopener noreferrer"
               >Read more<i class="ion-ios-arrow-forward"></i
             ></a>
           </p>
-          {{ else }}
-          <p>{{ .Summary | markdownify }}</p>
-          {{ end }}
         </div>
       </div>
     </div>
