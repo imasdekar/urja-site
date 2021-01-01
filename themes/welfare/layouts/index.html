@@ -86,19 +86,13 @@
 {{ with .Site.GetPage "/approach/pronged_approach.md" }}
 <section class="ftco-section" id="pronged_approach">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services py-4 d-block">
-          <div class="media-body pl-3 align-items-center">
-            <h2 class="heading">{{ .Title }}</h2>
-            <div
-              class="img img-approach"
-              style="background-image: url('{{ .Params.pronged_image }}');"
-            ></div>
-          </div>
-        </div>
-      </div>
+    <div class="heading-section ftco-animate text-center align-items-center">
+      <h2 class="heading"><a href="{{ .Page.Parent.Permalink }}" style="color: black;">{{ .Title }}</a></h2>
     </div>
+    <div
+      class="img img-approach"
+      style="background-image: url('{{ .Params.pronged_image }}');"
+    ></div>
   </div>
 </section>
 {{ end }}
@@ -110,7 +104,9 @@
 {{ with .Site.GetPage "/impact/case_stories.md" }}
 <section class="ftco-section" id="case_stories">
   <div class="container">
-    <h2 class="" style="text-align: center">Impact</h2>
+    <div class="heading-section ftco-animate text-center">
+        <h2 class="" >{{ .Page.Parent.Title }}</h2>
+      </div>
     <div class="row d-flex">
       <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
         {{ if gt (len .Params.story_2.content) 500 }}

@@ -54,10 +54,10 @@ body {
 }
 
 .container {
-  h1,
-  h2,
-  .h1,
-  .h2 {
+  h1:not(.no-heading-space),
+  h2:not(.no-heading-space),
+  .h1:not(.no-heading-space),
+  .h2:not(.no-heading-space) {
     margin-top: 8% !important;
     margin-bottom: 2% !important;
   }
@@ -1728,8 +1728,8 @@ textarea.form-control {
   width: 970px;
   height: 480px;
   @include media-breakpoint-down(sm) {
-    width: 330px;
-    height: 350px;
+    width: 350px;
+    height: 250px;
   }
 }
 
@@ -2763,8 +2763,8 @@ textarea.form-control {
         width: 54px;
         padding-left: 0;
         text-decoration: none;
-        background: $tertiary;
-        color: $secondary;
+        background: $red;
+        color: $black;
       }
     }
   }

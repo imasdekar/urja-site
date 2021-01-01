@@ -8560,10 +8560,10 @@ body.menu-show {
   width: 100%;
 }
 
-.container h1,
-.container h2,
-.container .h1,
-.container .h2 {
+.container h1:not(.no-heading-space),
+.container h2:not(.no-heading-space),
+.container .h1:not(.no-heading-space),
+.container .h2:not(.no-heading-space) {
   margin-top: 8% !important;
   margin-bottom: 2% !important;
 }
@@ -10187,8 +10187,8 @@ textarea.form-control {
 }
 @media (max-width: 767.98px) {
   .img-approach {
-    width: 330px;
-    height: 350px;
+    width: 350px;
+    height: 250px;
   }
 }
 
@@ -11171,8 +11171,8 @@ textarea.form-control {
   width: 54px;
   padding-left: 0;
   text-decoration: none;
-  background: #0b5394ff;
-  color: #434343ff;
+  background: #c22830;
+  color: #000000;
 }
 
 .section.triad-section {
