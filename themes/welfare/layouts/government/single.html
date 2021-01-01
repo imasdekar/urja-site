@@ -6,14 +6,6 @@
       class="row no-gutters slider-text align-items-center justify-content-center"
       data-scrollax-parent="true"
     >
-      <div
-        class="col-md-7 ftco-animate text-center"
-        data-scrollax=" properties: { translateY: '70%' }"
-      >
-        <h1 class="mb-3">
-          {{ .Title }}
-        </h1>
-      </div>
     </div>
   </div>
 </div>
@@ -23,9 +15,10 @@
   <div class="container">
     <div class="d-flex align-items-center flex-column">
       <blockquote class="blockquote text-center">
-        <h4 class="font-primary-color">
+        <h3 class="font-primary-color"><strong>{{ .Title }}</strong></h3>
+        <p class="font-primary-color">
           <strong>{{ .Params.quote_heading }}</strong>
-        </h4>
+        </p>
         <p class="font-primary-color">
           <strong>{{ .Params.quote }}</strong>
         </p>
