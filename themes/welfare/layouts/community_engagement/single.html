@@ -27,7 +27,7 @@
   </div>
 </div>
 {{ end }}
-<section class="ftco-section bg-red" id="community_engagement">
+<section class="ftco-section {{ if (modBool $index 2) }}bg-red{{ else }}bg-primary{{end}}" id="community_engagement">
   <div class="container">
     <div class="d-flex align-items-center flex-column">
       <blockquote class="blockquote text-center">
