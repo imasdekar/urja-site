@@ -72,13 +72,11 @@
 <!-- Quote section -->
 <section class="ftco-section bg-red" id="quote">
   <div class="container">
-    <div class="row">
-      <div class="align-self-stretch d-flex p-3">
-        <blockquote class="blockquote font-primary-color">
+      <div class="align-self-stretch d-flex ">
+        <blockquote class="blockquote ">
           <p>{{ .Params.mission_body }}</p>
         </blockquote>
       </div>
-    </div>
   </div>
 </section>
 {{ end }}
@@ -86,8 +84,8 @@
 {{ with .Site.GetPage "/approach/pronged_approach.md" }}
 <section class="ftco-section" id="pronged_approach">
   <div class="container">
-    <div class="heading-section ftco-animate text-center align-items-center">
-      <h2 class="heading"><a href="{{ .Page.Parent.Permalink }}" style="color: black;">{{ .Title }}</a></h2>
+    <div class="heading-section ftco-animate text-center align-items-center font-black-color">
+      <h2 class="heading"><a href="{{ .Page.Parent.Permalink }}" >{{ .Title }}</a></h2>
     </div>
     <div
       class="img img-approach"
@@ -108,17 +106,13 @@
         <h2 class="" >{{ .Page.Parent.Title }}</h2>
       </div>
     <div class="row d-flex">
-      <div class="markdown-content col-md-8 pl-md-5 ftco-animate ftco-degree-bg">
-        {{ if gt (len .Params.story_2.content) 500 }}
-        <p>{{ slicestr .Params.story_2.content 0 500 | markdownify }}</p>
-        {{ else }}
+      <div class="markdown-content col-md-9 ftco-animate ftco-degree-bg">
         <p>{{ .Params.story_2.content | markdownify }}</p>
-        {{ end }}
         <p>
           <a href="/impact/#case_stories">Read more<i class="ion-ios-arrow-forward"></i></a>
         </p>
       </div>
-      <div class="col-md-4 d-flex ftco-animate">
+      <div class="col-md-3 d-flex ftco-animate">
         <div
           class="img img-impact img-case-story align-self-stretch"
           style="background-image: url('{{ .Params.story_2.image }}');"
@@ -141,13 +135,12 @@
   <div class="container">
     <div class="row align-items-center justify-content-center pt-2 pl-3 pr-3 mt-2">
       <blockquote class="blockquote align-items-center justify-content-center">
-        <h2 class="heading">
-          <i>{{ .Params.homepage_summary }}</i>
-        </h2>
+        <h3 class="heading">
+            <i><strong><a href="{{ .Page.Permalink }}">{{ slicestr .Params.homepage_summary 0 12 | markdownify }}</a></strong> {{ slicestr .Params.homepage_summary 12  | markdownify }}</i>
+            <a href="{{ .Page.Permalink }}/#csr_philantrophy" class="btn btn-bg-red-text-primary">{{ .Params.homepage_csr_button_text }}</a>
+      <a href="{{ .Page.Permalink }}/#volunteer" class="btn btn-bg-red-text-primary">{{ .Params.homepage_volunteer_button_text }}</a>
+        </h3>
       </blockquote>
-    </div>
-    <div class="row align-items-center justify-content-center">
-      <a href="/get_involved" class="btn btn-bg-red-text-primary">{{ .Title }}</a>
     </div>
   </div>
 </section>
@@ -155,14 +148,14 @@
 
 <section class="ftco-section bg-primary" id="news_letter">
   <div class="container">
-    <div class="row align-items-center justify-content-center pt-3 mt-3">
+    <div class="row align-items-center justify-content-center ">
       <blockquote class="blockquote align-items-center justify-content-center">
         <h2 class="heading">
           {{ $data.newsletter_heading }}
         </h2>
       </blockquote>
     </div>
-    <div class="row align-items-center justify-content-center p-3">
+    <div class="row align-items-center justify-content-center ">
       <blockquote class="blockquote align-items-center justify-content-center">
         <p class="font-black-color">
           <strong

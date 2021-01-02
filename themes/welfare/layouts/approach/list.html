@@ -80,19 +80,13 @@
 
 <section class="ftco-section" id="pronged_approach">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 d-flex align-self-stretch ftco-animate ftco-degree-bg">
-        <div class="media block-6 d-flex services py-4 d-block">
-          <div class="media-body pl-4 align-items-center">
-            <h2 class="heading">{{ .Title }}</h2>
-            <div
-              class="img img-approach"
-              style="background-image: url('{{ .Params.pronged_image }}');"
-            ></div>
-          </div>
-        </div>
-      </div>
+    <div class="heading-section ftco-animate text-center align-items-center">
+      <h2 class="heading">{{ .Title }}</h2>
     </div>
+    <div
+      class="img img-approach"
+      style="background-image: url('{{ .Params.pronged_image }}');"
+    ></div>
   </div>
 </section>
 {{ end }}

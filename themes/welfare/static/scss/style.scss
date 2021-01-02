@@ -54,14 +54,27 @@ body {
 }
 
 .container {
+  max-width: 80% !important;
   h1:not(.no-heading-space),
   h2:not(.no-heading-space),
   .h1:not(.no-heading-space),
   .h2:not(.no-heading-space) {
     margin-top: 8% !important;
     margin-bottom: 2% !important;
+    text-transform: capitalize !important;
   }
 }
+blockquote,
+.blockquote {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+p {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
 span {
   color: lighten($black, 75%);
 }
@@ -507,7 +520,8 @@ h5,
   background: lighten($black, 98%) !important;
 }
 .font-black-color {
-  strong {
+  strong,
+  a {
     color: $black !important;
   }
 }
@@ -519,6 +533,8 @@ h5,
 }
 .bg-primary {
   background: $primary;
+  align-items: center !important;
+  color: $black !important;
   &.government {
     h4 {
       color: $red !important;
@@ -527,14 +543,8 @@ h5,
 }
 .bg-red {
   background: $red;
-  &.journey {
-    a {
-      color: $primary !important;
-    }
-    h4 {
-      color: $primary !important;
-    }
-  }
+  align-items: center !important;
+  color: $white !important;
 }
 
 //BUTTON
@@ -1725,11 +1735,11 @@ textarea.form-control {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
-  width: 970px;
+  width: auto;
   height: 480px;
   @include media-breakpoint-down(sm) {
-    width: 350px;
-    height: 250px;
+    width: auto;
+    height: 200px;
   }
 }
 
@@ -1769,8 +1779,9 @@ textarea.form-control {
   width: 540px;
   height: 900px;
   &.img-vision {
-    width: 380px;
-    height: 290px;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
     @include media-breakpoint-down(sm) {
       width: 330px;
       height: 230px;
