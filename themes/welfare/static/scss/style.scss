@@ -68,6 +68,12 @@ blockquote,
 .blockquote {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
+  strong:not(.no-quote-icon):before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f10d \00a0';
+    font-size: 2em;
+    font-weight: 900;
+  }
 }
 
 p {
@@ -535,11 +541,6 @@ h5,
   background: $primary;
   align-items: center !important;
   color: $black !important;
-  &.government {
-    h4 {
-      color: $red !important;
-    }
-  }
 }
 .bg-red {
   background: $red;

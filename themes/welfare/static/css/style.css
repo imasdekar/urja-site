@@ -8577,6 +8577,13 @@ blockquote,
   margin-top: 0px !important;
   margin-bottom: 0px !important;
 }
+blockquote strong:not(.no-quote-icon):before,
+.blockquote strong:not(.no-quote-icon):before {
+  font-family: "Font Awesome 5 Free";
+  content: " ";
+  font-size: 2em;
+  font-weight: 900;
+}
 
 p {
   margin-top: 0px !important;
@@ -9028,9 +9035,6 @@ h5,
   background: #fab73c;
   align-items: center !important;
   color: #000000 !important;
-}
-.bg-primary.government h4 {
-  color: #c22830 !important;
 }
 
 .bg-red {
