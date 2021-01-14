@@ -52,15 +52,15 @@ body {
   }
 }
 
-h1 > *:not(.no-justify),
-h2 > *:not(.no-justify),
-h3 > *:not(.no-justify),
-h4 > *:not(.no-justify),
-h5 > *:not(.no-justify),
-h6 > *:not(.no-justify),
-p:not(.no-justify),
-a:not(.no-justify),
-strong > *:not(.no-justify) {
+h1 > *:not(.no-justify, .hero-wrap),
+h2 > *:not(.no-justify, .hero-wrap),
+h3 > *:not(.no-justify, .hero-wrap),
+h4 > *:not(.no-justify, .hero-wrap),
+h5 > *:not(.no-justify, .hero-wrap),
+h6 > *:not(.no-justify, .hero-wrap),
+p:not(.no-justify, .hero-wrap),
+a:not(.no-justify, .hero-wrap),
+strong > *:not(.no-justify, .hero-wrap) {
   text-align: justify !important;
 }
 
