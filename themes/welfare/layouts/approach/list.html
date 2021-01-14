@@ -4,6 +4,7 @@
     {{ range $index, $element := .Params.slides }}
     <div class="carousel-item {{ if ( eq $index 0) }}active{{ end }}">
       <div class="hero-wrap" style="background-image: url('{{ $element.hero_image }}');">
+        <div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-end justify-content-center">
             <div class="col-md-7 ftco-animate text-center">
@@ -102,14 +103,14 @@
     <div class="row align-items-center justify-content-center">
       <blockquote class="blockquote align-items-center justify-content-center">
         <h4>
-          <strong>{{ .Params.donate_text }} </strong>
+          <strong class="no-quote-icon ">{{ .Params.donate_text }} </strong>
         </h4>
       </blockquote>
     </div>
     <div class="row align-items-center justify-content-center">
       <a
         href="{{ .Params.donate_link }}"
-        class="btn btn-white px-3 py-2 mt-2"
+        class="btn btn-bg-red-text-primary"
         >{{ .Params.donate_button_text }}</a
       >
     </div>

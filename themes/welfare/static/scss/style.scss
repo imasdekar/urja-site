@@ -43,7 +43,6 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 300;
-  text-align: justify !important;
   color: lighten($black, 50%);
   &.menu-show {
     overflow: hidden;
@@ -51,6 +50,18 @@ body {
     height: 100%;
     width: 100%;
   }
+}
+
+h1 > *:not(.no-justify),
+h2 > *:not(.no-justify),
+h3 > *:not(.no-justify),
+h4 > *:not(.no-justify),
+h5 > *:not(.no-justify),
+h6 > *:not(.no-justify),
+p:not(.no-justify),
+a:not(.no-justify),
+strong > *:not(.no-justify) {
+  text-align: justify !important;
 }
 
 .container {
@@ -361,7 +372,7 @@ h5,
     right: 0;
     bottom: 0;
     content: '';
-    opacity: 0;
+    opacity: 0.35;
     background: $black;
   }
 }
@@ -371,9 +382,9 @@ h5,
   height: 700px;
   font-size: 30px;
   h1 {
-    color: $black;
+    color: $white;
     line-height: 1.2;
-    font-weight: 850;
+    font-weight: 950;
     @include media-breakpoint-down(md) {
       font-size: 20px;
     }
@@ -385,12 +396,12 @@ h5,
   h5 {
     color: $black !important;
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 700;
   }
   p {
     font-size: 30px;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 600;
     color: $white;
     a {
       color: $black;
@@ -827,6 +838,9 @@ h5,
   }
   span.fund-raised {
     color: $black;
+  }
+  .d-block {
+    min-height: 408px !important;
   }
 }
 

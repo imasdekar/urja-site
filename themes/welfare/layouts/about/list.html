@@ -45,8 +45,8 @@
     <div class="row">
       <div class="align-self-stretch d-flex">
         <blockquote class="blockquote">
-          <p class="no-quote-icon">
-            <strong>{{ .Params.quote }}</strong>
+          <p>
+            <strong class="no-quote-icon">{{ .Params.quote }}</strong>
           </p>
         </blockquote>
       </div>
@@ -111,23 +111,15 @@
       <div class="markdown-content col-md-6 pl-md-5 ftco-animate ftco-degree-bg">
         <h2 style="text-align: center">{{ .Title }}</h2>
         {{ with .Site.GetPage "/about/homeless_young_women.md" }}
-
-        <div class="container">
-          <div class="row d-flex">
-            <div class="item">
-              <div class="">
-                <h5 style="text-align: center">
-                  <i>{{ .Title }}</i>
-                </h5>
-                <div class="text p-3 p-md-4">
+            <div class="row">
+              <div class="p-3 d-flex">
+                <blockquote class="blockquote">
                   {{ if not (eq .Summary "") }}
-                  <p>{{ .Summary }}</p>
+                  {{ .Summary }}
                   {{ end }}
-                </div>
+                </blockquote>
               </div>
-            </div>
           </div>
-        </div>
 
         {{ end }}
 
