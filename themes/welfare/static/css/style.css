@@ -8584,7 +8584,7 @@ strong > *:not(.no-justify, .hero-wrap) {
 .container .h1:not(.no-heading-space),
 .container .h2:not(.no-heading-space) {
   margin-top: 8% !important;
-  margin-bottom: 2% !important;
+  margin-bottom: 1% !important;
   text-transform: capitalize !important;
 }
 

@@ -34,11 +34,11 @@
                 <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
             </div>
             {{ end }}
-      <h3 ><a class="no-justify"  href="{{ .Params.newsLink }}">{{ .Title }}</a></h3>
+      <h3 ><a class="no-justify"  href="{{ .Params.newsLink }}" target="_blank" rel="noreferrer noopener" >{{ .Title }}</a></h3>
       {{ if not (eq .Summary "") }}
       <p>{{ .Summary }}</p>
       <p>
-        <a href="{{ .Params.newsLink }}">Read more<i class="ion-ios-arrow-forward"></i></a>
+        <a href="{{ .Params.newsLink }}" target="_blank" rel="noreferrer noopener" >Read more<i class="ion-ios-arrow-forward"></i></a>
       </p>
             {{ end }}
     </div>
