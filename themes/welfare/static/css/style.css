@@ -8559,6 +8559,11 @@ body.menu-show {
   width: 100%;
 }
 
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
 h1 > *:not(.no-justify, .hero-wrap),
 h2 > *:not(.no-justify, .hero-wrap),
 h3 > *:not(.no-justify, .hero-wrap),
@@ -10206,7 +10211,7 @@ textarea.form-control {
   flex: 0 0 20% !important;
 }
 .csr-sgd img {
-  width: 100% !important;
+  width: 98% !important;
   height: 100% !important;
 }
 
@@ -11151,13 +11156,23 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
-.markdown-content img {
+.markdown-content > *:not(#dmScriptContainer) img {
   max-width: 100%;
   height: auto;
   margin-left: auto;
   margin-top: 50px;
   margin-right: auto;
   display: block;
+}
+
+#DonationInfo-form img,
+.danamojo-widget-container img {
+  margin-top: 0px !important;
+  display: initial !important;
+}
+#DonationInfo-form .row,
+.danamojo-widget-container .row {
+  display: initial !important;
 }
 
 .ct-socials {

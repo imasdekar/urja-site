@@ -1,19 +1,20 @@
 <section class="ftco-section" id="csr_philantrophy">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-12 col-sm-6 heading-section ftco-animate text-center">
+    <div class="row justify-content-center d-flex">
+      <div class="col-sm-6 col-md-12 heading-section ftco-animate text-center">
         <h2 class="">{{ .Title }}</h2>
       </div>
     </div>
-    <div class="row csr-sgd align-items-center justify-content-center">
+    <div class="row csr-sgd align-items-center justify-content-center d-flex">
       {{ range $index, $element := .Params.goals }}
       <div class="col-sm-6 col-md-3">
         <img src="{{ $element.image }}" alt="{{ $element.name }}" />
       </div>
       {{ end }}
-    </div>
-    <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg">
-      <p>{{ .Params.description }}</p>
+        </div>
+        <div class="markdown-content col-md-12 ftco-animate ftco-degree-bg">
+            <p>{{ .Params.description }}</p>
+        </div>
     </div>
     <div class="row align-items-center justify-content-center">
       <div class="d-flex align-items-end flex-column">

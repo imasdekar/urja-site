@@ -52,6 +52,11 @@ body {
   }
 }
 
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
 h1 > *:not(.no-justify, .hero-wrap),
 h2 > *:not(.no-justify, .hero-wrap),
 h3 > *:not(.no-justify, .hero-wrap),
@@ -1742,7 +1747,7 @@ textarea.form-control {
     flex: 0 0 20% !important;
   }
   img {
-    width: 100% !important;
+    width: 98% !important;
     height: 100% !important;
   }
 }
@@ -2737,7 +2742,7 @@ textarea.form-control {
   }
 }
 
-.markdown-content {
+.markdown-content > *:not(#dmScriptContainer) {
   img {
     max-width: 100%;
     height: auto;
@@ -2745,6 +2750,17 @@ textarea.form-control {
     margin-top: 50px;
     margin-right: auto;
     display: block;
+  }
+}
+
+#DonationInfo-form,
+.danamojo-widget-container {
+  img {
+    margin-top: 0px !important;
+    display: initial !important;
+  }
+  .row {
+    display: initial !important;
   }
 }
 

@@ -35,8 +35,7 @@ Swami Narayan Mandir, Dadar East, Mumbai – 400014
 
 **OR choose to donate from here:**
 
-# DANA MOJO FORM
-
+{{< danamojo >}}
 
 **Other ways to contribute**
 - Monthly Foodgrain Support in kind at our shelter
